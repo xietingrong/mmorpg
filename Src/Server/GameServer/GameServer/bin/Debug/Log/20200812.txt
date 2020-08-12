@@ -1,0 +1,37 @@
+
+2020-08-12 12:06:13,217 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-08-12 12:06:13,700 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-08-12 12:06:14,076 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,077 [14] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,077 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,078 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,078 [13] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,079 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,079 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,080 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:06:14,176 [1] [WARN ] [GameServer] £ºNetService Started
+2020-08-12 12:06:41,020 [1] [INFO ] [GameServer] £ºGame Server Exiting...
+2020-08-12 12:06:41,029 [1] [WARN ] [GameServer] £ºStop NetService...
+2020-08-12 12:06:41,030 [1] [WARN ] [GameServer] £ºStoping Message Handler...
+2020-08-12 12:06:41,031 [10] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,031 [9] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,031 [14] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,031 [13] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,031 [11] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,031 [8] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,032 [12] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,031 [7] [WARN ] [GameServer] £ºMessageDistribute thread end
+2020-08-12 12:06:41,133 [1] [INFO ] [GameServer] £ºGame Server Exited
+2020-08-12 12:19:49,493 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-08-12 12:19:49,986 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-08-12 12:19:50,301 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,301 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,301 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,301 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,301 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,301 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,301 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,301 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 12:19:50,400 [1] [WARN ] [GameServer] £ºNetService Started
+2020-08-12 12:20:03,083 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:65186]] Connected
+2020-08-12 12:20:44,732 [3] [WARN ] [GameServer] £ºClient[] Disconnected
