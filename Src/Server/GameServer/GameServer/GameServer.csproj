@@ -108,6 +108,11 @@
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Monster.cs" />
     <Compile Include="GameServer.cs" />
+    <Compile Include="Managers\CharacterManager.cs" />
+    <Compile Include="Managers\DataManager.cs" />
+    <Compile Include="Managers\MapManager.cs" />
+    <Compile Include="Managers\StatusManager.cs" />
+    <Compile Include="Models\Map.cs" />
     <Compile Include="Network\ExtensionMethods.cs" />
     <Compile Include="Network\INetSession.cs" />
     <Compile Include="Network\IPostResponse.cs" />
@@ -156,10 +161,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Managers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Lib\Common\Common.csproj">
       <Project>{ce169e52-a80e-4c19-b75b-823907b4ecef}</Project>

@@ -35,3 +35,14 @@
 2020-08-12 12:19:50,400 [1] [WARN ] [GameServer] £ºNetService Started
 2020-08-12 12:20:03,083 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:65186]] Connected
 2020-08-12 12:20:44,732 [3] [WARN ] [GameServer] £ºClient[] Disconnected
+2020-08-12 16:15:40,488 [1] [INFO ] [GameServer] £ºGame Server Init
+2020-08-12 16:15:40,876 [1] [WARN ] [GameServer] £ºStarting Listener...
+2020-08-12 16:15:41,159 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,159 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,159 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,159 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,159 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,159 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,159 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,159 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2020-08-12 16:15:41,258 [1] [WARN ] [GameServer] £ºNetService Started
