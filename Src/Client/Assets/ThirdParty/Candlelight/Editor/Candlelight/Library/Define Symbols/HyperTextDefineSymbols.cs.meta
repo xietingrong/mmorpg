@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5ba60164d3969475caf6c99a5522fd34
+labels:
+- Gui
+- Text
+- HyperText
+- Styles
+- Ui
+- Links
+- Dialogue
+- Editor
+- Localization
+- Language
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
