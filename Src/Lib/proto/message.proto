@@ -1,0 +1,226 @@
+syntax = "proto3";
+
+package SkillBridge.Message;
+
+option csharp_namespace = "SkillBridge.Message";
+option cc_enable_arenas = true;
+
+////////////////////////////////////////////////////////////////
+//
+//  Basic Defines
+//
+////////////////////////////////////////////////////////////////
+enum RESULT
+{
+	SUCCESS = 0;
+	FAILED = 1;
+}
+
+enum CHARACTER_TYPE
+{
+	Player = 0;
+	NPC = 1;
+	Monster = 2;
+}
+
+enum CHARACTER_CLASS
+{
+	NONE = 0;
+	WARRIOR = 1;
+	WIZARD = 2;
+	ARCHER = 3;
+}
+
+enum CHARACTER_STATE
+{
+	IDLE = 0;
+	MOVE = 1;
+}
+
+enum ENTITY_EVENT
+{
+	NONE = 0;
+	IDLE = 1;
+	MOVE_FWD = 2;
+	MOVE_BACK = 3;
+	JUMP = 4;
+}
+
+message NUserInfo {
+	int32 id = 1;
+	NPlayerInfo player = 2;
+}
+
+message NPlayerInfo {
+	int32 id = 1;
+	repeated NCharacterInfo characters = 2;
+}
+
+message NCharacterInfo {
+	int32 id = 1;
+	int32 tid = 2;
+	string name = 3;
+	CHARACTER_TYPE type = 4;
+	CHARACTER_CLASS class = 5;
+	int32 level = 6;
+	int32 mapId = 7;
+	NEntity entity = 8;
+}
+
+message NVector3
+{
+	int32 x = 1;
+	int32 y = 2;
+	int32 z = 3;
+}
+
+////////////////////////////////////////////////////////////////
+//
+//  Entities
+//
+////////////////////////////////////////////////////////////////
+
+
+message NEntity {
+	int32 id = 1;
+	NVector3 position = 2;
+	NVector3 direction = 3;
+	int32 speed = 4;
+}
+
+message NEntitySync {
+	int32 id = 1;
+	ENTITY_EVENT event = 2;
+	NEntity entity = 3;
+	
+}
+
+
+
+////////////////////////////////////////////////////////////////
+//
+//  Messages
+//
+////////////////////////////////////////////////////////////////
+
+message NetMessage{
+	NetMessageRequest Request = 1;
+	NetMessageResponse Response = 2;
+}
+
+message NetMessageRequest{
+	UserRegisterRequest userRegister = 1;
+	UserLoginRequest userLogin = 2;
+	UserCreateCharacterRequest createChar = 3;
+	UserGameEnterRequest gameEnter = 4;
+	UserGameLeaveRequest gameLeave = 5;
+	
+	MapCharacterEnterRequest mapCharacterEnter = 6;
+
+	MapEntitySyncRequest mapEntitySync = 8;
+	MapTeleportRequest mapTeleport = 9;
+}
+
+message NetMessageResponse{
+	UserRegisterResponse userRegister = 1;
+	UserLoginResponse userLogin = 2;
+	UserCreateCharacterResponse createChar = 3;
+	UserGameEnterResponse gameEnter = 4;
+	UserGameLeaveResponse gameLeave = 5;
+
+	MapCharacterEnterResponse mapCharacterEnter = 6;
+	MapCharacterLeaveResponse mapCharacterLeave = 7;
+
+	MapEntitySyncResponse mapEntitySync = 8;
+	
+}
+
+
+// User Protocol
+message UserLoginRequest {
+	string user = 1;
+	string passward = 2;
+}
+
+message UserLoginResponse {
+	RESULT result = 1;
+	string errormsg = 2;
+	NUserInfo userinfo = 3;
+}
+
+
+message UserRegisterRequest
+{
+	string user = 1;
+	string passward = 2;
+}
+
+message UserRegisterResponse {
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+message UserCreateCharacterRequest
+{
+	string name = 1;
+	CHARACTER_CLASS class = 2;
+}
+
+message UserCreateCharacterResponse {
+	RESULT result = 1;
+	string errormsg = 2;
+	repeated NCharacterInfo characters = 3;
+}
+
+message UserGameEnterRequest
+{
+	int32 characterIdx = 1;
+}
+
+message UserGameEnterResponse {
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+message UserGameLeaveRequest
+{
+}
+
+message UserGameLeaveResponse {
+	RESULT result = 1;
+	string errormsg = 2;
+}
+
+// Map Protocol
+message MapCharacterEnterRequest
+{
+	int32 mapId = 1;
+}
+
+message MapCharacterEnterResponse
+{
+	int32 mapId = 1;
+	repeated NCharacterInfo characters = 2;
+}
+
+message MapCharacterLeaveResponse
+{
+	int32 characterId = 1;
+}
+
+
+message MapEntitySyncRequest
+{
+    NEntitySync entitySync = 1;
+}
+
+
+message MapEntitySyncResponse
+{
+    repeated NEntitySync entitySyncs = 2;
+}
+
+message MapTeleportRequest
+{
+	int32 teleporterId = 1;
+}

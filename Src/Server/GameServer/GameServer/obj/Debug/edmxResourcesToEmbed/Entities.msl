@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExtremeWorldModelStoreContainer" CdmEntityContainer="ExtremeWorldEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TUser)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TPlayer)">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Characters">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TCharacter)">
+        <MappingFragment StoreEntitySet="Characters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="MapPosX" ColumnName="MapPosX" />
+          <ScalarProperty Name="MapPosY" ColumnName="MapPosY" />
+          <ScalarProperty Name="MapPosZ" ColumnName="MapPosZ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UserPlayer" TypeName="ExtremeWorldModel.UserPlayer" StoreEntitySet="Users">
+      <EndProperty Name="Player">
+        <ScalarProperty Name="ID" ColumnName="Player_ID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PlayerCharacter" TypeName="ExtremeWorldModel.PlayerCharacter" StoreEntitySet="Characters">
+      <EndProperty Name="Player">
+        <ScalarProperty Name="ID" ColumnName="Player_ID" />
+      </EndProperty>
+      <EndProperty Name="Character">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

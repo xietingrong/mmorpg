@@ -1,0 +1,138 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": "主城->野外",
+    "MapID": 1,
+    "LinkTo": 6,
+    "Descript": null,
+    "Position": {
+      "X": 609,
+      "Y": 2601,
+      "Z": 806
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "2": {
+    "ID": 2,
+    "Name": "主城->副本",
+    "MapID": 1,
+    "LinkTo": 8,
+    "Descript": null,
+    "Position": {
+      "X": 7395,
+      "Y": 2601,
+      "Z": 806
+    },
+    "Direction": {
+      "X": -100,
+      "Y": -2,
+      "Z": 0
+    }
+  },
+  "3": {
+    "ID": 3,
+    "Name": "主城传入点1",
+    "MapID": 1,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 1629,
+      "Y": 2566,
+      "Z": 806
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "4": {
+    "ID": 4,
+    "Name": "出城传入点2",
+    "MapID": 1,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 6571,
+      "Y": 2636,
+      "Z": 806
+    },
+    "Direction": {
+      "X": -100,
+      "Y": -2,
+      "Z": 0
+    }
+  },
+  "5": {
+    "ID": 5,
+    "Name": "野外->主城",
+    "MapID": 2,
+    "LinkTo": 3,
+    "Descript": null,
+    "Position": {
+      "X": 2109,
+      "Y": 3989,
+      "Z": 9
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "6": {
+    "ID": 6,
+    "Name": "野外传入点",
+    "MapID": 2,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 2784,
+      "Y": 3931,
+      "Z": 7
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "7": {
+    "ID": 7,
+    "Name": "副本->主城",
+    "MapID": 3,
+    "LinkTo": 4,
+    "Descript": null,
+    "Position": {
+      "X": 2109,
+      "Y": 3989,
+      "Z": 9
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "8": {
+    "ID": 8,
+    "Name": "副本传入点",
+    "MapID": 3,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 2784,
+      "Y": 3931,
+      "Z": 7
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
+  }
+}

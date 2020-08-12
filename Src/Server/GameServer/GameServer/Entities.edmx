@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ExtremeWorldModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ExtremeWorldModelStoreContainer">
+    <EntitySet Name="Users" EntityType="ExtremeWorldModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Players" EntityType="ExtremeWorldModel.Store.Players" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Characters" EntityType="ExtremeWorldModel.Store.Characters" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="UserPlayer" Association="ExtremeWorldModel.Store.UserPlayer">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Player" EntitySet="Players" />
+    </AssociationSet>
+    <AssociationSet Name="PlayerCharacter" Association="ExtremeWorldModel.Store.PlayerCharacter">
+      <End Role="Player" EntitySet="Players" />
+      <End Role="Character" EntitySet="Characters" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RegisterDate" Type="datetime" Nullable="true" />
+    <Property Name="Player_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Players">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Characters">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Class" Type="int" Nullable="false" />
+    <Property Name="MapID" Type="int" Nullable="false" DefaultValue="1" />
+    <Property Name="MapPosX" Type="int" Nullable="false" />
+    <Property Name="MapPosY" Type="int" Nullable="false" />
+    <Property Name="MapPosZ" Type="int" Nullable="false" />
+    <Property Name="Player_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="UserPlayer">
+    <End Role="User" Type="ExtremeWorldModel.Store.Users" Multiplicity="*" />
+    <End Role="Player" Type="ExtremeWorldModel.Store.Players" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Player_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PlayerCharacter">
+    <End Role="Player" Type="ExtremeWorldModel.Store.Players" Multiplicity="1" />
+    <End Role="Character" Type="ExtremeWorldModel.Store.Characters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Character">
+        <PropertyRef Name="Player_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ExtremeWorldModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RegisterDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Player" Relationship="ExtremeWorldModel.UserPlayer" FromRole="User" ToRole="Player" />
+        </EntityType>
+        <EntityContainer Name="ExtremeWorldEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="ExtremeWorldModel.TUser" />
+          <EntitySet Name="Players" EntityType="ExtremeWorldModel.TPlayer" />
+          <AssociationSet Name="UserPlayer" Association="ExtremeWorldModel.UserPlayer">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Player" EntitySet="Players" />
+          </AssociationSet>
+          <EntitySet Name="Characters" EntityType="ExtremeWorldModel.TCharacter" />
+          <AssociationSet Name="PlayerCharacter" Association="ExtremeWorldModel.PlayerCharacter">
+            <End Role="Player" EntitySet="Players" />
+            <End Role="Character" EntitySet="Characters" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="TPlayer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Characters" Relationship="ExtremeWorldModel.PlayerCharacter" FromRole="Player" ToRole="Character" />
+          </EntityType>
+        <Association Name="UserPlayer">
+          <End Type="ExtremeWorldModel.TUser" Role="User" Multiplicity="0..1" />
+          <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
+        </Association>
+        <EntityType Name="TCharacter">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Player" Relationship="ExtremeWorldModel.PlayerCharacter" FromRole="Character" ToRole="Player" />
+          <Property Name="TID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="Class" Type="Int32" Nullable="false" />
+          <Property Name="MapID" Type="Int32" Nullable="false" DefaultValue="1" />
+          <Property Name="MapPosX" Type="Int32" Nullable="false" />
+          <Property Name="MapPosY" Type="Int32" Nullable="false" />
+          <Property Name="MapPosZ" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="PlayerCharacter">
+          <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
+          <End Type="ExtremeWorldModel.TCharacter" Role="Character" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExtremeWorldModelStoreContainer" CdmEntityContainer="ExtremeWorldEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TUser)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TPlayer)">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Characters">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TCharacter)">
+        <MappingFragment StoreEntitySet="Characters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TID" ColumnName="TID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="MapPosX" ColumnName="MapPosX" />
+          <ScalarProperty Name="MapPosY" ColumnName="MapPosY" />
+          <ScalarProperty Name="MapPosZ" ColumnName="MapPosZ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UserPlayer" TypeName="ExtremeWorldModel.UserPlayer" StoreEntitySet="Users">
+      <EndProperty Name="Player">
+        <ScalarProperty Name="ID" ColumnName="Player_ID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PlayerCharacter" TypeName="ExtremeWorldModel.PlayerCharacter" StoreEntitySet="Characters">
+      <EndProperty Name="Player">
+        <ScalarProperty Name="ID" ColumnName="Player_ID" />
+      </EndProperty>
+      <EndProperty Name="Character">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

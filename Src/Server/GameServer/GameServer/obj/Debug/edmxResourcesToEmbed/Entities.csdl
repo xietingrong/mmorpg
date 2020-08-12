@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExtremeWorldModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RegisterDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Player" Relationship="ExtremeWorldModel.UserPlayer" FromRole="User" ToRole="Player" />
+  </EntityType>
+  <EntityContainer Name="ExtremeWorldEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="ExtremeWorldModel.TUser" />
+    <EntitySet Name="Players" EntityType="ExtremeWorldModel.TPlayer" />
+    <AssociationSet Name="UserPlayer" Association="ExtremeWorldModel.UserPlayer">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Player" EntitySet="Players" />
+    </AssociationSet>
+    <EntitySet Name="Characters" EntityType="ExtremeWorldModel.TCharacter" />
+    <AssociationSet Name="PlayerCharacter" Association="ExtremeWorldModel.PlayerCharacter">
+      <End Role="Player" EntitySet="Players" />
+      <End Role="Character" EntitySet="Characters" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TPlayer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Characters" Relationship="ExtremeWorldModel.PlayerCharacter" FromRole="Player" ToRole="Character" />
+  </EntityType>
+  <Association Name="UserPlayer">
+    <End Type="ExtremeWorldModel.TUser" Role="User" Multiplicity="0..1" />
+    <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
+  </Association>
+  <EntityType Name="TCharacter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Player" Relationship="ExtremeWorldModel.PlayerCharacter" FromRole="Character" ToRole="Player" />
+    <Property Name="TID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Class" Type="Int32" Nullable="false" />
+    <Property Name="MapID" Type="Int32" Nullable="false" DefaultValue="1" />
+    <Property Name="MapPosX" Type="Int32" Nullable="false" />
+    <Property Name="MapPosY" Type="Int32" Nullable="false" />
+    <Property Name="MapPosZ" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="PlayerCharacter">
+    <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
+    <End Type="ExtremeWorldModel.TCharacter" Role="Character" Multiplicity="*" />
+  </Association>
+</Schema>
