@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac2b6ab4dd444dbbab600921238ffba, type: 3}
+  m_Name: HyperTextStyles
+  m_EditorClassIdentifier: 
+  m_CustomTextStyles:
+  - m_Tag: sub
+    m_TextStyle:
+      m_SizeScalar: 0.5
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+    m_VerticalOffset: -0.1
+  - m_Tag: sup
+    m_TextStyle:
+      m_SizeScalar: 0.5
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+    m_VerticalOffset: 0.6
+  m_DefaultFontStyle: 0
+  m_DefaultLinkStyle:
+    m_VerticalOffset: 0
+    m_TextStyle:
+      m_SizeScalar: 1
+      m_FontStyle: 0
+      m_ShouldReplaceColor: 0
+      m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Colors:
+      m_NormalColor: {r: 0.1, g: 0.5, b: 1, a: 1}
+      m_HighlightedColor: {r: 0.13, g: 0.76, b: 1, a: 1}
+      m_PressedColor: {r: 0.08, g: 0.32, b: 0.63, a: 1}
+      m_DisabledColor: {r: 0.45, g: 0.54, b: 0.64, a: 1}
+      m_ColorMultiplier: 1
+      m_FadeDuration: 0.1
+    m_ColorTintMode: 1
+    m_ColorTweenMode: 0
+  m_DefaultTextColor: {r: 1, g: 1, b: 1, a: 1}
+  m_Font: {fileID: 12800000, guid: 9cdf50e78f84cd44498bdc93925ab83e, type: 3}
+  m_FontSize: 20
+  m_InheritedStyles: []
+  m_LineSpacing: 1
+  m_LinkHitboxPadding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_LinkStyles:
+  - m_ClassName: player
+    m_Style:
+      m_VerticalOffset: 0
+      m_TextStyle:
+        m_SizeScalar: 1
+        m_FontStyle: 0
+        m_ShouldReplaceColor: 0
+        m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Colors:
+        m_NormalColor: {r: 0, g: 1, b: 0.12695718, a: 1}
+        m_HighlightedColor: {r: 0.77428603, g: 1, b: 0.12941176, a: 1}
+        m_PressedColor: {r: 0.093983635, g: 0.6037736, b: 0.14645927, a: 1}
+        m_DisabledColor: {r: 0.45, g: 0.54, b: 0.64, a: 1}
+        m_ColorMultiplier: 1
+        m_FadeDuration: 0.1
+      m_ColorTintMode: 1
+      m_ColorTweenMode: 0
+  - m_ClassName: item
+    m_Style:
+      m_VerticalOffset: 0
+      m_TextStyle:
+        m_SizeScalar: 1
+        m_FontStyle: 0
+        m_ShouldReplaceColor: 0
+        m_ReplacementColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Colors:
+        m_NormalColor: {r: 0, g: 0.5377358, b: 0.019097084, a: 1}
+        m_HighlightedColor: {r: 0.12941176, g: 1, b: 0.28011245, a: 1}
+        m_PressedColor: {r: 0.028005537, g: 0.3301887, b: 0.004672473, a: 1}
+        m_DisabledColor: {r: 0.45, g: 0.54, b: 0.64, a: 1}
+        m_ColorMultiplier: 1
+        m_FadeDuration: 0.1
+      m_ColorTintMode: 1
+      m_ColorTweenMode: 0
+  m_QuadStyles: []
+  m_ShouldOverrideInheritedDefaultFontStyle: 0
+  m_ShouldOverrideInheritedDefaultLinkStyle: 0
+  m_ShouldOverrideInheritedDefaultTextColor: 0
+  m_ShouldOverrideInheritedFontSize: 0
+  m_ShouldOverrideInheritedLineSpacing: 0
+  m_ShouldOverrideInheritedLinkHitboxPadding: 0
