@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Common.Data;
+using Models;
 using Services;
 using SkillBridge.Message;
 using System;
@@ -99,6 +100,16 @@ namespace Managers
                     OnEquipChanged();
                 }
             }
+        }
+        public List<EquipDefine> GetEquipDefines()
+        {
+            List<EquipDefine> result = new List<EquipDefine>();
+            for(int i =0; i< (int)EquipSlot.SlotMax;i++)
+            {
+                if (Equips[i] != null)
+                    result.Add(Equips[i].EquipInfo);
+            }
+            return result;
         }
     }
 }

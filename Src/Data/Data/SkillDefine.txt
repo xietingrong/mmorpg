@@ -1,0 +1,508 @@
+{
+  "1": {
+    "101": {
+      "ID": 101,
+      "Name": "普通攻击",
+      "Icon": "UI/Skill/warrior_skill_00",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 200,
+      "CastTime": 0.0,
+      "CD": 3.0,
+      "MPCost": 0,
+      "AOERange": 0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
+      "HitEffect": "EFX_Warrior_Behurt_prefab",
+      "AP": 0.0,
+      "ADFator": 1.0
+    },
+    "102": {
+      "ID": 102,
+      "Name": "冲锋突刺",
+      "Description": "角色选定目标，并对目标发起冲锋并造成伤害，被冲锋的目标原地眩晕2秒",
+      "Icon": "UI/Skill/warrior_skill_01",
+      "Type": "Skill",
+      "UnlockLevel": 5,
+      "CastTarget": "Target",
+      "CastRange": 1200,
+      "CastTime": 0.0,
+      "CD": 8.0,
+      "MPCost": 10,
+      "AOERange": 0,
+      "SkillAnim": "SkillA",
+      "Buff": [
+        1,
+        2
+      ],
+      "AD": 60.0,
+      "AP": 0.0,
+      "ADFator": 0.1
+    },
+    "103": {
+      "ID": 103,
+      "Name": "旋风斩",
+      "Description": "角色在原地抡起武器进行旋转，对周围目标造成持续性伤害",
+      "Icon": "UI/Skill/warrior_skill_02",
+      "Type": "Skill",
+      "UnlockLevel": 10,
+      "CastTarget": "None",
+      "CastRange": 0,
+      "CastTime": 0.0,
+      "CD": 7.0,
+      "MPCost": 20,
+      "AOERange": 300,
+      "SkillAnim": "SkillB",
+      "Duration": 3.5,
+      "Interval ": 0.8,
+      "Buff": [
+        3
+      ],
+      "AD": 80.0,
+      "AP": 0.0,
+      "ADFator": 0.125
+    },
+    "104": {
+      "ID": 104,
+      "Name": "圣剑裁决",
+      "Description": "角色单手持剑跳跃后，奋力劈下，地面龟裂出圣剑虚影，被击中的角色受物理伤害",
+      "Icon": "UI/Skill/warrior_skill_03",
+      "Type": "Skill",
+      "UnlockLevel": 15,
+      "CastTarget": "Target",
+      "CastRange": 1000,
+      "CastTime": 0.0,
+      "CD": 12.0,
+      "MPCost": 15,
+      "AOERange": 0,
+      "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.9
+      ],
+      "AD": 100.0,
+      "AP": 0.0,
+      "ADFator": 0.2
+    }
+  },
+  "2": {
+    "201": {
+      "ID": 201,
+      "Name": "普通攻击",
+      "Icon": "UI/Skill/wizzard_skill_00",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 1000,
+      "CastTime": 0.0,
+      "CD": 3.0,
+      "MPCost": 0,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "BulletResource": "EFX_Wizard_AtkA_Bullet_prefab",
+      "AOERange": 0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
+      "HitEffect": "EFX_Wizard_AttkA_hit_prefab",
+      "APFator": 1.0
+    },
+    "202": {
+      "ID": 202,
+      "Name": "火球术",
+      "Description": "角色空手凝聚火焰能量球（蓄力），之后先前推出火球伤害敌方角色",
+      "Icon": "UI/Skill/wizzard_skill_01",
+      "Type": "Skill",
+      "UnlockLevel": 5,
+      "CastTarget": "Target",
+      "CastRange": 1000,
+      "CastTime": 0.0,
+      "CD": 3.0,
+      "MPCost": 20,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "BulletResource": "EFX_Wizard_SkillA_Bullet_prefab",
+      "AOERange": 0,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.6
+      ],
+      "HitEffect": "EFX_Wizard_SkillA_Hit_prefab",
+      "AD": 0.0,
+      "AP": 80.0,
+      "APFator": 0.125
+    },
+    "203": {
+      "ID": 203,
+      "Name": "火焰雨",
+      "Description": "角色手持法杖，漂浮半空召唤流行雨，对圆形区域敌方角色造成AOE法术伤害",
+      "Icon": "UI/Skill/wizzard_skill_02",
+      "Type": "Skill",
+      "UnlockLevel": 10,
+      "CastTarget": "Position",
+      "CastRange": 1200,
+      "CastTime": 1.2,
+      "CD": 12.0,
+      "MPCost": 30,
+      "AOERange": 500,
+      "AOEEffect": "EFX_Wizard_SkillB_bullet_perfab",
+      "SkillAnim": "SkillB",
+      "Duration": 3.5,
+      "Interval ": 0.8,
+      "AD": 0.0,
+      "AP": 100.0,
+      "APFator": 0.16667
+    },
+    "204": {
+      "ID": 204,
+      "Name": "火焰冲击",
+      "Description": "角色单手指向前方瞬间施法，目标受到一次单体火焰高额伤害，并附带火焰冲击Debuff",
+      "Icon": "UI/Skill/wizzard_skill_03",
+      "Type": "Skill",
+      "UnlockLevel": 15,
+      "CastTarget": "Target",
+      "CastRange": 800,
+      "CastTime": 0.0,
+      "CD": 7.0,
+      "MPCost": 25,
+      "AOERange": 0,
+      "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.8
+      ],
+      "HitEffect": "EFX_Wizard_SkillA_Hit_prefab",
+      "Buff": [
+        4
+      ],
+      "AD": 0.0,
+      "AP": 140.0,
+      "APFator": 0.25
+    }
+  },
+  "3": {
+    "301": {
+      "ID": 301,
+      "Name": "普通攻击",
+      "Icon": "UI/Skill/archer_skill_00",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 1000,
+      "CastTime": 0.0,
+      "CD": 3.0,
+      "MPCost": 0,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "BulletResource": "EFX_Archer_AtkA_B_dandao_prefab",
+      "AOERange": 0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.8
+      ],
+      "HitEffect": "EFX_Archer_AtkA_B_Behurt_prefab",
+      "ADFator": 1.0
+    },
+    "302": {
+      "ID": 302,
+      "Name": "流血箭",
+      "Description": "角色蓄力拉出满弓，射出流血箭，对目标造成大量伤害，并造成流血效果",
+      "Icon": "UI/Skill/archer_skill_01",
+      "Type": "Skill",
+      "UnlockLevel": 5,
+      "CastTarget": "Target",
+      "CastRange": 1000,
+      "CastTime": 0.5,
+      "CD": 8.0,
+      "MPCost": 15,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "BulletResource": "EFX_Archer_AtkA_B_dandao_prefab",
+      "AOERange": 0,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.3
+      ],
+      "HitEffect": "EFX_Archer_AtkA_B_Behurt_prefab",
+      "Buff": [
+        5
+      ],
+      "AD": 70.0,
+      "AP": 0.0,
+      "ADFator": 0.125
+    },
+    "303": {
+      "ID": 303,
+      "Name": "毒箭雨",
+      "Description": "角色选定一个圆形区域并持弓向天射出多支毒箭，对区域内目标造成一次物理伤害并使区域内目标中毒",
+      "Icon": "UI/Skill/archer_skill_02",
+      "Type": "Skill",
+      "UnlockLevel": 10,
+      "CastTarget": "Position",
+      "CastRange": 1200,
+      "CastTime": 1.2,
+      "CD": 7.0,
+      "MPCost": 25,
+      "AOERange": 500,
+      "AOEEffect": "EFX_Archer_SkillB_behurt_prefab",
+      "SkillAnim": "SkillB",
+      "HitTimes": [
+        0.8
+      ],
+      "HitEffect": "EFX_Archer_AtkA_B_Behurt_prefab",
+      "Buff": [
+        6
+      ],
+      "AD": 80.0,
+      "AP": 0.0,
+      "ADFator": 0.16667
+    },
+    "304": {
+      "ID": 304,
+      "Name": "连射",
+      "Description": "角色持弓对单个目标连射三箭，每箭伤害递增并最终造成大量物理伤害",
+      "Icon": "UI/Skill/archer_skill_03",
+      "Type": "Skill",
+      "UnlockLevel": 15,
+      "CastTarget": "Target",
+      "CastRange": 800,
+      "CastTime": 0.5,
+      "CD": 12.0,
+      "MPCost": 20,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "BulletResource": "EFX_Archer_AtkA_B_dandao_prefab",
+      "AOERange": 0,
+      "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.6,
+        1.25,
+        2.0
+      ],
+      "HitEffect": "EFX_Archer_AtkA_B_Behurt_prefab",
+      "AD": 70.0,
+      "AP": 0.0,
+      "ADFator": 0.2
+    }
+  },
+  "1001": {
+    "10011": {
+      "ID": 10011,
+      "Name": "普通攻击",
+      "Description": "恶鬼横向挥动手中的斧子进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 200,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 1.0
+    },
+    "10012": {
+      "ID": 10012,
+      "Name": "旋风横扫",
+      "Description": "恶鬼360度横向挥动斧子，对周围的敌人造成一次AOE伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "None",
+      "CastRange": 200,
+      "CD": 6.0,
+      "AOERange": 300,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 2.0
+    }
+  },
+  "1002": {
+    "10021": {
+      "ID": 10021,
+      "Name": "拳击挥打",
+      "Description": "石头人向敌人挥动右拳进行攻击然后马上用继续挥动左掌进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 300,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.6,
+        1.0
+      ],
+      "ADFator": 1.0
+    },
+    "10022": {
+      "ID": 10022,
+      "Name": "大地震击",
+      "Description": "石头人高举双手锤向地面，对周围8码内敌人造成一次AOE伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "None",
+      "CastRange": 300,
+      "CD": 4.0,
+      "AOERange": 800,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.52
+      ],
+      "ADFator": 2.0
+    },
+    "10023": {
+      "ID": 10023,
+      "Name": "重击",
+      "Description": "石头人挥动右手重重砸下目标使目标受到巨额伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 300,
+      "CD": 7.0,
+      "SkillAnim": "SkillB",
+      "HitTimes": [
+        0.6
+      ],
+      "ADFator": 3.0
+    }
+  },
+  "1003": {
+    "10031": {
+      "ID": 10031,
+      "Name": "叉击",
+      "Description": "小恶魔挥动手中的三头叉对敌人进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 1.0
+    },
+    "10032": {
+      "ID": 10032,
+      "Name": "旋转叉击",
+      "Description": "小恶魔旋转一圈以获得巨大的冲力并向前刺出三头叉对敌人进行攻击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 6.0,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.6
+      ],
+      "ADFator": 2.0
+    }
+  },
+  "1004": {
+    "10041": {
+      "ID": 10041,
+      "Name": "挥砍",
+      "Description": "骷髅兵挥动手中的短剑对敌人进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.5
+      ],
+      "ADFator": 1.0
+    },
+    "10042": {
+      "ID": 10042,
+      "Name": "重砍",
+      "Description": "骷髅兵高高举起手中的短剑，对敌人进行蓄力一击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 6.0,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        1.5
+      ],
+      "ADFator": 2.0
+    }
+  },
+  "1005": {
+    "10051": {
+      "ID": 10051,
+      "Name": "挥击",
+      "Description": "死神挥动右爪，向敌人发起攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 200,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
+      "HitEffect": "EFX_M1005_AtkA_hit_prefab",
+      "ADFator": 1.0,
+      "APFator": 1.0
+    },
+    "10052": {
+      "ID": 10052,
+      "Name": "死亡尖叫",
+      "Description": "死神发出恐怖的尖叫，对周围8码内敌人造成一次AOE伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "None",
+      "CastRange": 600,
+      "CD": 10.0,
+      "AOERange": 800,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 2.0,
+      "APFator": 2.0
+    },
+    "10053": {
+      "ID": 10053,
+      "Name": "鬼影背刺",
+      "Description": "死神突然消失，随机选中一个敌人并出现在它身后发起致命一击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 1000,
+      "CD": 15.0,
+      "SkillAnim": "SkillB",
+      "HitTimes": [
+        1.0
+      ],
+      "ADFator": 2.0,
+      "APFator": 2.0
+    },
+    "10054": {
+      "ID": 10054,
+      "Name": "死亡飞弹",
+      "Description": "死神右爪聚集大量死气，形成死亡飞弹，并将飞弹砸向敌人进行攻击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 1200,
+      "CD": 20.0,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "BulletResource": "EFX_M1005_SkillC_dandao",
+      "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.7
+      ],
+      "HitEffect": "EFX_M1005_SkillC_hit",
+      "ADFator": 3.0,
+      "APFator": 3.0
+    }
+  }
+}

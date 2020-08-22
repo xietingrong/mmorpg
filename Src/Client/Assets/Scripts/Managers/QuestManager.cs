@@ -43,9 +43,9 @@ namespace Managers
             //初始化可用任务
             foreach (var kv in DataManager.Instance.Quests)
             {
-                if (kv.Value.LimitClass != CharacterClass.None && kv.Value.LimitClass != User.Instance.CurrentCharacter.Class)
+                if (kv.Value.LimitClass != CharacterClass.None && kv.Value.LimitClass != User.Instance.CurrentCharacterInfo.Class)
                     continue;//不符合职业
-                if (kv.Value.LimitLevel > User.Instance.CurrentCharacter.Level)
+                if (kv.Value.LimitLevel > User.Instance.CurrentCharacterInfo.Level)
                     continue;//不符合等级
                 if (this.allQuests.ContainsKey(kv.Key))
                     continue;//任务已存在

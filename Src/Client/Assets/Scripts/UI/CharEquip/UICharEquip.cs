@@ -1,4 +1,5 @@
-﻿using Managers;
+﻿using Common.Battle;
+using Managers;
 using Models;
 using SkillBridge.Message;
 using System;
@@ -16,6 +17,12 @@ public class UICharEquip : UIWindow
     public GameObject itemEquipedPrefab;
     public Transform itemListRoot;
     public List<Transform> slots;
+    public Text hp;
+    public Slider hpbar;
+    public Text mp;
+    public Slider mpbar;
+    public Text[] attrs;
+
     private void Start()
     {
         ReFreshUI();
@@ -28,7 +35,27 @@ public class UICharEquip : UIWindow
         InitAllEquipItems();
         ClearEquipList();
         InitEquipedItem();
-        this.money.text = User.Instance.CurrentCharacter.Gold.ToString();
+        this.money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
+
+        InitAttributes();
+    }
+
+    private void InitAttributes()
+    {
+        var charattr = User.Instance.CurrentCharacter.Attributes;
+        this.hp.text = string.Format("{0}/{1}", charattr.HP, charattr.MaxHP);
+        this.mp.text = string.Format("{0}/{1}", charattr.MP, charattr.MaxMp);
+        this.hpbar.maxValue = charattr.MaxHP;
+        this.hpbar.value = charattr.HP;
+        this.mpbar.maxValue = charattr.MaxMp;
+        this.mpbar.value = charattr.MP;
+        for (int i = (int)AttributeType.STR; i <= (int)AttributeType.DEX; i++)
+        {
+            if (i == (int)AttributeType.CRI)
+                this.attrs[i - 2].text = string.Format("{0:f2}%", charattr.Final.Data[i] * 100);
+            else
+                this.attrs[i - 2].text =(int) charattr.Final.Data[i].ToString();
+        }
     }
 
     private void OnDestroy()

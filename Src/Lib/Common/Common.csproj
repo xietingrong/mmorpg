@@ -51,6 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Battle\AttributeData.cs" />
+    <Compile Include="Battle\Attributescs.cs" />
+    <Compile Include="Battle\Define.cs" />
     <Compile Include="BufferUtility.cs" />
     <Compile Include="Data\CharacterDefine.cs" />
     <Compile Include="Data\EquipDefine.cs" />

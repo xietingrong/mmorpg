@@ -44,7 +44,7 @@ public class UIRide:UIWindow
         foreach (var kv in ItemManager.Instance.Items)
         {
             if (kv.Value.Define.Type == ItemType.Ride
-                && (kv.Value.Define.LimitClass ==CharacterClass.None.ToString() || kv.Value.Define.LimitClass == User.Instance.CurrentCharacter.Class.ToString())
+                && (kv.Value.Define.LimitClass ==CharacterClass.None.ToString() || kv.Value.Define.LimitClass == User.Instance.CurrentCharacterInfo.Class.ToString())
                 )
             {
               

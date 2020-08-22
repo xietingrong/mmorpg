@@ -36,6 +36,8 @@ namespace GameServer
         public long Gold { get; set; }
         public byte[] Equips { get; set; }
         public int GuildId { get; set; }
+        public int HP { get; set; }
+        public int MP { get; set; }
     
         public virtual TPlayer Player { get; set; }
         public virtual TCharacterBag Bag { get; set; }

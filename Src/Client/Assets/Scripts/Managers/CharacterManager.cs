@@ -9,6 +9,7 @@ using UnityEngine.Events;
 
 using Entities;
 using SkillBridge.Message;
+using Models;
 
 namespace Managers
 {
@@ -54,6 +55,8 @@ namespace Managers
             {
                 OnCharacterEnter(character);
             }
+            if (cha.EntityId == User.Instance.CurrentCharacterInfo.EntityId)
+                User.Instance.CurrentCharacter = character;
         }
 
 

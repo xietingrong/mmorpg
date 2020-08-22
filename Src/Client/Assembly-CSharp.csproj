@@ -78,7 +78,6 @@
     <Compile Include="Assets\Scripts\GameObject\RideController.cs" />
     <Compile Include="Assets\Scripts\GameObject\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\GameObject\TeleporterObject.cs" />
-    <Compile Include="Assets\Scripts\GameObject\TextBoxEnter.cs" />
     <Compile Include="Assets\Scripts\LoadingManager.cs" />
     <Compile Include="Assets\Scripts\Log\UnityLogger.cs" />
     <Compile Include="Assets\Scripts\Managers\BagManager.cs" />

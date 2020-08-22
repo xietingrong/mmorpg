@@ -79,7 +79,7 @@ public  class NpcController: MonoBehaviour
 
     IEnumerator FaceTolayer()
     {
-        Vector3 faceTo = (User.Instance.CurrentCharacterObject.transform.position - this.transform.position).normalized;
+        Vector3 faceTo = (User.Instance.CurrentCharacterInfoObject.transform.position - this.transform.position).normalized;
         while(Mathf.Abs(Vector3.Angle(this.gameObject.transform.forward,faceTo))> 5)
         {
             this.gameObject.transform.forward = Vector3.Lerp(this.gameObject.transform.forward, faceTo, Time.deltaTime * 5f);
@@ -88,9 +88,9 @@ public  class NpcController: MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if(Vector3.Distance(this.transform.position,User.Instance.CurrentCharacterObject.transform.position)>2f)
+        if(Vector3.Distance(this.transform.position,User.Instance.CurrentCharacterInfoObject.transform.position)>2f)
         {
-            User.Instance.CurrentCharacterObject.StartNav(this.transform.position);
+            User.Instance.CurrentCharacterInfoObject.StartNav(this.transform.position);
         }
         Interactive();
     }

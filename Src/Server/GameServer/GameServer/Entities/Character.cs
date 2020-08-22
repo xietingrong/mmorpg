@@ -4,11 +4,13 @@ using Common.Utils;
 using GameServer.Core;
 using GameServer.Managers;
 using GameServer.Models;
+using log4net.Core;
 using Network;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,6 +48,7 @@ namespace GameServer.Entities
             this.Info.Id = cha.ID;
             this.Info.EntityId = this.entityId;
             this.Info.Name = cha.Name;
+            this.Info.Exp = cha.Exp;
             this.Info.Level = 10;//cha.Level;
             this.Info.ConfigId = cha.TID;
             this.Info.Class = (CharacterClass)cha.Class;
@@ -70,6 +73,9 @@ namespace GameServer.Entities
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
 
             this.Chat = new Chat(this);
+            this.Info.attrDynamic = new NAttributeDynamic();
+            this.Info.attrDynamic.Hp = cha.HP;
+            this.Info.attrDynamic.Mp = cha.MP;
         }
 
         public long Gold
@@ -93,6 +99,51 @@ namespace GameServer.Entities
                     return;
                 this.Info.Ride = value;
             }
+        }
+        public  long Exp
+        {
+            get { return this.Info.Exp; }
+            set
+            {
+                if (this.Info.Exp == value)
+                    return;
+                this.StatusManager.AddExpChange((int)(value - this.Data.Exp));
+                this.Data.Exp = value;
+            }
+        }
+        public int Level
+        {
+            get { return this.Info.Level; }
+            set
+            {
+                if (this.Info.Level == value)
+                    return;
+                this.StatusManager.AddLevelUp((int)(value - this.Data.Level));
+                this.Data.Level = value;
+            }
+        }
+
+        public void AddExp(int exp)
+        {
+            this.Exp += exp;
+            this.CheckLevelUp();
+        }
+
+        private void CheckLevelUp()
+        {
+            //经验公式：EXP =Power(lv,3)*10+lv*40+50;
+            long needExp = (long)Math.Pow(this.Level, 3) * 10 + this.Level * 40 + 50;
+            if(this.Exp >needExp)
+            {
+                this.LevelUp();
+            }
+        }
+
+        private void LevelUp()
+        {
+            this.Level += 1;
+            Log.InfoFormat("Charcter[{0}:{1}] levelUp:{2}", this.Id, this.Info.Name, this.Level);
+            CheckLevelUp();
         }
 
         public void PostProcess(NetMessageResponse message)

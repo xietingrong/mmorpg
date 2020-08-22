@@ -49,7 +49,7 @@ public class UIBag:UIWindow
     }
     public void SetTitle(string title)
     {
-        this.money.text = User.Instance.CurrentCharacter.Id.ToString();
+        this.money.text = User.Instance.CurrentCharacterInfo.Id.ToString();
     }
     void Clear()
     {

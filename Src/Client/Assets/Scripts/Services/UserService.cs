@@ -247,7 +247,7 @@ namespace Services
             {
                 if(response.Character!=null)
                  {
-                    User.Instance.CurrentCharacter = response.Character;
+                    User.Instance.CurrentCharacterInfo = response.Character;
                     ItemManager.Instance.Init(response.Character.Items);
                     BagManager.Instance.Init(response.Character.Bag);
                     EquipManager.Instance.Init(response.Character.Equips);
@@ -272,7 +272,7 @@ namespace Services
         void OnGameLeave(object sender, UserGameLeaveResponse response)
         {
             MapService.Instance.CurrentMapId = 0;
-            User.Instance.CurrentCharacter = null;
+            User.Instance.CurrentCharacterInfo = null;
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
             if(this.isQuitGame)
             {

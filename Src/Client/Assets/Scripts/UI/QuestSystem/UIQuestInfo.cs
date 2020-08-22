@@ -65,7 +65,7 @@ public class UIQuestInfo : MonoBehaviour
     public void OnClickNav()
     {
         Vector3 pos = NpcManager.Instance.GetNpcPostion(this.npc);
-        User.Instance.CurrentCharacterObject.StartNav(pos);
+        User.Instance.CurrentCharacterInfoObject.StartNav(pos);
         UIManager.Instance.Close<UIQuestSystem>();
     }
     private void Update()

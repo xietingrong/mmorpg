@@ -53,6 +53,30 @@ namespace GameServer.Managers
             this.AddStatus(StatusType.Item, id, count, action);
         }
 
+        public void AddExpChange(int ExpDelta)
+        {
+            if (ExpDelta > 0)
+            {
+                this.AddStatus(StatusType.Exp, 0, ExpDelta, StatusAction.Add);
+            }
+            if (ExpDelta < 0)
+            {
+                this.AddStatus(StatusType.Exp, 0, -ExpDelta, StatusAction.Delete);
+            }
+        }
+
+        public void AddLevelUp(int LeveDelta)
+        {
+            if (LeveDelta > 0)
+            {
+                this.AddStatus(StatusType.Level, 0, LeveDelta, StatusAction.Add);
+            }
+            if (LeveDelta < 0)
+            {
+                this.AddStatus(StatusType.Level, 0, -LeveDelta, StatusAction.Delete);
+            }
+        }
+
         public void PostProcess(NetMessageResponse message)
         {
             if (message.statusNotify == null)

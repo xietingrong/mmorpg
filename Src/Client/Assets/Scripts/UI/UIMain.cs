@@ -19,8 +19,8 @@ public class UIMain :MonoSingleton<UIMain> {
 
     void UpdateAvatar()
     {
-        this.avatarName.text = string.Format("{0}[{1}]", User.Instance.CurrentCharacter.Name, User.Instance.CurrentCharacter.Id);
-        this.avatarLevel.text = User.Instance.CurrentCharacter.Level.ToString();
+        this.avatarName.text = string.Format("{0}[{1}]", User.Instance.CurrentCharacterInfo.Name, User.Instance.CurrentCharacterInfo.Id);
+        this.avatarLevel.text = User.Instance.CurrentCharacterInfo.Level.ToString();
     }
 	
 	// Update is called once per frame
