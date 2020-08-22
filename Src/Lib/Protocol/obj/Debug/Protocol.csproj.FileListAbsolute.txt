@@ -2,8 +2,8 @@ G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\Protocol.dll
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\Protocol.pdb
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\protobuf-net.dll
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\protobuf-net.xml
-G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csprojAssemblyReference.cache
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csproj.CoreCompileInputs.cache
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csproj.CopyComplete
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.dll
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.pdb
+G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csprojAssemblyReference.cache

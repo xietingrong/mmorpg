@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Common.Data;
 using SkillBridge.Message;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Entities
     {
         public NCharacterInfo Info;
 
-        public Common.Data.CharacterDefine Define;
+        public CharacterDefine Define;
 
         public int Id
         {

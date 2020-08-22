@@ -230,7 +230,7 @@ namespace Services
         {
             Debug.LogFormat("UserGameEnterRequest::characterId :{0}", characterIdx);
 
-           // ChatManager.Instance.Init();//进入游戏前初始化
+            ChatManager.Instance.Init();//进入游戏前初始化
 
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
@@ -246,14 +246,14 @@ namespace Services
             if (response.Result == Result.Success)
             {
                 if(response.Character!=null)
-                {
+                 {
                     User.Instance.CurrentCharacter = response.Character;
-                    //ItemManager.Instance.Init(response.Character.Items);
-                    //BagManager.Instance.Init(response.Character.Bag);
-                    //EquipManager.Instance.Init(response.Character.Equips);
-                    //QuestManager.Instance.Init(response.Character.Quests);
-                    //FriendManager.Instance.Init(response.Character.Friends);
-                    //GuildManager.Instance.Init(response.Character.Guild);
+                    ItemManager.Instance.Init(response.Character.Items);
+                    BagManager.Instance.Init(response.Character.Bag);
+                    EquipManager.Instance.Init(response.Character.Equips);
+                    QuestManager.Instance.Init(response.Character.Quests);
+                    FriendManager.Instance.Init(response.Character.Friends);
+                    GuildManager.Instance.Init(response.Character.Guild);
                 }
             }
         }

@@ -44,22 +44,22 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager>
     }
 
 
-    //public void AddNpcQuestStatus(Transform owner, NpcQuestStatus status)
-    //{
-    //    if (this.elementStatus.ContainsKey(owner))
-    //    {
-    //        elementStatus[owner].GetComponent<UIQuestStatus>().SetQuestStatus(status);
-    //    }
-    //    else
-    //    {
-    //        GameObject go = Instantiate(npcStatusPrefab, this.transform);
-    //        go.name = "NpcQuestStatus" + owner.name;
-    //        go.GetComponent<UIWorldElement>().owner = owner;
-    //        go.GetComponent<UIQuestStatus>().SetQuestStatus(status);
-    //        go.SetActive(true);
-    //        this.elementStatus[owner] = go;
-    //    }
-    //}
+    public void AddNpcQuestStatus(Transform owner, NpcQuestStatus status)
+    {
+        if (this.elementStatus.ContainsKey(owner))
+        {
+            elementStatus[owner].GetComponent<UIQuestStatus>().SetQuestStatus(status);
+        }
+        else
+        {
+            GameObject go = Instantiate(npcStatusPrefab, this.transform);
+            go.name = "NpcQuestStatus" + owner.name;
+            go.GetComponent<UIWorldElement>().owner = owner;
+            go.GetComponent<UIQuestStatus>().SetQuestStatus(status);
+            go.SetActive(true);
+            this.elementStatus[owner] = go;
+        }
+    }
 
     public void RemoveNpcQuestStatus(Transform owner)
     {

@@ -29,12 +29,12 @@ namespace GameServer.Entities
         {
             this.Info = new NCharacterInfo();
             this.Info.Type = type;
-        //    this.Info.Level = level;
-        //    this.Info.ConfigId = configId;
-        //    this.Info.Entity = this.EntityData;
-        //    this.Info.EntityId = this.entityId;
-        //    this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
-        //    this.Info.Name = this.Define.Name;
+            this.Info.Level = level;
+            this.Info.ConfigId = configId;
+            this.Info.Entity = this.EntityData;
+            this.Info.EntityId = this.entityId;
+            this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
+            this.Info.Name = this.Define.Name;
         }
     }
 }

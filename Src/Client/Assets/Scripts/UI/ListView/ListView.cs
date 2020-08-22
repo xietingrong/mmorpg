@@ -6,7 +6,10 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+public class ItemSelectEvent:UnityEvent<ListView.ListViewItem>
+{
 
+}
 public class ListView : MonoBehaviour
 {
     public UnityAction<ListViewItem> onItemSelected;

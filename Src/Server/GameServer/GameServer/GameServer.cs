@@ -26,15 +26,15 @@ namespace GameServer
             network = new NetService();
             network.Init(Port);
             DBService.Instance.Init();
-            //DataManager.Instance.Load();
-            //MapService.Instance.Init();
+            DataManager.Instance.Load();
+            MapService.Instance.Init();
             UserService.Instance.Init();
-            //ItemService.Instance.Init();
-            //QuestService.Instance.Init();
-            //FriendService.Instance.Init();
-            //TeamService.Instance.Init();
-            //GuildService.Instance.Init();
-            //ChatService.Instance.Init();
+            ItemService.Instance.Init();
+            QuestService.Instance.Init();
+            FriendService.Instance.Init();
+            TeamService.Instance.Init();
+            GuildService.Instance.Init();
+            ChatService.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
 
             return true;

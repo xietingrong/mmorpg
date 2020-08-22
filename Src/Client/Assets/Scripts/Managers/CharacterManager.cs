@@ -49,7 +49,7 @@ namespace Managers
             Debug.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", cha.Id, cha.Name, cha.mapId, cha.Entity.String());
             Character character = new Character(cha);
             this.Characters[cha.EntityId] = character;
-            //EntityManager.Instance.AddEntity(character);
+            EntityManager.Instance.AddEntity(character);
             if(OnCharacterEnter!=null)
             {
                 OnCharacterEnter(character);
@@ -62,7 +62,7 @@ namespace Managers
             Debug.LogFormat("RemoveCharacter:{0}", entityId);
             if (this.Characters.ContainsKey(entityId))
             {
-                //EntityManager.Instance.RemoveEntity(this.Characters[entityId].Info.Entity);
+                EntityManager.Instance.RemoveEntity(this.Characters[entityId].Info.Entity);
                 if (OnCharacterLeave != null)
                 {
                     OnCharacterLeave(this.Characters[entityId]);

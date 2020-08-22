@@ -6,13 +6,13 @@
     "LinkTo": 6,
     "Descript": null,
     "Position": {
-      "X": 609,
-      "Y": 2601,
-      "Z": 806
+      "X": 401,
+      "Y": 2600,
+      "Z": 759
     },
     "Direction": {
-      "X": 100,
-      "Y": 0,
+      "X": 0,
+      "Y": 100,
       "Z": 0
     }
   },
@@ -23,13 +23,13 @@
     "LinkTo": 8,
     "Descript": null,
     "Position": {
-      "X": 7395,
-      "Y": 2601,
-      "Z": 806
+      "X": 1221,
+      "Y": 2600,
+      "Z": 759
     },
     "Direction": {
-      "X": -100,
-      "Y": -2,
+      "X": 0,
+      "Y": 100,
       "Z": 0
     }
   },
@@ -40,13 +40,13 @@
     "LinkTo": 0,
     "Descript": null,
     "Position": {
-      "X": 1629,
-      "Y": 2566,
-      "Z": 806
+      "X": 7206,
+      "Y": 2600,
+      "Z": 759
     },
     "Direction": {
-      "X": 100,
-      "Y": 0,
+      "X": 0,
+      "Y": 100,
       "Z": 0
     }
   },
@@ -57,13 +57,13 @@
     "LinkTo": 0,
     "Descript": null,
     "Position": {
-      "X": 6571,
-      "Y": 2636,
-      "Z": 806
+      "X": 6540,
+      "Y": 2600,
+      "Z": 759
     },
     "Direction": {
-      "X": -100,
-      "Y": -2,
+      "X": 0,
+      "Y": 100,
       "Z": 0
     }
   },
@@ -74,13 +74,13 @@
     "LinkTo": 3,
     "Descript": null,
     "Position": {
-      "X": 2109,
-      "Y": 3989,
-      "Z": 9
+      "X": 1857,
+      "Y": 4005,
+      "Z": 17
     },
     "Direction": {
-      "X": 100,
-      "Y": 0,
+      "X": 0,
+      "Y": 100,
       "Z": 0
     }
   },
@@ -91,48 +91,32 @@
     "LinkTo": 0,
     "Descript": null,
     "Position": {
-      "X": 2784,
-      "Y": 3931,
-      "Z": 7
+      "X": 3032,
+      "Y": 4020,
+      "Z": 17
     },
     "Direction": {
-      "X": 100,
-      "Y": 0,
+      "X": 0,
+      "Y": 100,
       "Z": 0
     }
   },
   "7": {
     "ID": 7,
     "Name": "副本->主城",
-    "MapID": 3,
+    "MapID": 4,
     "LinkTo": 4,
     "Descript": null,
-    "Position": {
-      "X": 2109,
-      "Y": 3989,
-      "Z": 9
-    },
-    "Direction": {
-      "X": 100,
-      "Y": 0,
-      "Z": 0
-    }
+    "Position": null,
+    "Direction": null
   },
   "8": {
     "ID": 8,
     "Name": "副本传入点",
-    "MapID": 3,
+    "MapID": 4,
     "LinkTo": 0,
     "Descript": null,
-    "Position": {
-      "X": 2784,
-      "Y": 3931,
-      "Z": 7
-    },
-    "Direction": {
-      "X": 100,
-      "Y": 0,
-      "Z": 0
-    }
+    "Position": null,
+    "Direction": null
   }
 }

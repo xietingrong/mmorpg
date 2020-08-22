@@ -26,7 +26,7 @@ public class UICharacterSelect : MonoBehaviour {
 
     public Text[] names;
 
-    private int selectCharacterIdx = -1;
+    private int selectCharacterIdx = 0;
 
     public UICharacterView characterView;
 
@@ -56,7 +56,7 @@ public class UICharacterSelect : MonoBehaviour {
             MessageBox.Show("请输入角色名称");
             return;
         }
-        //SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         UserService.Instance.SendCharacterCreate(this.charName.text, this.charClass);
     }
 
@@ -77,7 +77,7 @@ public class UICharacterSelect : MonoBehaviour {
         }
 
         descs.text = DataManager.Instance.Characters[charClass].Description;
-       // SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
     }
 
 
@@ -105,8 +105,8 @@ public class UICharacterSelect : MonoBehaviour {
                 Destroy(old);
             }
             uiChars.Clear();
-
-            for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
+            int count = User.Instance.Info.Player.Characters.Count;
+            for (int i = 0; i < count; i++)
             {
 
                 GameObject go = Instantiate(uiCharInfo, this.uiCharList);
@@ -122,6 +122,11 @@ public class UICharacterSelect : MonoBehaviour {
                 uiChars.Add(go);
                 go.SetActive(true);
             }
+            if (count >= 1)
+            {
+                OnSelectCharacter(this.selectCharacterIdx);
+            }
+
         }
     }
 
@@ -131,17 +136,18 @@ public class UICharacterSelect : MonoBehaviour {
         this.selectCharacterIdx = idx;
         var cha = User.Instance.Info.Player.Characters[idx];
         Debug.LogFormat("Select Char:[{0}]{1}[{2}]", cha.Id, cha.Name, cha.Class);
+        //User.Instance.CurrentCharacter = cha;
         characterView.CurrectCharacter = ((int)cha.Class - 1);
         for (int i = 0; i < User.Instance.Info.Player.Characters.Count; i++)
         {
             UICharInfo ci = this.uiChars[i].GetComponent<UICharInfo>();
             ci.Selected = idx == i;
         }
-       // SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
     }
     public void OnClickPlay()
     {
-       // SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         if (selectCharacterIdx >= 0)
         {
             UserService.Instance.SendGameEnter(selectCharacterIdx);

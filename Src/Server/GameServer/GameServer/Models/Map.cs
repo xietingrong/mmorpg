@@ -41,23 +41,23 @@ namespace GameServer.Models
         Dictionary<int, MapCharacter> MapCharacters = new Dictionary<int, MapCharacter>();
 
 
-        ///// <summary>
-        ///// 刷怪管理器
-        ///// </summary>
-        //SpawnManager SpawnManager = new SpawnManager();
+        /// <summary>
+        /// 刷怪管理器
+        /// </summary>
+        SpawnManager SpawnManager = new SpawnManager();
 
-        //public MonsterManager MonsterManager = new MonsterManager();
+        public MonsterManager MonsterManager = new MonsterManager();
 
         internal Map(MapDefine define)
         {
             this.Define = define;
-            //this.SpawnManager.Init(this);
-            //this.MonsterManager.Init(this);
+            this.SpawnManager.Init(this);
+            this.MonsterManager.Init(this);
         }
 
         internal void Update()
         {
-            //SpawnManager.Update();
+            SpawnManager.Update();
         }
 
         /// <summary>
@@ -78,10 +78,10 @@ namespace GameServer.Models
                 if (kv.Value.character != character)
                     this.AddCharacterEnterMap(kv.Value.connection, character.Info);
             }
-            //foreach (var kv in this.MonsterManager.Monsters)
-            //{
-            //    conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);
-            //}
+            foreach (var kv in this.MonsterManager.Monsters)
+            {
+                conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);
+            }
             conn.SendResponse();
         }
 
@@ -111,30 +111,30 @@ namespace GameServer.Models
         void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
             Log.InfoFormat("SendCharacterLeaveMap To {0}:{1} : Map:{2} Character:{3}:{4}", conn.Session.Character.Id, conn.Session.Character.Info.Name, this.Define.ID, character.Id, character.Info.Name);
-            //conn.Session.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
-            //conn.Session.Response.mapCharacterLeave.entityId = character.entityId;
-            //conn.SendResponse();
+            conn.Session.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
+            conn.Session.Response.mapCharacterLeave.entityId = character.entityId;
+            conn.SendResponse();
         }
 
         internal void UpdateEntity(NEntitySync entity)
         {
-            //foreach (var kv in this.MapCharacters)
-            //{
-            //    if (kv.Value.character.entityId == entity.Id)
-            //    {
-            //        kv.Value.character.Position = entity.Entity.Position;
-            //        kv.Value.character.Direction = entity.Entity.Direction;
-            //        kv.Value.character.Speed = entity.Entity.Speed;
-            //        if (entity.Event == EntityEvent.Ride)
-            //        {
-            //            kv.Value.character.Ride = entity.Param;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        MapService.Instance.SendEntityUpdate(kv.Value.connection, entity);
-            //    }
-            //}
+            foreach (var kv in this.MapCharacters)
+            {
+                if (kv.Value.character.entityId == entity.Id)
+                {
+                    kv.Value.character.Position = entity.Entity.Position;
+                    kv.Value.character.Direction = entity.Entity.Direction;
+                    kv.Value.character.Speed = entity.Entity.Speed;
+                    if (entity.Event == EntityEvent.Ride)
+                    {
+                        kv.Value.character.Ride = entity.Param;
+                    }
+                }
+                else
+                {
+                    MapService.Instance.SendEntityUpdate(kv.Value.connection, entity);
+                }
+            }
         }
 
 

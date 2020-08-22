@@ -179,3 +179,5 @@ G:\ExtremeWorld\mmorpg\Src\Client\obj\Debug\Assembly-CSharp.csproj.CoreCompileIn
 G:\ExtremeWorld\mmorpg\Src\Client\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 G:\ExtremeWorld\mmorpg\Src\Client\obj\Debug\Assembly-CSharp.dll
 G:\ExtremeWorld\mmorpg\Src\Client\obj\Debug\Assembly-CSharp.pdb
+G:\ExtremeWorld\mmorpg\Src\Client\Temp\bin\Debug\Common.pdb
+G:\ExtremeWorld\mmorpg\Src\Client\Temp\bin\Debug\Protocol.pdb

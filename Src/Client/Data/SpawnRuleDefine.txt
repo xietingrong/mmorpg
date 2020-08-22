@@ -11,7 +11,7 @@
     "2": {
       "ID": 2,
       "MapID": "2",
-      "SpawnMonID": 1001,
+      "SpawnMonID": 1002,
       "SpawnLevel": 1,
       "SpawnPeriod": 60,
       "SpawnPoint": 2
@@ -19,7 +19,7 @@
     "3": {
       "ID": 3,
       "MapID": "2",
-      "SpawnMonID": 1001,
+      "SpawnMonID": 1003,
       "SpawnLevel": 1,
       "SpawnPeriod": 60,
       "SpawnPoint": 3
@@ -27,7 +27,7 @@
     "4": {
       "ID": 4,
       "MapID": "2",
-      "SpawnMonID": 1001,
+      "SpawnMonID": 1005,
       "SpawnLevel": 1,
       "SpawnPeriod": 60,
       "SpawnPoint": 4
@@ -45,7 +45,7 @@
     "2": {
       "ID": 2,
       "MapID": "3",
-      "SpawnMonID": 1001,
+      "SpawnMonID": 1002,
       "SpawnLevel": 1,
       "SpawnPeriod": 60,
       "SpawnPoint": 2
@@ -53,7 +53,7 @@
     "3": {
       "ID": 3,
       "MapID": "3",
-      "SpawnMonID": 1001,
+      "SpawnMonID": 1003,
       "SpawnLevel": 1,
       "SpawnPeriod": 60,
       "SpawnPoint": 3
@@ -61,7 +61,7 @@
     "4": {
       "ID": 4,
       "MapID": "3",
-      "SpawnMonID": 1001,
+      "SpawnMonID": 1005,
       "SpawnLevel": 1,
       "SpawnPeriod": 60,
       "SpawnPoint": 4

@@ -5,7 +5,7 @@ using UnityEngine;
 using Entities;
 using Managers;
 
-public class EntityController : MonoBehaviour//, IEntityNotify
+public class EntityController : MonoBehaviour, IEntityNotify
 {
 
     public Animator anim;
@@ -27,7 +27,7 @@ public class EntityController : MonoBehaviour//, IEntityNotify
 
     public bool isPlayer = false;
 
-    //public RideController rideController;
+    public RideController rideController;
 
     private int currentRide = 0;
 
@@ -37,7 +37,7 @@ public class EntityController : MonoBehaviour//, IEntityNotify
     void Start () {
         if (entity != null)
         {
-           // EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId, this);
+            EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId, this);
             this.UpdateTransform();
         }
 
@@ -117,7 +117,7 @@ public class EntityController : MonoBehaviour//, IEntityNotify
                 }
                 break;
         }
-        //if (this.rideController != null) this.rideController.OnEntityEvent(entityEvent, param);
+        if (this.rideController != null) this.rideController.OnEntityEvent(entityEvent, param);
     }
 
 
@@ -127,28 +127,29 @@ public class EntityController : MonoBehaviour//, IEntityNotify
         currentRide = rideId;
         if (rideId >0)
         {
-            //this.rideController = GameObjectManager.Instance.LoadRide(rideId, this.transform);
+            this.rideController = GameObjectManager.Instance.LoadRide(rideId, this.transform);
         }
         else
         {
-            //Destroy(this.rideController.gameObject);
-            //this.rideController = null;
+            Destroy(this.rideController.gameObject);
+            this.rideController = null;
         }
 
-        //if (this.rideController == null)
-        //{
-        //    this.anim.transform.localPosition = Vector3.zero;
-        //    this.anim.SetLayerWeight(1, 0);
-        //}
-        //else
-        //{
-        //    this.rideController.SetRider(this);
-        //    this.anim.SetLayerWeight(1, 1);
-        //}
+        if (this.rideController == null)
+        {
+            this.anim.transform.localPosition = Vector3.zero;
+            this.anim.SetLayerWeight(1, 0);
+        }
+        else
+        {
+            this.rideController.SetRider(this);
+            this.anim.SetLayerWeight(1, 1);
+        }
     }
 
     public void SetRidePotision(Vector3 position)
     {
         this.anim.transform.position = position + (this.anim.transform.position - this.rideBone.position);
     }
+
 }

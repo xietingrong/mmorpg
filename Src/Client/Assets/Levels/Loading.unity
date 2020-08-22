@@ -621,16 +621,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 291457454}
-  - component: {fileID: 291457453}
   - component: {fileID: 291457452}
   - component: {fileID: 291457455}
+  - component: {fileID: 291457453}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &291457452
 AudioSource:
   m_ObjectHideFlags: 0
@@ -733,11 +733,15 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 291457451}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386d0aa16cd86124b84b57258f3f7de4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ce996cb50a56884c8b671ff3d8dec13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 1
+  audioMixer: {fileID: 24100000, guid: e265e7e6c5ecedb4f8ac20a6aa4ff148, type: 2}
+  musicAudioSource: {fileID: 291457452}
+  soundAudioSource: {fileID: 291457455}
 --- !u!4 &291457454
 Transform:
   m_ObjectHideFlags: 0
@@ -1355,7 +1359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &543729088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1748,7 +1752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!120 &704826142
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1860,9 +1864,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 704826141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba9c4e33967c7474cb112e32daccfe9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 598a6b44c7360b44c86bf0782b364b8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  global: 1
 --- !u!1 &753956145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4840,25 +4845,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2089207830}
-  - component: {fileID: 2089207829}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &2089207829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2089207828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507b0446c29383c48a8bccd89985a5af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_IsActive: 1
 --- !u!4 &2089207830
 Transform:
   m_ObjectHideFlags: 0
