@@ -1,0 +1,70 @@
+{
+  "2": {
+    "1": {
+      "ID": 1,
+      "MapID": "2",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 1
+    },
+    "2": {
+      "ID": 2,
+      "MapID": "2",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 2
+    },
+    "3": {
+      "ID": 3,
+      "MapID": "2",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 3
+    },
+    "4": {
+      "ID": 4,
+      "MapID": "2",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 4
+    }
+  },
+  "3": {
+    "1": {
+      "ID": 1,
+      "MapID": "3",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 1
+    },
+    "2": {
+      "ID": 2,
+      "MapID": "3",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 2
+    },
+    "3": {
+      "ID": 3,
+      "MapID": "3",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 3
+    },
+    "4": {
+      "ID": 4,
+      "MapID": "3",
+      "SpawnMonID": 1001,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 60,
+      "SpawnPoint": 4
+    }
+  }
+}

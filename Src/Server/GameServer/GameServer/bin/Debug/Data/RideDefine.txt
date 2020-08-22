@@ -1,0 +1,26 @@
+{
+  "8001": {
+    "ID": 8001,
+    "Name": "冰原虎",
+    "Description": "冰原猛虎长期生活在遥远的极寒之地，刺骨寒风锻炼着它坚韧的品质。",
+    "Level": 1,
+    "Resource": "Ride/R001",
+    "Icon": "UI/Items/ride8001"
+  },
+  "8002": {
+    "ID": 8002,
+    "Name": "夜行虎",
+    "Description": "夜行虎昼伏夜出，它可以利用夜色遮掩自己的行迹，是名副其实的黑夜猎手。",
+    "Level": 1,
+    "Resource": "Ride/R002",
+    "Icon": "UI/Items/ride8002"
+  },
+  "8003": {
+    "ID": 8003,
+    "Name": "森林虎",
+    "Description": "森林湖长期生活在古老的森林中，是实至名归的万兽之王。",
+    "Level": 1,
+    "Resource": "Ride/R003",
+    "Icon": "UI/Items/ride8003"
+  }
+}

@@ -1,0 +1,41 @@
+2020-08-14 10:51:59,015 [ 1] INFO  Unity: LoadingManager start
+2020-08-14 10:52:02,296 [ 1] INFO  Unity: DataManager > DataManager()
+2020-08-14 10:52:11,800 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2020-08-14 10:52:11,803 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-08-14 10:52:11,805 [ 1] INFO  Unity: DoConnect
+2020-08-14 10:52:11,809 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-14 10:52:11,818 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-08-14 10:52:11,824 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-08-14 10:52:11,970 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-08-14 10:52:11,972 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-08-14 10:52:12,635 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-14 10:52:14,511 [ 1] INFO  Unity: Select Char:[3]rerert[Warrior]
+2020-08-14 10:52:15,712 [ 1] INFO  Unity: UserGameEnterRequest::characterId :2
+2020-08-14 10:52:15,751 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-08-14 10:52:15,754 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2020-08-14 10:52:15,758 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-08-14 10:52:16,568 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object '') is missing!
+
+2020-08-14 10:52:16,569 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object 'UIQuestStatus') is missing!
+
+2020-08-14 10:52:16,647 [ 1] WARN  Unity: MainPlayerCamera[-1813500] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2020-08-14 10:52:16,648 [ 1] WARN  Unity: GameObjectManager[-1813460] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2020-08-14 10:52:16,655 [ 1] WARN  Unity: UIWorldElementManager[-1812250] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2020-08-14 10:52:16,712 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-14 10:52:49,962 [ 1] INFO  Unity: Character_3_rerert OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2020-08-14 10:52:49,965 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-08-14 10:52:49,967 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
+

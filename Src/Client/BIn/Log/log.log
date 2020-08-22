@@ -1,0 +1,104 @@
+2020-08-14 12:03:06,639 [ 1] INFO  Unity: LoadingManager start
+2020-08-14 12:03:10,853 [ 1] INFO  Unity: DataManager > DataManager()
+2020-08-14 12:03:29,295 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2020-08-14 12:03:29,305 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-08-14 12:03:29,307 [ 1] INFO  Unity: DoConnect
+2020-08-14 12:03:29,311 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-14 12:03:29,314 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-08-14 12:03:29,326 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-08-14 12:03:35,012 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-08-14 12:03:35,025 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-08-14 12:03:37,306 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-14 12:03:39,800 [ 1] INFO  Unity: Select Char:[2]rerert[Archer]
+2020-08-14 12:03:40,996 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
+2020-08-14 12:03:41,055 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-08-14 12:03:41,080 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2020-08-14 12:03:41,096 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-08-14 12:03:43,056 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object '') is missing!
+
+2020-08-14 12:03:43,057 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object 'UIQuestStatus') is missing!
+
+2020-08-14 12:03:43,149 [ 1] WARN  Unity: MainPlayerCamera[-1972548] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2020-08-14 12:03:43,153 [ 1] WARN  Unity: GameObjectManager[-1972508] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2020-08-14 12:03:48,679 [ 1] WARN  Unity: UIWorldElementManager[-1971298] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2020-08-14 12:03:48,815 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-08-14 12:03:48,817 [ 1] WARN  Unity: UIMinimap Start 222078
+UnityEngine.Debug:LogWarning(Object)
+UIMinimap:Start() (at Assets/Scripts/UI/Minimap/UIMinimap.cs:18)
+
+2020-08-14 12:03:48,823 [ 1] WARN  Unity: MinimapManager.Instance.Minimap[222078] Set
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+Managers.MinimapManager:set_Minimap(UIMinimap) (at Assets/Scripts/Managers/MinimapManager.cs:16)
+UIMinimap:Start() (at Assets/Scripts/UI/Minimap/UIMinimap.cs:19)
+
+2020-08-14 12:03:53,956 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2020-08-14 12:03:54,043 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
+2020-08-14 12:03:54,143 [ 1] INFO  Unity: SetDirection:(84, 54, 0)
+2020-08-14 12:03:54,227 [ 1] INFO  Unity: SetDirection:(73, 68, 0)
+2020-08-14 12:03:54,333 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2020-08-14 12:03:54,434 [ 1] INFO  Unity: SetDirection:(39, 92, 0)
+2020-08-14 12:03:54,522 [ 1] INFO  Unity: SetDirection:(19, 98, 0)
+2020-08-14 12:03:54,623 [ 1] INFO  Unity: SetDirection:(-2, 100, 0)
+2020-08-14 12:03:54,730 [ 1] INFO  Unity: SetDirection:(-22, 97, 0)
+2020-08-14 12:03:54,803 [ 1] INFO  Unity: SetDirection:(-39, 92, 0)
+2020-08-14 12:03:54,904 [ 1] INFO  Unity: SetDirection:(-57, 82, 0)
+2020-08-14 12:03:54,994 [ 1] INFO  Unity: SetDirection:(-71, 71, 0)
+2020-08-14 12:03:55,113 [ 1] INFO  Unity: SetDirection:(-83, 56, 0)
+2020-08-14 12:03:55,166 [ 1] INFO  Unity: MoveForward
+2020-08-14 12:03:56,248 [ 1] INFO  Unity: SetDirection:(-70, 72, 0)
+2020-08-14 12:03:56,332 [ 1] INFO  Unity: SetDirection:(-56, 83, 0)
+2020-08-14 12:03:56,434 [ 1] INFO  Unity: SetDirection:(-38, 93, 0)
+2020-08-14 12:03:56,519 [ 1] INFO  Unity: SetDirection:(-21, 98, 0)
+2020-08-14 12:03:56,604 [ 1] INFO  Unity: SetDirection:(0, 100, 0)
+2020-08-14 12:03:56,709 [ 1] INFO  Unity: SetDirection:(21, 98, 0)
+2020-08-14 12:03:56,810 [ 1] INFO  Unity: SetDirection:(41, 91, 0)
+2020-08-14 12:03:56,911 [ 1] INFO  Unity: SetDirection:(58, 82, 0)
+2020-08-14 12:03:57,064 [ 1] INFO  Unity: SetDirection:(72, 69, 0)
+2020-08-14 12:03:57,967 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2020-08-14 12:03:58,068 [ 1] INFO  Unity: SetDirection:(40, 92, 0)
+2020-08-14 12:03:58,168 [ 1] INFO  Unity: SetDirection:(20, 98, 0)
+2020-08-14 12:03:58,253 [ 1] INFO  Unity: SetDirection:(3, 100, 0)
+2020-08-14 12:03:58,337 [ 1] INFO  Unity: SetDirection:(-15, 99, 0)
+2020-08-14 12:03:58,438 [ 1] INFO  Unity: SetDirection:(-35, 94, 0)
+2020-08-14 12:03:58,523 [ 1] INFO  Unity: SetDirection:(-51, 86, 0)
+2020-08-14 12:03:58,610 [ 1] INFO  Unity: SetDirection:(-68, 74, 0)
+2020-08-14 12:03:58,711 [ 1] INFO  Unity: SetDirection:(-81, 58, 0)
+2020-08-14 12:03:58,795 [ 1] INFO  Unity: SetDirection:(-90, 43, 0)
+2020-08-14 12:03:58,880 [ 1] INFO  Unity: SetDirection:(-96, 27, 0)
+2020-08-14 12:03:58,965 [ 1] INFO  Unity: SetDirection:(-100, 10, 0)
+2020-08-14 12:03:59,050 [ 1] INFO  Unity: SetDirection:(-100, -8, 0)
+2020-08-14 12:03:59,153 [ 1] INFO  Unity: SetDirection:(-96, -28, 0)
+2020-08-14 12:03:59,238 [ 1] INFO  Unity: SetDirection:(-89, -45, 0)
+2020-08-14 12:03:59,340 [ 1] INFO  Unity: SetDirection:(-79, -62, 0)
+2020-08-14 12:03:59,476 [ 1] INFO  Unity: SetDirection:(-66, -75, 0)
+2020-08-14 12:03:59,902 [ 1] INFO  Unity: SetDirection:(-79, -61, 0)
+2020-08-14 12:03:59,985 [ 1] INFO  Unity: SetDirection:(-89, -46, 0)
+2020-08-14 12:04:00,095 [ 1] INFO  Unity: SetDirection:(-96, -27, 0)
+2020-08-14 12:04:00,162 [ 1] INFO  Unity: SetDirection:(-100, -10, 0)
+2020-08-14 12:04:00,246 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
+2020-08-14 12:04:00,347 [ 1] INFO  Unity: SetDirection:(-96, 28, 0)
+2020-08-14 12:04:00,431 [ 1] INFO  Unity: SetDirection:(-90, 44, 0)
+2020-08-14 12:04:00,516 [ 1] INFO  Unity: SetDirection:(-81, 59, 0)
+2020-08-14 12:04:00,601 [ 1] INFO  Unity: SetDirection:(-69, 72, 0)
+2020-08-14 12:04:00,684 [ 1] INFO  Unity: SetDirection:(-55, 83, 0)
+2020-08-14 12:04:00,786 [ 1] INFO  Unity: SetDirection:(-37, 93, 0)
+2020-08-14 12:04:00,887 [ 1] INFO  Unity: SetDirection:(-18, 98, 0)
+2020-08-14 12:04:01,022 [ 1] INFO  Unity: SetDirection:(-1, 100, 0)
+2020-08-14 12:04:01,749 [ 1] INFO  Unity: Stop
+2020-08-14 12:04:25,374 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-08-14 12:04:25,376 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
+
+2020-08-14 12:04:25,384 [ 1] INFO  Unity: Character_2_rerert OnDestroy :ID:0 POS:(4399, 5006, 820) DIR:(-1, 100, 0) SPD:0 
