@@ -94,7 +94,7 @@ public class GameObjectManager : MonoSingleton<GameObjectManager>
 
             if (character.IsCurrentPlayer)
             {
-                User.Instance.CurrentCharacterInfoObject = pc;
+                User.Instance.CurrentCharacterObject = pc;
                 MainPlayerCamera.Instance.player = go;
                 pc.enabled = true;
                 pc.character = character;

@@ -55,9 +55,9 @@ namespace Entities
         {
             this.Info = info;
             this.Define = DataManager.Instance.Characters[info.ConfigId];
-            this.Attributescs = new Attributescs();
+            this.Attributes = new Attributescs();
             var equips = EquipManager.Instance.GetEquipDefines();
-            this.Attributescs.Init(this.Define, this.Info.Level, equips, this.Info.attrDynamic);
+            this.Attributes.Init(this.Define, this.Info.Level, equips, this.Info.attrDynamic);
         }
 
         public void MoveForward()

@@ -54,7 +54,7 @@ public class UICharEquip : UIWindow
             if (i == (int)AttributeType.CRI)
                 this.attrs[i - 2].text = string.Format("{0:f2}%", charattr.Final.Data[i] * 100);
             else
-                this.attrs[i - 2].text =(int) charattr.Final.Data[i].ToString();
+                this.attrs[i - 2].text =((int) charattr.Final.Data[i]).ToString();
         }
     }
 

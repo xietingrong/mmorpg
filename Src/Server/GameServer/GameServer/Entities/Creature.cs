@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace GameServer.Entities
 {
-    class CharacterBase : Entity
+    class Creature : Entity
     {
 
         public int Id { get; set; }
@@ -19,12 +19,7 @@ namespace GameServer.Entities
         public NCharacterInfo Info;
         public CharacterDefine Define;
 
-        public CharacterBase(Vector3Int pos, Vector3Int dir):base(pos,dir)
-        {
-
-        }
-
-        public CharacterBase(CharacterType type, int configId, int level, Vector3Int pos, Vector3Int dir) :
+        public Creature(CharacterType type, int configId, int level, Vector3Int pos, Vector3Int dir) :
            base(pos, dir)
         {
             this.Info = new NCharacterInfo();
@@ -33,7 +28,7 @@ namespace GameServer.Entities
             this.Info.ConfigId = configId;
             this.Info.Entity = this.EntityData;
             this.Info.EntityId = this.entityId;
-            this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
+            this.Define = DataManager.Instance.Characters[configId];
             this.Info.Name = this.Define.Name;
         }
     }

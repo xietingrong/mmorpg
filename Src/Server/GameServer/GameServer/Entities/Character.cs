@@ -20,7 +20,7 @@ namespace GameServer.Entities
     /// Character
     /// 玩家角色类
     /// </summary>
-    class Character : CharacterBase,IPostResponser
+    class Character : Creature,IPostResponser
     {
         public TCharacter Data;
 
@@ -39,24 +39,17 @@ namespace GameServer.Entities
         public Chat Chat;
 
         public Character(CharacterType type,TCharacter cha):
-            base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
+            base(type, cha.TID, cha.Level,new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
         {
             this.Data = cha;
             this.Id = cha.ID;
-            this.Info = new NCharacterInfo();
-            this.Info.Type = type;
             this.Info.Id = cha.ID;
-            this.Info.EntityId = this.entityId;
-            this.Info.Name = cha.Name;
             this.Info.Exp = cha.Exp;
-            this.Info.Level = 10;//cha.Level;
-            this.Info.ConfigId = cha.TID;
             this.Info.Class = (CharacterClass)cha.Class;
             this.Info.mapId = cha.MapID;
             this.Info.Gold = cha.Gold;
             this.Info.Ride = 0;
-            this.Info.Entity = this.EntityData;
-            this.Define = DataManager.Instance.Characters[this.Info.ConfigId];
+            this.Info.Name = cha.Name;
 
             this.ItemManager = new ItemManager(this);
             this.ItemManager.GetItemInfos(this.Info.Items);

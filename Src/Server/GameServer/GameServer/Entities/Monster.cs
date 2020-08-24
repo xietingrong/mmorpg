@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GameServer.Entities
 {
-    class Monster : CharacterBase
+    class Monster : Creature
     {
         public Monster(int tid, int level, Vector3Int pos, Vector3Int dir) : base(CharacterType.Monster, tid, level, pos, dir)
         {
