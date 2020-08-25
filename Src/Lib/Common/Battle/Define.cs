@@ -54,5 +54,28 @@ namespace Common.Battle
         CRI =10,
         MAX
     }
-   
+    public enum SkillType
+    {
+        Normal =0,
+        Skill =1
+    }
+    public enum TargetType
+    {
+        None  =0,
+        Target =1,
+        Self =2,
+        Postion
+    }
+    public enum BuffEffect
+    {
+        None = 0,
+        Stum =1
+    }
+    public enum SkillResult
+    {
+        OK=0,
+        InvalidTarget,
+        OutOfMP,
+        Cooldown
+    }
 }

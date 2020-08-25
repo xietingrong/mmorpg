@@ -151,5 +151,13 @@ namespace GameServer.Models
                 this.AddCharacterEnterMap(kv.Value.connection, monster.Info);
             }
         }
+        internal void BrodacastBattleResponse(NetMessageResponse response)
+        {
+            foreach (var kv in this.MapCharacters)
+            {
+                kv.Value.connection.Session.Response.skillCast = response.skillCast;
+                kv.Value.connection.Session.GetResponse();
+            }
+        }
     }
 }

@@ -22,7 +22,6 @@ enum CHARACTER_TYPE
 	NPC = 1;
 	Monster = 2;
 }
-
 enum CHARACTER_CLASS
 {
 	NONE = 0;
@@ -100,6 +99,7 @@ message NCharacterInfo {
 	repeated NFriendInfo friends = 17;
 	NGuildInfo guild = 18;
 	int32 ride = 19;
+	repeated NSkillInfo  Skills = 20;
 }
 message NAttributeDynamic
 {
@@ -111,6 +111,12 @@ message NItemInfo
 {
 	int32 id  = 1;
 	int32 count = 2;
+}
+
+message NSkillInfo
+{
+    int32 id  = 1;
+	int32 level = 2;
 }
 
 message NVector3
@@ -237,6 +243,8 @@ message NetMessageRequest{
 	GuildAdminRequest guildAdmin = 29;
 
 	ChatRequest chat = 30;
+
+	SkillCastRequest skillCast = 50;
 }
 
 message NetMessageResponse{
@@ -277,7 +285,7 @@ message NetMessageResponse{
 	GuildAdminResponse guildAdmin = 29;
 
 	ChatResponse chat = 30;
-
+	SkillCastResponse skillCast = 50;
 	StatusNotify statusNotify = 100;	
 }
 
@@ -764,3 +772,33 @@ message ChatResponse
 	repeated ChatMessage teamMessages = 7;
 	repeated ChatMessage guildMessages = 8;
 }
+
+//////////////////////////////////////////////////////////////////////////////
+//
+//Battle
+//
+///////////////////////////////////////////////////////////////////////////////
+enum SKILL_RESULT
+{
+  OK =0;
+  OUT_OF_MP =1;
+  COOL_DOWN =2;
+  INVALTO_TARGET =3;
+}
+ message NSkillCastInfo
+ {
+   int32 skillId =1;
+   int32 casterId =2;
+   int32 targetId =3;
+   NVector3 postion =4;
+ }
+ message SkillCastRequest
+ {
+   NSkillCastInfo castInfo =1;
+ }
+ message SkillCastResponse
+ {
+   RESULT result =1;
+   string errormsg =2;
+   NSkillCastInfo castInfo =3;
+ }

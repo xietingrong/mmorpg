@@ -16,7 +16,7 @@ namespace Entities
         public Vector3Int direction;
         public int speed;
 
-
+        public IEntityController Controller;
         private NEntity entityData;
         public NEntity EntityData
         {

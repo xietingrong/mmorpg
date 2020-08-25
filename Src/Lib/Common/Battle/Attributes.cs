@@ -6,7 +6,7 @@ using SkillBridge.Message;
 using Common.Data;
 namespace Common.Battle
 {
-    public class Attributescs
+    public class Attributes
     {
         AttributeData Initial = new AttributeData();
         AttributeData Growth = new AttributeData();

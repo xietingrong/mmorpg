@@ -22,6 +22,9 @@ namespace Managers
         public Dictionary<int, Quest> allQuests = new Dictionary<int, Quest>();
         public Dictionary<int,Dictionary<NpcQuestStatus,List<Quest>>>npcQuests = new   Dictionary<int, Dictionary<NpcQuestStatus, List<Quest>>>();
         public UnityAction<Quest> onQuestStatusChanged;
+
+        public UnityAction OnQuestChange;
+
         public void Init(List<NQuestInfo> quests)
         {
             this.questInfos = quests;
