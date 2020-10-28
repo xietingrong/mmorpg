@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4081835109173684}
-  - component: {fileID: 114829049450758456}
+  - component: {fileID: 114310839603268522}
   m_Layer: 0
   m_Name: EFX_M1005_SkillC_hit
   m_TagString: Untagged
@@ -164,7 +164,7 @@ Transform:
   m_Father: {fileID: 4089742458105476}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114829049450758456
+--- !u!114 &114310839603268522
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,10 +172,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1048774545087594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf074bbcc64b034bb044bc1995a87a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 1
+  liftTime: 1
 --- !u!198 &198054429839961728
 ParticleSystem:
   m_ObjectHideFlags: 1

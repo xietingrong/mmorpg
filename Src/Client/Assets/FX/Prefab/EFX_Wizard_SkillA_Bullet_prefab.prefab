@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4131350516342130}
-  - component: {fileID: 114308847267003798}
+  - component: {fileID: 114000202541336314}
   m_Layer: 0
   m_Name: EFX_Wizard_SkillA_Bullet_prefab
   m_TagString: Untagged
@@ -327,6 +327,18 @@ TrailRenderer:
   m_MinVertexDistance: 0
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &114000202541336314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1005759160301016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liftTime: 1
 --- !u!114 &114152217511257252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -339,18 +351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 2
---- !u!114 &114308847267003798
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1005759160301016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf074bbcc64b034bb044bc1995a87a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 1
 --- !u!198 &198060190496811554
 ParticleSystem:
   m_ObjectHideFlags: 1

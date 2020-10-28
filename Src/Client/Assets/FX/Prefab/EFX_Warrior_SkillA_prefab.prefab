@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4683393099224736}
   - component: {fileID: 114236741192401760}
-  - component: {fileID: 114986175538444870}
+  - component: {fileID: 114481686813090624}
   m_Layer: 0
   m_Name: EFX_Warrior_SkillA_prefab
   m_TagString: Untagged
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   child: {fileID: 4220353495653862}
   delayTime: 0.5
---- !u!114 &114986175538444870
+--- !u!114 &114481686813090624
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,10 +385,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1257901164209554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf074bbcc64b034bb044bc1995a87a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 1
+  liftTime: 1
 --- !u!198 &198257452328250554
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114656881393638030}
   - component: {fileID: 114868849169718574}
   - component: {fileID: 114140696825401092}
+  - component: {fileID: 114014490126521770}
   m_Layer: 0
   m_Name: EFX_M1002_Atk_prefab
   m_TagString: Untagged
@@ -756,6 +757,18 @@ Transform:
   m_Father: {fileID: 4230172883395480}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -335.72}
+--- !u!114 &114014490126521770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031873632175112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liftTime: 1
 --- !u!114 &114140696825401092
 MonoBehaviour:
   m_ObjectHideFlags: 1

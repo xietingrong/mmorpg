@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4302097301603286}
   - component: {fileID: 114665215069159880}
-  - component: {fileID: 114574445776302552}
+  - component: {fileID: 114444726130944898}
   m_Layer: 0
   m_Name: EFX_Wizard_AtkA_prefab
   m_TagString: Untagged
@@ -134,7 +134,7 @@ Transform:
   m_Father: {fileID: 4289713908925450}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114574445776302552
+--- !u!114 &114444726130944898
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,10 +142,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1383008316993028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf074bbcc64b034bb044bc1995a87a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 1
+  liftTime: 1
 --- !u!114 &114665215069159880
 MonoBehaviour:
   m_ObjectHideFlags: 1

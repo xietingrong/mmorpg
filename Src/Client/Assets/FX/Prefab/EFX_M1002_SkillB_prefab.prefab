@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 4655324420546708}
   - component: {fileID: 114692941259353078}
   - component: {fileID: 114722541959581324}
+  - component: {fileID: 114989938384558428}
   m_Layer: 0
   m_Name: EFX_M1002_SkillB_prefab
   m_TagString: Untagged
@@ -470,6 +471,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   child: {fileID: 4642471726595890}
   delayTime: 0.5
+--- !u!114 &114989938384558428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842625295425816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liftTime: 1
 --- !u!198 &198009563805355062
 ParticleSystem:
   m_ObjectHideFlags: 1

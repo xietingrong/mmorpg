@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4829517319832706}
-  - component: {fileID: 114037475080188736}
+  - component: {fileID: 114990809561091408}
   m_Layer: 0
   m_Name: EFX_Portal_prefab
   m_TagString: Untagged
@@ -398,7 +398,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114037475080188736
+--- !u!114 &114990809561091408
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,10 +406,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100989151536986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf074bbcc64b034bb044bc1995a87a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 1
+  liftTime: 1
 --- !u!198 &198045755530983320
 ParticleSystem:
   m_ObjectHideFlags: 1

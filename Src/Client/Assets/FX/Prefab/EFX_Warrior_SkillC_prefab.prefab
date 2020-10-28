@@ -258,7 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4309738027849502}
   - component: {fileID: 114397595360652660}
-  - component: {fileID: 114262083229022532}
+  - component: {fileID: 114627153943850074}
   m_Layer: 0
   m_Name: EFX_Warrior_SkillC_prefab
   m_TagString: Untagged
@@ -752,18 +752,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114262083229022532
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1485146738577394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf074bbcc64b034bb044bc1995a87a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 1
 --- !u!114 &114314512152459568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -803,6 +791,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   child: {fileID: 4572218545194490}
   delayTime: 0.75
+--- !u!114 &114627153943850074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485146738577394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liftTime: 1
 --- !u!198 &198003254224170382
 ParticleSystem:
   m_ObjectHideFlags: 1

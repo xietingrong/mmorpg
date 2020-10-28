@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4327878765089568}
+  - component: {fileID: 114571447680134128}
   m_Layer: 0
   m_Name: EFX_M1005_Bip001RHand_SkillC_prefab
   m_TagString: Untagged
@@ -164,6 +165,18 @@ Transform:
   m_Father: {fileID: 4089140421675444}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114571447680134128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732625411224218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aaa2f81851d3d142ba30c163cf36a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liftTime: 1
 --- !u!198 &198056514251213810
 ParticleSystem:
   m_ObjectHideFlags: 1
