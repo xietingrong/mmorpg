@@ -1,0 +1,12 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": "落日空间",
+    "SubType": "Normal",
+    "Mapid": 4,
+    "Description": "落日空间的魔王守护者黑暗保藏，击杀魔王可以获得宝箱",
+    "LimitTime": 300,
+    "PreQuest": 4001,
+    "Quest": 4002
+  }
+}

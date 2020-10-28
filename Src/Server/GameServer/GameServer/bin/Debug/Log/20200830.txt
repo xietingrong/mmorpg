@@ -1,0 +1,803 @@
+
+2020-08-30 00:36:37,782 [1] [INFO ] [GameServer] £∫Game Server Init
+2020-08-30 00:36:42,277 [1] [INFO ] [GameServer] £∫DataManager > DataManager()
+2020-08-30 00:36:43,260 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤º¡÷’Ú
+2020-08-30 00:36:43,265 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2020-08-30 00:36:43,266 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:3:“∞Õ‚2
+2020-08-30 00:36:43,266 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’ø’º‰
+2020-08-30 00:36:46,393 [1] [WARN ] [GameServer] £∫Starting Listener...
+2020-08-30 00:36:46,441 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,441 [8] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,441 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,441 [15] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,441 [12] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,441 [14] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,441 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,441 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 00:36:46,536 [1] [WARN ] [GameServer] £∫NetService Started
+2020-08-30 00:37:42,231 [4] [WARN ] [GameServer] £∫Client[127.0.0.1:64692]] Connected
+2020-08-30 00:37:42,483 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:20
+2020-08-30 00:37:42,775 [8] [INFO ] [GameServer] £∫UserLoginRequest: User:1234  Pass:1234
+2020-08-30 00:37:46,734 [7] [INFO ] [GameServer] £∫Map[2] Spawn[1:Mon:1001,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,762 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:0
+2020-08-30 00:37:46,762 [7] [INFO ] [GameServer] £∫Map[2] Spawn[2:Mon:1002,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,763 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:0
+2020-08-30 00:37:46,763 [7] [INFO ] [GameServer] £∫Map[2] Spawn[3:Mon:1003,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,763 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:0
+2020-08-30 00:37:46,763 [7] [INFO ] [GameServer] £∫Map[2] Spawn[4:Mon:1005,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,767 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:2 monsterId:0
+2020-08-30 00:37:46,774 [7] [INFO ] [GameServer] £∫Map[3] Spawn[1:Mon:1001,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,775 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:0
+2020-08-30 00:37:46,775 [7] [INFO ] [GameServer] £∫Map[3] Spawn[2:Mon:1002,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,776 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:0
+2020-08-30 00:37:46,777 [7] [INFO ] [GameServer] £∫Map[3] Spawn[3:Mon:1003,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,778 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:0
+2020-08-30 00:37:46,778 [7] [INFO ] [GameServer] £∫Map[3] Spawn[4:Mon:1005,lv:Common.Data.SpawnRuleDefine] At Point;Common.Data.SpawnRuleDefine
+2020-08-30 00:37:46,779 [7] [INFO ] [GameServer] £∫MonsterEnter: Map:3 monsterId:0
+2020-08-30 00:37:54,316 [5] [WARN ] [GameServer] £∫Client[] DataReceived Len:20
+2020-08-30 00:37:54,320 [8] [INFO ] [GameServer] £∫UserRegisterRequest: User:1234  Pass:1234
+2020-08-30 00:37:57,292 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:20
+2020-08-30 00:37:57,296 [9] [INFO ] [GameServer] £∫UserLoginRequest: User:1234  Pass:1234
+2020-08-30 00:38:13,478 [5] [WARN ] [GameServer] £∫Client[] DataReceived Len:21
+2020-08-30 00:38:13,487 [8] [INFO ] [GameServer] £∫UserCreateCharacterRequest: Name:Li'LYi'LY  Class:Archer
+2020-08-30 00:38:16,056 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:8
+2020-08-30 00:38:16,062 [8] [INFO ] [GameServer] £∫UserGameEnterRequest: characterID:1:Li'LYi'LY Map:1
+2020-08-30 00:38:16,071 [8] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:38:16,093 [8] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2020-08-30 00:38:16,094 [8] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:38:22,268 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:38:22,276 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5000,4000,820),dir:(98,-19,0),spd:0
+2020-08-30 00:38:22,352 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:38:22,353 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5000,4000,820),dir:(93,-38,0),spd:0
+2020-08-30 00:38:22,454 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:38:22,460 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5000,4000,820),dir:(83,-56,0),spd:0
+2020-08-30 00:38:22,547 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:38:22,549 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5000,4000,820),dir:(72,-70,0),spd:0
+2020-08-30 00:38:22,659 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:38:22,661 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5000,4000,820),dir:(56,-83,0),spd:0
+2020-08-30 00:38:22,743 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:38:22,747 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5000,4000,820),dir:(38,-93,0),spd:0
+2020-08-30 00:38:22,877 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:38:22,880 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5000,4000,820),dir:(21,-98,0),spd:0
+2020-08-30 00:38:23,014 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:47
+2020-08-30 00:38:23,018 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:MoveFwd Entity:(9:pos:(5000,4000,820),dir:(21,-98,0),spd:300
+2020-08-30 00:38:23,575 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:38:23,579 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5037,3815,820),dir:(2,-100,0),spd:300
+2020-08-30 00:38:23,693 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:23,697 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5037,3780,820),dir:(-18,-98,0),spd:300
+2020-08-30 00:38:23,795 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:23,798 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5031,3750,820),dir:(-38,-93,0),spd:300
+2020-08-30 00:38:23,904 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:23,906 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5019,3720,820),dir:(-56,-83,0),spd:300
+2020-08-30 00:38:23,991 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:23,994 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5001,3696,820),dir:(-70,-71,0),spd:300
+2020-08-30 00:38:24,166 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:24,169 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4961,3656,820),dir:(-82,-58,0),spd:300
+2020-08-30 00:38:27,825 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:27,831 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4085,2999,820),dir:(-90,-43,0),spd:300
+2020-08-30 00:38:28,004 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:28,010 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4030,2977,820),dir:(-97,-25,0),spd:300
+2020-08-30 00:38:32,479 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:32,481 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2651,2622,800),dir:(-97,-25,0),spd:300
+2020-08-30 00:38:33,406 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:33,410 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2371,2566,800),dir:(-100,-8,0),spd:300
+2020-08-30 00:38:34,569 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:38:34,573 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Jump Entity:(9:pos:(2021,2566,800),dir:(-100,-8,0),spd:300
+2020-08-30 00:38:36,544 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:38:36,548 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Jump Entity:(9:pos:(1431,2566,800),dir:(-100,-8,0),spd:300
+2020-08-30 00:38:36,577 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:38:36,578 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(1397,2472,804),dir:(-100,-8,0),spd:300
+2020-08-30 00:38:37,986 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:38:37,988 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(962,2472,804),dir:(-100,10,0),spd:300
+2020-08-30 00:38:38,136 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:38:38,138 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(917,2481,804),dir:(-96,29,0),spd:300
+2020-08-30 00:38:39,031 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:10
+2020-08-30 00:38:39,035 [13] [INFO ] [GameServer] £∫OnMapTeleport: characterID:1:GameServer.TCharacter TeleporterId:1
+2020-08-30 00:38:39,036 [13] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2020-08-30 00:38:39,038 [13] [INFO ] [GameServer] £∫SendCharacterLeaveMap To 1:Li'LYi'LY : Map:1 Character:1:Li'LYi'LY
+2020-08-30 00:38:39,039 [13] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:38:39,040 [13] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2020-08-30 00:38:39,041 [13] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:38:44,295 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:10
+2020-08-30 00:38:44,298 [14] [INFO ] [GameServer] £∫OnMapTeleport: characterID:1:GameServer.TCharacter TeleporterId:1
+2020-08-30 00:38:44,300 [14] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2020-08-30 00:38:44,301 [14] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2020-08-30 00:38:44,302 [14] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:38:44,717 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:10
+2020-08-30 00:38:44,722 [15] [INFO ] [GameServer] £∫OnMapTeleport: characterID:1:GameServer.TCharacter TeleporterId:1
+2020-08-30 00:38:44,729 [15] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2020-08-30 00:38:44,736 [15] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2020-08-30 00:38:44,737 [15] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:38:44,875 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:35
+2020-08-30 00:38:44,876 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:MoveFwd Entity:(9:pos:(2844,4025,17),dir:(0,100,0),spd:300
+2020-08-30 00:38:45,455 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:45,458 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Idle Entity:(9:pos:(2844,4025,17),dir:(0,100,0),spd:0
+2020-08-30 00:38:46,627 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:46,629 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(19,98,0),spd:0
+2020-08-30 00:38:46,772 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:46,777 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(37,93,0),spd:0
+2020-08-30 00:38:46,825 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:46,826 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(53,85,0),spd:0
+2020-08-30 00:38:46,916 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:46,924 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(67,74,0),spd:0
+2020-08-30 00:38:47,097 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:47,100 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(81,59,0),spd:0
+2020-08-30 00:38:47,149 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:47,151 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(90,44,0),spd:0
+2020-08-30 00:38:47,190 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:47,198 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(96,28,0),spd:0
+2020-08-30 00:38:47,295 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:38:47,297 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(99,10,0),spd:0
+2020-08-30 00:38:47,359 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:38:47,360 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(99,-10,0),spd:0
+2020-08-30 00:38:47,449 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:38:47,452 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(96,-29,0),spd:0
+2020-08-30 00:38:47,608 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:38:47,613 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(2844,4025,17),dir:(89,-45,0),spd:0
+2020-08-30 00:38:47,966 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:38:47,970 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:MoveFwd Entity:(9:pos:(2844,4025,17),dir:(89,-45,0),spd:300
+2020-08-30 00:38:49,081 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:49,084 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(3112,3891,17),dir:(96,-28,0),spd:300
+2020-08-30 00:38:49,708 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:38:49,712 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Jump Entity:(9:pos:(3302,3853,17),dir:(96,-28,0),spd:300
+2020-08-30 00:38:51,413 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:51,418 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(3852,3659,17),dir:(96,-28,0),spd:300
+2020-08-30 00:38:51,448 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:38:51,450 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Jump Entity:(9:pos:(3852,3659,17),dir:(96,-28,0),spd:300
+2020-08-30 00:38:52,968 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:52,973 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4317,3566,17),dir:(90,-44,0),spd:300
+2020-08-30 00:38:54,081 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:54,086 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4647,3434,17),dir:(81,-59,0),spd:300
+2020-08-30 00:38:55,303 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:55,306 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4943,3212,17),dir:(69,-73,0),spd:300
+2020-08-30 00:38:55,423 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:55,426 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4964,3184,17),dir:(53,-85,0),spd:300
+2020-08-30 00:38:55,529 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:55,532 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4982,3160,17),dir:(34,-94,0),spd:300
+2020-08-30 00:38:55,646 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:55,647 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(4996,3125,17),dir:(17,-99,0),spd:300
+2020-08-30 00:38:56,282 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:56,284 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5034,2935,17),dir:(34,-94,0),spd:300
+2020-08-30 00:38:56,367 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:56,369 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5044,2910,17),dir:(50,-87,0),spd:300
+2020-08-30 00:38:56,451 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:56,456 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5059,2890,17),dir:(64,-77,0),spd:300
+2020-08-30 00:38:56,552 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:56,553 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5077,2866,17),dir:(78,-63,0),spd:300
+2020-08-30 00:38:56,687 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:56,689 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5113,2839,17),dir:(88,-48,0),spd:300
+2020-08-30 00:38:57,228 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:57,234 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5241,2775,17),dir:(77,-64,0),spd:300
+2020-08-30 00:38:57,350 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:57,353 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5269,2754,17),dir:(65,-76,0),spd:300
+2020-08-30 00:38:58,127 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:58,129 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5410,2566,17),dir:(50,-87,0),spd:300
+2020-08-30 00:38:58,574 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:38:58,577 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5493,2366,20),dir:(50,-87,0),spd:300
+2020-08-30 00:38:59,064 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:43
+2020-08-30 00:38:59,068 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Idle Entity:(9:pos:(5586,2242,20),dir:(50,-87,0),spd:0
+2020-08-30 00:39:01,133 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:39:01,137 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5586,2242,20),dir:(66,-75,0),spd:0
+2020-08-30 00:39:01,235 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:39:01,237 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5586,2242,20),dir:(80,-60,0),spd:0
+2020-08-30 00:39:01,305 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:39:01,307 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:MoveFwd Entity:(9:pos:(5586,2242,20),dir:(80,-60,0),spd:300
+2020-08-30 00:39:01,340 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:39:01,341 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5594,2236,20),dir:(91,-42,0),spd:300
+2020-08-30 00:39:01,441 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:39:01,444 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5624,2224,20),dir:(97,-23,0),spd:300
+2020-08-30 00:39:01,598 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:39:01,599 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5669,2215,20),dir:(100,-5,0),spd:300
+2020-08-30 00:39:01,945 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:39:01,949 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5774,2215,20),dir:(97,-25,0),spd:300
+2020-08-30 00:39:02,040 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:39:02,043 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5804,2209,20),dir:(90,-43,0),spd:300
+2020-08-30 00:39:02,125 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:39:02,129 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5829,2199,20),dir:(81,-58,0),spd:300
+2020-08-30 00:39:02,210 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:39:02,212 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5849,2184,20),dir:(70,-71,0),spd:300
+2020-08-30 00:39:02,294 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:43
+2020-08-30 00:39:02,298 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Idle Entity:(9:pos:(5869,2164,20),dir:(56,-83,0),spd:0
+2020-08-30 00:39:02,328 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:39:02,329 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5869,2164,20),dir:(56,-83,0),spd:0
+2020-08-30 00:39:02,398 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:39:02,400 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5869,2164,20),dir:(38,-92,0),spd:0
+2020-08-30 00:39:02,514 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:39:02,516 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5869,2164,20),dir:(21,-98,0),spd:0
+2020-08-30 00:39:02,990 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:39:02,994 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:MoveFwd Entity:(9:pos:(5869,2164,20),dir:(21,-98,0),spd:300
+2020-08-30 00:39:03,566 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:43
+2020-08-30 00:39:03,571 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:Idle Entity:(9:pos:(5903,1994,20),dir:(21,-98,0),spd:0
+2020-08-30 00:39:05,170 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:24
+2020-08-30 00:39:05,176 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:0 posSkillBridge.Message.NVector3
+2020-08-30 00:39:05,178 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:0 pos(5719,1653,0)
+2020-08-30 00:39:14,144 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:39:14,146 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:14,353 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:39:15,165 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:39:15,217 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:39:15,233 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;252 Crit:[3]
+2020-08-30 00:39:15,235 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;83 Crit:[3]
+2020-08-30 00:39:15,237 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:15,355 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:39:23,009 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:24
+2020-08-30 00:39:23,013 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:0 posSkillBridge.Message.NVector3
+2020-08-30 00:39:23,017 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:0 pos(5767,1692,0)
+2020-08-30 00:39:23,061 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:39:23,062 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:24,277 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:39:25,086 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:39:25,089 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:39:25,093 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;605 Crit:[3]
+2020-08-30 00:39:25,093 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;395 Crit:[3]
+2020-08-30 00:39:25,094 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:25,197 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:39:27,826 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:41
+2020-08-30 00:39:27,831 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5903,1994,20),dir:(3,-100,0),spd:0
+2020-08-30 00:39:27,963 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:50
+2020-08-30 00:39:27,969 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5903,1994,20),dir:(-16,-99,0),spd:0
+2020-08-30 00:39:28,065 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:50
+2020-08-30 00:39:28,067 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:9 Evt:None Entity:(9:pos:(5903,1994,20),dir:(-33,-94,0),spd:0
+2020-08-30 00:39:31,605 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:24
+2020-08-30 00:39:31,607 [11] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:0 posSkillBridge.Message.NVector3
+2020-08-30 00:39:31,609 [11] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:0 pos(5729,1652,0)
+2020-08-30 00:39:31,656 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:39:31,657 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:32,868 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:39:33,677 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:39:33,680 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:39:33,683 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;505 Crit:[3]
+2020-08-30 00:39:33,684 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;34 Crit:[3]
+2020-08-30 00:39:33,685 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:33,787 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:39:40,352 [3] [WARN ] [GameServer] £∫Client[] DataReceived Len:24
+2020-08-30 00:39:40,355 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:0 posSkillBridge.Message.NVector3
+2020-08-30 00:39:40,357 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:0 pos(5817,1627,0)
+2020-08-30 00:39:40,450 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:39:40,451 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:41,663 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:39:42,472 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:39:42,474 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:39:42,478 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;905 Crit:[3]
+2020-08-30 00:39:42,479 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;537 Crit:[3]
+2020-08-30 00:39:42,480 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:42,582 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:39:45,574 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:24
+2020-08-30 00:39:45,577 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:0 posSkillBridge.Message.NVector3
+2020-08-30 00:39:45,581 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:0 pos(5817,1627,0)
+2020-08-30 00:39:45,610 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[InvalidTarget] Statu:None
+2020-08-30 00:39:45,611 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:48,682 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:39:48,687 [9] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:39:48,690 [9] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5817,1627,0)
+2020-08-30 00:39:48,742 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:39:48,743 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:49,450 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:39:49,454 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:39:49,458 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:39:49,460 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:49,965 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:39:49,965 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:39:49,968 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:39:49,969 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:52,073 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:39:52,079 [10] [INFO ] [GameServer] £∫OnSkillCast: skill:302 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:39:52,082 [10] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:302 caster:9 target:1 pos(5817,1627,0)
+2020-08-30 00:39:52,092 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:39:52,093 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:52,598 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.UpdateCasting Finsh
+2020-08-30 00:39:52,904 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit
+2020-08-30 00:39:52,904 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:39:52,907 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡˜—™º˝] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:39:52,908 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:53,413 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit[0] IsBullet:True
+2020-08-30 00:39:53,414 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.HitTarget[∂ÒπÌ] Damage;104 Crit:[3]
+2020-08-30 00:39:53,416 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝UpdateSkill Finsh
+2020-08-30 00:39:53,417 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:56,415 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:39:56,420 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:304 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:39:56,426 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:304 caster:9 target:1 pos(5817,1627,0)
+2020-08-30 00:39:56,449 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:39:56,451 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:56,958 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.UpdateCasting Finsh
+2020-08-30 00:39:57,566 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit
+2020-08-30 00:39:57,570 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:39:57,577 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡¨…‰] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:39:57,578 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:58,088 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit[0] IsBullet:True
+2020-08-30 00:39:58,090 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.HitTarget[∂ÒπÌ] Damage;412 Crit:[3]
+2020-08-30 00:39:58,093 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:58,296 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit
+2020-08-30 00:39:58,296 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:39:58,300 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡¨…‰] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:39:58,301 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:58,807 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit[1] IsBullet:True
+2020-08-30 00:39:58,808 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.HitTarget[∂ÒπÌ] Damage;715 Crit:[3]
+2020-08-30 00:39:58,812 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:59,016 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit
+2020-08-30 00:39:59,018 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:39:59,021 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡¨…‰] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:39:59,023 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:39:59,532 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit[2] IsBullet:True
+2020-08-30 00:39:59,533 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.HitTarget[∂ÒπÌ] Damage;604 Crit:[3]
+2020-08-30 00:39:59,536 [7] [INFO ] [GameServer] £∫Skill¡¨…‰UpdateSkill Finsh
+2020-08-30 00:39:59,537 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:01,333 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:40:01,336 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:302 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:40:01,340 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:302 caster:9 target:1 pos(5817,1627,0)
+2020-08-30 00:40:01,358 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:40:01,359 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:01,868 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.UpdateCasting Finsh
+2020-08-30 00:40:02,171 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit
+2020-08-30 00:40:02,172 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:40:02,175 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡˜—™º˝] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:40:02,179 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:02,689 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit[0] IsBullet:True
+2020-08-30 00:40:02,690 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.HitTarget[∂ÒπÌ] Damage;258 Crit:[3]
+2020-08-30 00:40:02,692 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝UpdateSkill Finsh
+2020-08-30 00:40:02,693 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:05,447 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:40:05,451 [9] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:2 posSkillBridge.Message.NVector3
+2020-08-30 00:40:05,455 [9] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:2 pos(5817,1627,0)
+2020-08-30 00:40:05,520 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:40:05,521 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:06,229 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:40:06,232 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;…Ω«æﬁ»À
+2020-08-30 00:40:06,237 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.5975
+2020-08-30 00:40:06,239 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:06,747 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:40:06,748 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[…Ω«æﬁ»À] Damage;1 Crit:[3]
+2020-08-30 00:40:06,750 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:40:06,751 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:10,141 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:40:10,146 [10] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:40:10,153 [10] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5817,1627,0)
+2020-08-30 00:40:10,181 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:40:10,187 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:10,899 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:40:10,902 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:40:10,905 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:40:10,906 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:11,412 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:40:11,413 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:40:11,416 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:40:11,417 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:13,141 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:40:13,144 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:302 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:40:13,148 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:302 caster:9 target:1 pos(5817,1627,0)
+2020-08-30 00:40:13,237 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:40:13,238 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:13,751 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.UpdateCasting Finsh
+2020-08-30 00:40:14,055 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit
+2020-08-30 00:40:14,060 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:40:14,068 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡˜—™º˝] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:40:14,068 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:14,578 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit[0] IsBullet:True
+2020-08-30 00:40:14,579 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.HitTarget[∂ÒπÌ] Damage;411 Crit:[3]
+2020-08-30 00:40:14,583 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝UpdateSkill Finsh
+2020-08-30 00:40:14,584 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:16,625 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:40:16,630 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:40:16,634 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5817,1627,0)
+2020-08-30 00:40:16,705 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:40:16,706 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:17,415 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:40:17,417 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:40:17,419 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:40:17,420 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:17,925 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:40:17,927 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:40:17,933 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:40:17,934 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:21,124 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:40:21,132 [9] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:40:21,135 [9] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5722,1592,0)
+2020-08-30 00:40:21,164 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:40:21,164 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:22,407 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:40:23,218 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:40:23,222 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:40:23,225 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;504 Crit:[3]
+2020-08-30 00:40:23,227 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;476 Crit:[3]
+2020-08-30 00:40:23,230 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:23,337 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:40:29,863 [4] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:40:29,867 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:40:29,877 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5722,1658,0)
+2020-08-30 00:40:29,897 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:40:29,898 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:31,111 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:40:31,920 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:40:31,922 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:40:31,926 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;59 Crit:[3]
+2020-08-30 00:40:31,928 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;22 Crit:[3]
+2020-08-30 00:40:31,938 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:40:32,042 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:41:52,304 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:41:52,308 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:302 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:41:52,310 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:302 caster:9 target:1 pos(5722,1658,0)
+2020-08-30 00:41:52,403 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:41:52,403 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:41:52,912 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.UpdateCasting Finsh
+2020-08-30 00:41:53,215 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit
+2020-08-30 00:41:53,217 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:41:53,220 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡˜—™º˝] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:41:53,221 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:41:53,729 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit[0] IsBullet:True
+2020-08-30 00:41:53,729 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.HitTarget[∂ÒπÌ] Damage;744 Crit:[3]
+2020-08-30 00:41:53,732 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝UpdateSkill Finsh
+2020-08-30 00:41:53,733 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:41:57,524 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:41:57,527 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:41:57,530 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5722,1658,0)
+2020-08-30 00:41:57,569 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:41:57,571 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:41:58,279 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:41:58,281 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:41:58,283 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:41:58,284 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:41:58,788 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:41:58,789 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:41:58,795 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:41:58,797 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:42:01,662 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:42:01,667 [9] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:42:01,671 [9] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5863,1485,0)
+2020-08-30 00:42:01,730 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:42:01,732 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:42:02,947 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:42:03,757 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:42:03,761 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:42:03,766 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;283 Crit:[3]
+2020-08-30 00:42:03,767 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;644 Crit:[3]
+2020-08-30 00:42:03,767 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:42:03,870 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:44:47,209 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:44:47,214 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:44:47,218 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5775,1605,0)
+2020-08-30 00:44:47,274 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:44:47,274 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:44:48,494 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:44:49,302 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:44:49,306 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:44:49,311 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;102 Crit:[3]
+2020-08-30 00:44:49,312 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;449 Crit:[3]
+2020-08-30 00:44:49,313 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:44:49,415 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:45:03,795 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:45:03,798 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:45:03,801 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5801,1607,0)
+2020-08-30 00:45:03,850 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:45:03,852 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:05,067 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:45:05,876 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:45:05,880 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:45:05,885 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;862 Crit:[3]
+2020-08-30 00:45:05,886 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;427 Crit:[3]
+2020-08-30 00:45:05,887 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:05,992 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:45:13,787 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:45:13,790 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:45:13,795 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5853,1571,0)
+2020-08-30 00:45:13,868 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:45:13,871 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:15,089 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:45:15,899 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:45:15,901 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:45:15,910 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;264 Crit:[3]
+2020-08-30 00:45:15,916 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;630 Crit:[3]
+2020-08-30 00:45:15,918 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:16,020 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:45:32,888 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:45:32,891 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:45:32,896 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5762,1791,0)
+2020-08-30 00:45:32,905 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:45:32,906 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:34,119 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:45:34,928 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:45:34,930 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:45:34,935 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;795 Crit:[3]
+2020-08-30 00:45:34,936 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;1076 Crit:[3]
+2020-08-30 00:45:34,939 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:35,050 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:45:35,747 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:45:35,750 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:302 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:45:35,755 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:302 caster:9 target:1 pos(5762,1791,0)
+2020-08-30 00:45:35,858 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:45:35,863 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:36,379 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.UpdateCasting Finsh
+2020-08-30 00:45:36,685 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit
+2020-08-30 00:45:36,687 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:45:36,690 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡˜—™º˝] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:45:36,690 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:37,197 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.DoHit[0] IsBullet:True
+2020-08-30 00:45:37,200 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝.HitTarget[∂ÒπÌ] Damage;672 Crit:[3]
+2020-08-30 00:45:37,205 [7] [INFO ] [GameServer] £∫Skill¡˜—™º˝UpdateSkill Finsh
+2020-08-30 00:45:37,206 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:39,507 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:45:39,508 [9] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:45:39,524 [9] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5762,1791,0)
+2020-08-30 00:45:39,631 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:45:39,634 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:40,344 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:45:40,347 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:45:40,349 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:45:40,351 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:40,859 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:45:40,862 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:45:40,867 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:45:40,868 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:50,689 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:45:50,693 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:304 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:45:50,695 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:304 caster:9 target:1 pos(5762,1791,0)
+2020-08-30 00:45:50,762 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:45:50,762 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:51,268 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.UpdateCasting Finsh
+2020-08-30 00:45:51,874 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit
+2020-08-30 00:45:51,877 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:45:51,894 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡¨…‰] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:45:51,898 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:52,304 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit[0] IsBullet:True
+2020-08-30 00:45:52,307 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.HitTarget[∂ÒπÌ] Damage;619 Crit:[3]
+2020-08-30 00:45:52,310 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:52,615 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit
+2020-08-30 00:45:52,617 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:45:52,620 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡¨…‰] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:45:52,620 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:53,127 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit[1] IsBullet:True
+2020-08-30 00:45:53,130 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.HitTarget[∂ÒπÌ] Damage;582 Crit:[3]
+2020-08-30 00:45:53,135 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:53,338 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit
+2020-08-30 00:45:53,338 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:45:53,342 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[¡¨…‰] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:45:53,345 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:53,851 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.DoHit[2] IsBullet:True
+2020-08-30 00:45:53,854 [7] [INFO ] [GameServer] £∫Skill¡¨…‰.HitTarget[∂ÒπÌ] Damage;224 Crit:[3]
+2020-08-30 00:45:53,857 [7] [INFO ] [GameServer] £∫Skill¡¨…‰UpdateSkill Finsh
+2020-08-30 00:45:53,858 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:57,020 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:45:57,022 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:45:57,026 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:9 target:1 pos(5813,1555,0)
+2020-08-30 00:45:57,090 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:45:57,090 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:58,305 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:45:59,117 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:45:59,119 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:45:59,124 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;44 Crit:[3]
+2020-08-30 00:45:59,125 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;224 Crit:[3]
+2020-08-30 00:45:59,127 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:45:59,234 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:46:26,520 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:46:26,525 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:46:26,543 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5813,1555,0)
+2020-08-30 00:46:26,606 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:46:26,607 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:46:27,318 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:46:27,321 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:46:27,326 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:46:27,327 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:46:27,834 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:46:27,837 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:46:27,840 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:46:27,841 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:46:47,070 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:46:47,073 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:46:47,077 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5813,1555,0)
+2020-08-30 00:46:47,134 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:46:47,135 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:46:47,843 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:46:47,844 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:46:47,846 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:46:47,847 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:46:48,353 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:46:48,357 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:46:48,360 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:46:48,360 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:47:38,079 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:26
+2020-08-30 00:47:38,081 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:301 caster:9 target:1 posSkillBridge.Message.NVector3
+2020-08-30 00:47:38,085 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:301 caster:9 target:1 pos(5813,1555,0)
+2020-08-30 00:47:38,132 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.Cast Result:[Ok] Statu:Runing
+2020-08-30 00:47:38,134 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:47:38,853 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit
+2020-08-30 00:47:38,855 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.CastBullet[0] Target;∂ÒπÌ
+2020-08-30 00:47:38,858 [7] [INFO ] [GameServer] £∫ Bullet.CastBullet[∆’Õ®π•ª˜] casterId:[1] Distance:[2] Time;0.52625
+2020-08-30 00:47:38,859 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:47:39,366 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.DoHit[0] IsBullet:True
+2020-08-30 00:47:39,368 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜.HitTarget[∂ÒπÌ] Damage;1 Crit:[3]
+2020-08-30 00:47:39,370 [7] [INFO ] [GameServer] £∫Skill∆’Õ®π•ª˜UpdateSkill Finsh
+2020-08-30 00:47:39,370 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:48:44,661 [17] [INFO ] [GameServer] £∫CharacterLeave£∫ characterID:1:Li'LYi'LY
+2020-08-30 00:48:44,676 [17] [INFO ] [GameServer] £∫CharacterLeave: Map:2 characterId:1
+2020-08-30 00:48:44,693 [17] [INFO ] [GameServer] £∫SendCharacterLeaveMap To 1:Li'LYi'LY : Map:2 Character:1:Li'LYi'LY
+2020-08-30 00:48:44,721 [17] [WARN ] [GameServer] £∫Client[] Disconnected
+2020-08-30 00:50:14,686 [17] [WARN ] [GameServer] £∫Client[127.0.0.1:65269]] Connected
+2020-08-30 00:50:14,949 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:20
+2020-08-30 00:50:14,951 [8] [INFO ] [GameServer] £∫UserLoginRequest: User:1234  Pass:1234
+2020-08-30 00:50:24,205 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:8
+2020-08-30 00:50:24,208 [8] [INFO ] [GameServer] £∫UserGameEnterRequest: characterID:1:Li'LYi'LY Map:1
+2020-08-30 00:50:24,216 [8] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:50:24,221 [8] [INFO ] [GameServer] £∫CharacterEnter: Map:1 characterId:1
+2020-08-30 00:50:24,226 [8] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:50:37,196 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:50:37,200 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5000,4000,820),dir:(98,-19,0),spd:0
+2020-08-30 00:50:37,280 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:50:37,284 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5000,4000,820),dir:(93,-37,0),spd:0
+2020-08-30 00:50:37,380 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:50:37,382 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5000,4000,820),dir:(85,-53,0),spd:0
+2020-08-30 00:50:37,472 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:50:37,473 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5000,4000,820),dir:(72,-69,0),spd:0
+2020-08-30 00:50:37,598 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:42
+2020-08-30 00:50:37,600 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5000,4000,820),dir:(58,-82,0),spd:0
+2020-08-30 00:50:37,658 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:47
+2020-08-30 00:50:37,661 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:MoveFwd Entity:(10:pos:(5000,4000,820),dir:(58,-82,0),spd:300
+2020-08-30 00:50:38,220 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:50:38,222 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5111,3852,820),dir:(43,-91,0),spd:300
+2020-08-30 00:50:38,364 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:50:38,366 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5129,3807,820),dir:(24,-97,0),spd:300
+2020-08-30 00:50:38,459 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:50:38,461 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5135,3777,820),dir:(4,-100,0),spd:300
+2020-08-30 00:50:38,564 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:38,565 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5135,3752,820),dir:(-13,-99,0),spd:300
+2020-08-30 00:50:38,628 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:38,629 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5130,3727,820),dir:(-30,-95,0),spd:300
+2020-08-30 00:50:38,752 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:38,753 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5120,3702,820),dir:(-47,-88,0),spd:300
+2020-08-30 00:50:38,844 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:38,845 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5106,3674,820),dir:(-63,-77,0),spd:300
+2020-08-30 00:50:39,585 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:39,589 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(4974,3498,820),dir:(-77,-64,0),spd:300
+2020-08-30 00:50:39,732 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:39,736 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(4938,3471,820),dir:(-87,-49,0),spd:300
+2020-08-30 00:50:39,847 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:39,850 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(4910,3457,820),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:41,762 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:50:41,764 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(4335,3227,820),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:41,800 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:50:41,802 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(4335,3227,820),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:43,512 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:50:43,517 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(3810,3017,820),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:43,557 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:50:43,559 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(3810,3017,820),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:44,816 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:50:44,818 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(3425,2863,820),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:44,863 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:44,864 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(3434,2956,801),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:47,001 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:56
+2020-08-30 00:50:47,010 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(2789,2698,801),dir:(-95,-31,0),spd:300
+2020-08-30 00:50:48,359 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:54
+2020-08-30 00:50:48,362 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2379,2534,801),dir:(-99,-14,0),spd:300
+2020-08-30 00:50:48,504 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:50:48,506 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2334,2525,801),dir:(-100,4,0),spd:300
+2020-08-30 00:50:49,041 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:47
+2020-08-30 00:50:49,045 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(2179,2525,801),dir:(-100,4,0),spd:300
+2020-08-30 00:50:49,093 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:47
+2020-08-30 00:50:49,095 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(2179,2525,801),dir:(-100,4,0),spd:300
+2020-08-30 00:50:49,641 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:45
+2020-08-30 00:50:49,644 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2009,2625,801),dir:(-100,4,0),spd:300
+2020-08-30 00:50:50,861 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:47
+2020-08-30 00:50:50,867 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(1639,2625,801),dir:(-100,4,0),spd:300
+2020-08-30 00:50:50,914 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:47
+2020-08-30 00:50:50,916 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(1639,2625,801),dir:(-100,4,0),spd:300
+2020-08-30 00:50:53,057 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:47
+2020-08-30 00:50:53,060 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(979,2625,801),dir:(-100,4,0),spd:300
+2020-08-30 00:50:54,037 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:10
+2020-08-30 00:50:54,040 [9] [INFO ] [GameServer] £∫OnMapTeleport: characterID:1:GameServer.TCharacter TeleporterId:1
+2020-08-30 00:50:54,044 [9] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2020-08-30 00:50:54,045 [9] [INFO ] [GameServer] £∫SendCharacterLeaveMap To 1:Li'LYi'LY : Map:1 Character:1:Li'LYi'LY
+2020-08-30 00:50:54,046 [9] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:50:54,056 [9] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2020-08-30 00:50:54,059 [9] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:50:55,012 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:10
+2020-08-30 00:50:55,016 [10] [INFO ] [GameServer] £∫OnMapTeleport: characterID:1:GameServer.TCharacter TeleporterId:1
+2020-08-30 00:50:55,019 [10] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2020-08-30 00:50:55,020 [10] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2020-08-30 00:50:55,023 [10] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:50:55,106 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:10
+2020-08-30 00:50:55,110 [11] [INFO ] [GameServer] £∫OnMapTeleport: characterID:1:GameServer.TCharacter TeleporterId:1
+2020-08-30 00:50:55,112 [11] [INFO ] [GameServer] £∫CharacterLeave: Map:1 characterId:1
+2020-08-30 00:50:55,115 [11] [INFO ] [GameServer] £∫CharacterEnter: Map:2 characterId:1
+2020-08-30 00:50:55,121 [11] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:50:55,184 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:35
+2020-08-30 00:50:55,188 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:MoveFwd Entity:(10:pos:(2844,4025,17),dir:(0,100,0),spd:300
+2020-08-30 00:50:55,695 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:50:55,698 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Idle Entity:(10:pos:(2844,4050,17),dir:(0,100,0),spd:0
+2020-08-30 00:50:56,572 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:50:56,576 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2844,4050,17),dir:(20,98,0),spd:0
+2020-08-30 00:50:56,677 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:50:56,680 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2844,4050,17),dir:(38,93,0),spd:0
+2020-08-30 00:50:56,794 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:50:56,797 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2844,4050,17),dir:(56,83,0),spd:0
+2020-08-30 00:50:56,868 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:50:56,870 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2844,4050,17),dir:(70,72,0),spd:0
+2020-08-30 00:50:56,955 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:32
+2020-08-30 00:50:56,956 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2844,4050,17),dir:(81,58,0),spd:0
+2020-08-30 00:50:57,040 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:37
+2020-08-30 00:50:57,043 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:MoveFwd Entity:(10:pos:(2852,4056,17),dir:(91,42,0),spd:300
+2020-08-30 00:50:57,112 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:35
+2020-08-30 00:50:57,113 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2852,4056,17),dir:(91,42,0),spd:300
+2020-08-30 00:50:57,183 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:35
+2020-08-30 00:50:57,185 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(2897,4074,17),dir:(97,25,0),spd:300
+2020-08-30 00:50:58,152 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:35
+2020-08-30 00:50:58,156 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(3187,4132,17),dir:(100,7,0),spd:300
+2020-08-30 00:50:58,264 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:50:58,265 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(3222,4132,17),dir:(99,-13,0),spd:300
+2020-08-30 00:50:58,379 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:50:58,384 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(3252,4126,17),dir:(95,-32,0),spd:300
+2020-08-30 00:50:58,499 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:50:58,501 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(3297,4108,17),dir:(87,-49,0),spd:300
+2020-08-30 00:51:01,124 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:51:01,128 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(3999,3740,15),dir:(87,-49,0),spd:300
+2020-08-30 00:51:03,411 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:51:03,413 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(4620,3390,9),dir:(87,-49,0),spd:300
+2020-08-30 00:51:03,507 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:51:03,508 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(4648,3376,9),dir:(77,-64,0),spd:300
+2020-08-30 00:51:04,017 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:51:04,023 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(4764,3289,9),dir:(77,-64,0),spd:300
+2020-08-30 00:51:04,069 [17] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:51:04,071 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(4764,3289,9),dir:(77,-64,0),spd:300
+2020-08-30 00:51:05,605 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:51:05,612 [8] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(5148,3001,9),dir:(77,-64,0),spd:300
+2020-08-30 00:51:05,672 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:51:05,676 [9] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Jump Entity:(10:pos:(5148,3001,9),dir:(77,-64,0),spd:300
+2020-08-30 00:51:06,715 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:51:06,718 [10] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5412,2803,9),dir:(63,-78,0),spd:300
+2020-08-30 00:51:06,862 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:51:06,867 [11] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5439,2767,9),dir:(48,-88,0),spd:300
+2020-08-30 00:51:07,839 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:44
+2020-08-30 00:51:07,842 [12] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:None Entity:(10:pos:(5555,2535,9),dir:(30,-95,0),spd:300
+2020-08-30 00:51:08,628 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:43
+2020-08-30 00:51:08,633 [13] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Idle Entity:(10:pos:(5651,2295,9),dir:(30,-95,0),spd:0
+2020-08-30 00:51:09,230 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:46
+2020-08-30 00:51:09,232 [14] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:MoveFwd Entity:(10:pos:(5651,2295,9),dir:(30,-95,0),spd:300
+2020-08-30 00:51:09,898 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:43
+2020-08-30 00:51:09,903 [15] [INFO ] [GameServer] £∫OnMapEntitySync: characterID:1:Li'LYi'LY Entity.Id:10 Evt:Idle Entity:(10:pos:(5731,2095,9),dir:(30,-95,0),spd:0
+2020-08-30 00:51:11,321 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:24
+2020-08-30 00:51:11,324 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:10 target:0 posSkillBridge.Message.NVector3
+2020-08-30 00:51:11,328 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:10 target:0 pos(5705,1672,0)
+2020-08-30 00:51:11,341 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:51:11,342 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:51:12,556 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:51:13,366 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:51:13,367 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:51:13,370 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;971 Crit:[3]
+2020-08-30 00:51:13,371 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;113 Crit:[3]
+2020-08-30 00:51:13,372 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:51:13,475 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:51:23,481 [16] [WARN ] [GameServer] £∫Client[] DataReceived Len:24
+2020-08-30 00:51:23,483 [8] [INFO ] [GameServer] £∫OnSkillCast: skill:303 caster:10 target:0 posSkillBridge.Message.NVector3
+2020-08-30 00:51:23,491 [8] [INFO ] [GameServer] £∫BattleManager.ProcessBattleMessage: skill:303 caster:10 target:0 pos(5740,1629,0)
+2020-08-30 00:51:23,579 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.Cast Result:[Ok] Statu:Casting
+2020-08-30 00:51:23,582 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:51:24,807 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.UpdateCasting Finsh
+2020-08-30 00:51:25,618 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit
+2020-08-30 00:51:25,620 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.DoHit[0] IsBullet:False
+2020-08-30 00:51:25,626 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[∂ÒπÌ] Damage;38 Crit:[3]
+2020-08-30 00:51:25,628 [7] [INFO ] [GameServer] £∫Skill∂æº˝”Í.HitTarget[…Ω«æﬁ»À] Damage;402 Crit:[3]
+2020-08-30 00:51:25,633 [7] [INFO ] [GameServer] £∫PostProcess > Character: characterID:1:Li'LYi'LY
+2020-08-30 00:51:25,735 [7] [INFO ] [GameServer] £∫Skill∂æº˝”ÍUpdateSkill Finsh
+2020-08-30 00:53:04,463 [16] [INFO ] [GameServer] £∫CharacterLeave£∫ characterID:1:Li'LYi'LY
+2020-08-30 00:53:04,494 [16] [INFO ] [GameServer] £∫CharacterLeave: Map:2 characterId:1
+2020-08-30 00:53:04,499 [16] [INFO ] [GameServer] £∫SendCharacterLeaveMap To 1:Li'LYi'LY : Map:2 Character:1:Li'LYi'LY
+2020-08-30 00:53:04,500 [16] [WARN ] [GameServer] £∫Client[] Disconnected
+2020-08-30 16:02:02,998 [1] [INFO ] [GameServer] £∫Game Server Init
+2020-08-30 16:02:04,111 [1] [INFO ] [GameServer] £∫DataManager > DataManager()
+2020-08-30 16:02:05,340 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤º¡÷’Ú
+2020-08-30 16:02:05,378 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2020-08-30 16:02:05,419 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:3:“∞Õ‚2
+2020-08-30 16:02:05,420 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’ø’º‰
+2020-08-30 21:31:02,171 [1] [INFO ] [GameServer] £∫Game Server Init
+2020-08-30 21:31:03,028 [1] [INFO ] [GameServer] £∫DataManager > DataManager()
+2020-08-30 21:31:04,157 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:1:≤º¡÷’Ú
+2020-08-30 21:31:04,188 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:2:¬‰»’…≠¡÷
+2020-08-30 21:31:04,228 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:3:“∞Õ‚2
+2020-08-30 21:31:04,230 [1] [INFO ] [GameServer] £∫MapManager.Init > Map:4:¬‰»’ø’º‰
+2020-08-30 21:31:08,818 [1] [WARN ] [GameServer] £∫Starting Listener...
+2020-08-30 21:31:08,862 [7] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,862 [12] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,862 [13] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,862 [11] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,862 [9] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,862 [6] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,862 [8] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,863 [10] [WARN ] [GameServer] £∫MessageDistribute thread start
+2020-08-30 21:31:08,939 [1] [WARN ] [GameServer] £∫NetService Started

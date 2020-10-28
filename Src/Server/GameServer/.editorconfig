@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0006: 未能找到元数据文件“G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\Common.dll”
+dotnet_diagnostic.CS0006.severity = error

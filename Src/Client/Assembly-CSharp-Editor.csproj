@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\MapTools.cs" />
+    <Compile Include="Assets\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
     <Compile Include="Assets\ThirdParty\Candlelight\Editor\Candlelight\Library\Define Symbols\HyperTextDefineSymbols.cs" />
     <Compile Include="Assets\ThirdParty\Candlelight\Editor\Candlelight\Library\Define Symbols\UnityFeatureDefineSymbols.cs" />
     <Compile Include="Assets\ThirdParty\Candlelight\Editor\Candlelight\Library\Editors\BaseEditor.cs" />
