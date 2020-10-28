@@ -52,14 +52,14 @@ namespace GameServer.Managers
         {
             if (this.spawned)
                 return false;
-            if (this.unspawnTime + this.Define.SpawnPoint > Time.time)
+            if (this.unspawnTime + this.Define.SpawnPeriod > Time.time)
                 return false;
-            return false;
+            return true;
         }
         public void Spawn()
         {
             this.spawned = true;
-            //Log.InfoFormat("Map[{0}] Spawn[{1}:Mon:{2},lv:{3}] At Point;{4}",this.Define.MapID,this.Define.ID,this.Define.SpawnMonID, this.Define,this.Define)
+            Log.InfoFormat("Map[{0}] Spawn[{1}:Mon:{2},lv:{3}] At Point;{4}", this.Define.MapID, this.Define.ID, this.Define.SpawnMonID, this.Define, this.Define);
             this.Map.MonsterManager.Create(this.Define.SpawnMonID, this.Define.SpawnLevel, this.spawnPoint.Position, this.spawnPoint.Direction);
         }   
     }

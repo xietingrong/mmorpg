@@ -1,3 +1,5 @@
+G:\ExtremeWorld\mmorpg\Src\Lib\Common\obj\Debug\Common.csprojAssemblyReference.cache
+G:\ExtremeWorld\mmorpg\Src\Lib\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\Common.dll
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\Common.pdb
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\log4net.dll
@@ -7,8 +9,6 @@ G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\UnityEngine.dll
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\Protocol.pdb
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\log4net.xml
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\bin\Debug\protobuf-net.xml
-G:\ExtremeWorld\mmorpg\Src\Lib\Common\obj\Debug\Common.csprojAssemblyReference.cache
-G:\ExtremeWorld\mmorpg\Src\Lib\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\obj\Debug\Common.csproj.CopyComplete
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\obj\Debug\Common.dll
 G:\ExtremeWorld\mmorpg\Src\Lib\Common\obj\Debug\Common.pdb

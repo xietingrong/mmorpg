@@ -87,6 +87,8 @@
     <NavigationProperty Name="Quests" Relationship="ExtremeWorldModel.TCharacterTCharacterQuest" FromRole="TCharacter" ToRole="TCharacterQuest" />
     <NavigationProperty Name="Friends" Relationship="ExtremeWorldModel.TCharacterTCharacterFriend" FromRole="TCharacter" ToRole="TCharacterFriend" />
     <Property Name="GuildId" Type="Int32" Nullable="false" />
+    <Property Name="HP" Type="Int32" Nullable="false" />
+    <Property Name="MP" Type="Int32" Nullable="false" />
   </EntityType>
   <Association Name="PlayerCharacter">
     <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />

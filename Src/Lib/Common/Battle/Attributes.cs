@@ -8,23 +8,23 @@ namespace Common.Battle
 {
     public class Attributes
     {
-        AttributeData Initial = new AttributeData();
-        AttributeData Growth = new AttributeData();
-        AttributeData Equip = new AttributeData();
-        AttributeData Basic = new AttributeData();
-        AttributeData Buff = new AttributeData();
+        public AttributeData Initial = new AttributeData();
+        public AttributeData Growth = new AttributeData();
+        public AttributeData Equip = new AttributeData();
+        public AttributeData Basic = new AttributeData();
+        public AttributeData Buff = new AttributeData();
         public AttributeData Final = new AttributeData();
         int Level;
-        private NAttributeDynamic dynamic;
+        public NAttributeDynamic DynamicAttr;
         public float HP
         {
-            get { return dynamic.Hp; }
-            set { dynamic.Hp = (int)Math.Min(MaxHP, value); }
+            get { return DynamicAttr.Hp; }
+            set { DynamicAttr.Hp = (int)Math.Min(MaxHP, value); }
         }
         public float MP
         {
-            get { return dynamic.Mp; }
-            set { dynamic.Mp = (int)Math.Min(MaxMp, value); }
+            get { return DynamicAttr.Mp; }
+            set { DynamicAttr.Mp = (int)Math.Min(MaxMp, value); }
         }
         /// <summary>
         /// 生命
@@ -70,9 +70,9 @@ namespace Common.Battle
         /// 暴击概率
         /// </summary>
         public float CRI { get { return this.Final.CRI; } }
-        public void Init( CharacterDefine define,int level,List<EquipDefine>equips,NAttributeDynamic dynamicAttr)
+        public void Init( CharacterDefine define,int level,List<EquipDefine>equips, NAttributeDynamic DynamicAttrAttr)
         {
-            this.dynamic = dynamicAttr;
+            this.DynamicAttr = DynamicAttrAttr;
             this.Level = level;
             this.LoadInitAttrbute(this.Initial, define);
             this.LoadGrowthAttribute(this.Growth, define);
@@ -81,11 +81,21 @@ namespace Common.Battle
             this.InitSecondaryAttributes();
 
             this.InitFinalAttributes();
-            this.HP = dynamicAttr.Hp;
-            this.MP = dynamicAttr.Mp;
+            if (this.DynamicAttr == null)
+            {
+                this.DynamicAttr = new NAttributeDynamic();
+                this.HP = this.MaxHP;
+                this.MP = this.MaxMp;
+            }
+            else
+            {
+                this.HP = this.DynamicAttr.Hp;
+                this.MP = this.DynamicAttr.Mp;
+            }
+        
         }
 
-        private void InitFinalAttributes()
+       public void InitFinalAttributes()
         {
             for (int i = (int)AttributeType.MaxHP; i < (int)AttributeType.MAX; i++)
             {
@@ -93,7 +103,7 @@ namespace Common.Battle
             }
         }
 
-        private void InitSecondaryAttributes()
+        public void InitSecondaryAttributes()
         {
             //二级属性成长(包括装备)
             this.Basic.MaxHp = this.Basic.STR * 10 + this.Initial.MaxHp + this.Equip.MaxHp;
@@ -107,7 +117,7 @@ namespace Common.Battle
             this.Basic.SPD = this.Basic.DEX * 0.2f +  this.Initial.SPD + this.Equip.SPD;
             this.Basic.CRI = this.Basic.DEX * 0.0002f + this.Initial.CRI + this.Equip.CRI;
         }
-        private void InitBasicAttributes()
+        public void InitBasicAttributes()
         {
             for(int i =(int) AttributeType.MaxHP;i <(int)AttributeType.MAX;i++)
             {
@@ -121,10 +131,11 @@ namespace Common.Battle
             }
         }
 
-     
-        private void LoadEquipAttribute(AttributeData attr, List<EquipDefine> equips)
+
+        public void LoadEquipAttribute(AttributeData attr, List<EquipDefine> equips)
         {
             attr.Reset();
+            if (equips == null) return;
             foreach(var define in equips)
             {
                 attr.MaxHp = define.MaxHp;
@@ -142,14 +153,14 @@ namespace Common.Battle
             }
         }
 
-        private void LoadGrowthAttribute(AttributeData attr, CharacterDefine define)
+        public void LoadGrowthAttribute(AttributeData attr, CharacterDefine define)
         {
             attr.STR = define.STR;
             attr.INT = define.INT;
             attr.DEX = define.DEX;
         }
 
-        private void LoadInitAttrbute(AttributeData attr, CharacterDefine define)
+        public void LoadInitAttrbute(AttributeData attr, CharacterDefine define)
         {
             attr.MaxHp = define.MaxHp;
             attr.MaxMp = define.MaxMp;

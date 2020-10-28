@@ -34,6 +34,8 @@
           <ScalarProperty Name="Gold" ColumnName="Gold" />
           <ScalarProperty Name="Equips" ColumnName="Equips" />
           <ScalarProperty Name="GuildId" ColumnName="GuildId" />
+          <ScalarProperty Name="HP" ColumnName="HP" />
+          <ScalarProperty Name="MP" ColumnName="MP" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

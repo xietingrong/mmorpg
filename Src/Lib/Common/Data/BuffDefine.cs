@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace Common.Data
 {
@@ -15,6 +16,7 @@ namespace Common.Data
         public string Icon { get; set; }
         public TargetType Target { get; set; }
         public BuffEffect Effect { get; set; }
+        public TriggerType Trigger { get; set; }
         public float CD { get; set; }
         public float Duraction { get; set; }
         public float Interval { get; set; }

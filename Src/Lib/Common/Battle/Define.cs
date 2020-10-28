@@ -56,26 +56,37 @@ namespace Common.Battle
     }
     public enum SkillType
     {
-        Normal =0,
-        Skill =1
+        ALL = -1,
+        Normal =1,
+        Skill =2,
+        Passive =4
+
     }
     public enum TargetType
     {
         None  =0,
         Target =1,
         Self =2,
-        Postion
+        Position
     }
     public enum BuffEffect
     {
         None = 0,
-        Stum =1
+        Stun =1,//眩晕
+        Invincible = 2,//无敌
     }
-    public enum SkillResult
+
+    public enum TriggerType
     {
-        OK=0,
-        InvalidTarget,
-        OutOfMP,
-        Cooldown
+        None = 0,
+        SkillCast= 1,//技能释放中
+        SkillHit = 2,//技能命中时
     }
+    public enum CharState
+    {
+        None = 0,
+        Idle = 1,
+        InBattle = 2,
+    }
+    
 }

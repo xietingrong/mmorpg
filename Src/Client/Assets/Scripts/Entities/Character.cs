@@ -12,6 +12,8 @@ namespace Entities
 {
     public class Character : Creature
     {
+        internal bool ready;
+
         public Character(NCharacterInfo info):base(info)
         {
 
@@ -20,5 +22,6 @@ namespace Entities
         {
             return  EquipManager.Instance.GetEquipDefines();
         }
+
     }
 }

@@ -12,6 +12,7 @@ namespace GameServer.Managers
     class MonsterManager
     {
         private Map Map;
+        private int idx;
         public Dictionary<int, Monster> Monsters = new Dictionary<int, Monster>();
         public void Init(Map map)
         {
@@ -20,10 +21,11 @@ namespace GameServer.Managers
         internal Monster Create(int spawnMonID,int spawnLevel,NVector3 psstion,NVector3 dirtion)
         {
             Monster monster = new Monster(spawnMonID, spawnLevel, psstion, dirtion);
-            EntityManager.Instance.AddEntity(this.Map.ID, monster);
+            EntityManager.Instance.AddEntity(this.Map.ID, this.Map.InstanceId, monster);
             monster.Info.Id = monster.entityId;
             monster.Info.mapId = this.Map.ID;
-            Monsters[monster.Id] = monster;
+            Monsters[idx]=monster;
+            idx++;
             this.Map.MonsterEnter(monster);
             return monster;
         }

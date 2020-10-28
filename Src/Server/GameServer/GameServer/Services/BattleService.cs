@@ -23,13 +23,7 @@ namespace GameServer.Services
 
             Character character = sender.Session.Character;
             Log.InfoFormat("OnSkillCast: skill:{0} caster:{1} target:{2} pos{3}", request.castInfo.skillId, request.castInfo.casterId, request.castInfo.targetId, request.castInfo.Postion.ToString());
-          
-            sender.Session.Response.skillCast = new SkillCastResponse();
-            sender.Session.Response.skillCast.Result = Result.Success;
-            sender.Session.Response.skillCast.castInfo = request.castInfo;
-            sender.SendResponse();
-            MapManager.Instance[character.Info.mapId].BrodacastBattleResponse(sender.Session.Response);
-            
+            BattleManager.Instance.ProcessBattleMessage(sender, request);
         }
 
         public void Init()

@@ -87,10 +87,23 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\AIAgent.cs" />
+    <Compile Include="AI\AIBase.cs" />
+    <Compile Include="AI\AIBoss.cs" />
+    <Compile Include="AI\AIMonsterPassive.cs" />
+    <Compile Include="Battle\Battle.cs" />
+    <Compile Include="Battle\BattleContext.cs" />
+    <Compile Include="Battle\Buff.cs" />
+    <Compile Include="Battle\BuffManager.cs" />
+    <Compile Include="Battle\EffectManager.cs" />
+    <Compile Include="Battle\Skill.cs" />
+    <Compile Include="Battle\SkillManager.cs" />
     <Compile Include="CommandHelper.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Core\Vector3.cs" />
     <Compile Include="Entities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,11 +119,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Entities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Battle\Bullet.cs" />
     <Compile Include="Entities\Character.cs" />
-    <Compile Include="Entities\CharacterBase.cs" />
+    <Compile Include="Entities\Creature.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Monster.cs" />
     <Compile Include="GameServer.cs" />
+    <Compile Include="Managers\AreanaManager.cs" />
+    <Compile Include="Managers\BattleManager.cs" />
     <Compile Include="Managers\CharacterManager.cs" />
     <Compile Include="Managers\ChatManager.cs" />
     <Compile Include="Managers\DataManager.cs" />
@@ -127,11 +143,14 @@
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\SpawnManager.cs" />
     <Compile Include="Managers\StatusManager.cs" />
+    <Compile Include="Managers\StoryManager.cs" />
     <Compile Include="Managers\TeamManager.cs" />
+    <Compile Include="Models\Arena.cs" />
     <Compile Include="Models\Chat.cs" />
     <Compile Include="Models\Guild.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Map.cs" />
+    <Compile Include="Models\Story.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Network\ExtensionMethods.cs" />
     <Compile Include="Network\INetSession.cs" />
@@ -148,7 +167,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Services\ArenaService.cs" />
     <Compile Include="Services\BagService.cs" />
+    <Compile Include="Services\BattleService.cs" />
     <Compile Include="Services\ChatService.cs" />
     <Compile Include="Services\DBService.cs" />
     <Compile Include="Services\FriendService.cs" />
@@ -156,6 +177,7 @@
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Services\MapService.cs" />
     <Compile Include="Services\QuestService.cs" />
+    <Compile Include="Services\StorySerice.cs" />
     <Compile Include="Services\TeamService.cs" />
     <Compile Include="Services\UserSerevice.cs" />
     <Compile Include="Settings.cs" />
@@ -193,6 +215,9 @@
     <Compile Include="Utils\Time.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>

@@ -13,6 +13,8 @@ namespace Managers
         public int Unlocked;
         public BagItem[] items;
         NBagInfo Info;
+       
+
         unsafe public void Init(NBagInfo info)
         {
             this.Info = info;
@@ -30,6 +32,9 @@ namespace Managers
             }
 
         }
+
+        
+
         public void Reset()
         {
             int i = 0;

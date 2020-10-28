@@ -77,6 +77,8 @@
     <Property Name="Gold" Type="bigint" Nullable="false" />
     <Property Name="Equips" Type="binary" Nullable="false" MaxLength="28" />
     <Property Name="GuildId" Type="int" Nullable="false" />
+    <Property Name="HP" Type="int" Nullable="false" />
+    <Property Name="MP" Type="int" Nullable="false" />
     <Property Name="Player_ID" Type="int" Nullable="false" />
     <Property Name="Bag_Id" Type="int" Nullable="false" />
   </EntityType>

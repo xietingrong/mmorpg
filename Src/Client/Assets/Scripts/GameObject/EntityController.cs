@@ -5,7 +5,7 @@ using UnityEngine;
 using Entities;
 using Managers;
 
-public class EntityController : MonoBehaviour, IEntityNotify
+public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 {
 
     public Animator anim;
@@ -32,9 +32,9 @@ public class EntityController : MonoBehaviour, IEntityNotify
     private int currentRide = 0;
 
     public Transform rideBone;
-
+    public EntityEffectManager EffectMgr;
     // Use this for initialization
-    void Start () {
+    void Start() {
         if (entity != null)
         {
             EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId, this);
@@ -45,23 +45,27 @@ public class EntityController : MonoBehaviour, IEntityNotify
             rb.useGravity = false;
     }
 
-    void UpdateTransform()
+    public void UpdateTransform()//------
     {
         this.position = GameObjectTool.LogicToWorld(entity.position);
-        this.direction = GameObjectTool.LogicToWorld(entity.direction);
-
         this.rb.MovePosition(this.position);
-        this.transform.forward = this.direction;
         this.lastPosition = this.position;
+
+        UpdateDirection();
+    }
+ 
+    public void UpdateDirection()//------
+    {
+        this.direction = GameObjectTool.LogicToWorld(entity.direction);
+        this.transform.forward = this.direction;
         this.lastRotation = this.rotation;
     }
-	
     void OnDestroy()
     {
         if (entity != null)
             Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.entityId, entity.position, entity.direction, entity.speed);
 
-        if(UIWorldElementManager.Instance!=null)
+        if (UIWorldElementManager.Instance != null)
         {
             UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
         }
@@ -80,8 +84,8 @@ public class EntityController : MonoBehaviour, IEntityNotify
             this.UpdateTransform();
         }
     }
-	
-	public void OnEntityChanged(Entity entity)
+
+    public void OnEntityChanged(Entity entity)
     {
         Debug.LogFormat("OnEntityChanged :ID:{0} POS:{1} DIR:{2} SPD:{3} ", entity.entityId, entity.position, entity.direction, entity.speed);
     }
@@ -96,7 +100,7 @@ public class EntityController : MonoBehaviour, IEntityNotify
 
     public void OnEntityEvent(EntityEvent entityEvent, int param)
     {
-        switch(entityEvent)
+        switch (entityEvent)
         {
             case EntityEvent.Idle:
                 anim.SetBool("Move", false);
@@ -125,7 +129,7 @@ public class EntityController : MonoBehaviour, IEntityNotify
     {
         if (currentRide == rideId) return;
         currentRide = rideId;
-        if (rideId >0)
+        if (rideId > 0)
         {
             this.rideController = GameObjectManager.Instance.LoadRide(rideId, this.transform);
         }
@@ -151,5 +155,43 @@ public class EntityController : MonoBehaviour, IEntityNotify
     {
         this.anim.transform.position = position + (this.anim.transform.position - this.rideBone.position);
     }
+    void OnMouseDown()
+    {
+        Creature target = this.entity as Creature;
+        if (target.IsCurrentPlayer) return;
+        BattleManager.Instance.CurrentTarget = this.entity as Creature;
+    }
+    public void PlayAnim(string name)
+    {
+        this.anim.SetTrigger(name);
+    }
 
+    public void SetStandby(bool standby)
+    {
+        this.anim.SetBool("Standby", standby);
+    }
+
+ 
+
+    public void PlayEffect(EffectType type, string name, Creature target, float duration)
+    {
+        Transform transform = target.Controller.GetTransform();
+        if (type == EffectType.Position || type == EffectType.Hit)
+            FXManager.Instance.PlayEffect(type, name, transform, target.GetHitOffset(), duration);
+        else
+            this.EffectMgr.PlayEffect(type, name, transform, target.GetHitOffset(), duration);
+    }
+
+    public Transform GetTransform()
+    {
+        return this.transform;
+    }
+
+    public void PlayEffect(EffectType type, string name, NVector3 postion, float duration)
+    {
+        if (type == EffectType.Position || type == EffectType.Hit)
+            FXManager.Instance.PlayEffect(type, name, null, GameObjectTool.LogicToWorld(postion), duration);
+        else
+            this.EffectMgr.PlayEffect(type, name, null, GameObjectTool.LogicToWorld(postion), duration);
+    }
 }

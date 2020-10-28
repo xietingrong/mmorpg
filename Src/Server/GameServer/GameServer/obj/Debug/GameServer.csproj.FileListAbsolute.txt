@@ -9,7 +9,6 @@ G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\log4net.dll
 G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\Newtonsoft.Json.dll
 G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\protobuf-net.dll
 G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\Protocol.dll
-G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\UnityEngine.dll
 G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\Common.pdb
 G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\Protocol.pdb
 G:\ExtremeWorld\mmorpg\Src\Server\GameServer\GameServer\bin\Debug\EntityFramework.xml

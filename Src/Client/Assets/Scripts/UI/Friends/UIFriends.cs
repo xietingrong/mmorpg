@@ -91,8 +91,22 @@ public class UIFriends:UIWindow
             TeamService.Instance.SendTeamInviteRequest(this.seletedItem.info.friendInfo.Id, this.seletedItem.info.friendInfo.Name);
         };
     }
-
-    public void OnClickFriendRemove()
+    public void OnClickChange()
+    {
+        if (seletedItem == null)
+        {
+            MessageBox.Show("请选择要挑战的好友");
+        }
+        if (seletedItem.info.Status == 0)
+        {
+            MessageBox.Show("请选择在线的好友");
+        }
+        MessageBox.Show(string.Format("确定要好友【{0}】进行竞技场挑战吗？", seletedItem.info.friendInfo.Name), "竞技场挑战", MessageBoxType.Confirm, "确定", "取消").OnYes = () =>
+        {
+            ArenaService.Instance.SendArenaChangeRequest(this.seletedItem.info.friendInfo.Id, this.seletedItem.info.friendInfo.Name);
+        };
+    }
+     public void OnClickFriendRemove()
     {
         if (seletedItem == null)
         {

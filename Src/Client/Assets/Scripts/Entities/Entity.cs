@@ -59,5 +59,7 @@ namespace Entities
             entityData.Direction.FromVector3Int(this.direction);
             entityData.Speed = this.speed;
         }
+
+        
     }
 }

@@ -7,6 +7,7 @@ using SkillBridge.Message;
 using Services;
 using UnityEngine.AI;
 using System;
+using Models;
 
 public class PlayerInputController : MonoBehaviour {
 
@@ -51,7 +52,7 @@ public class PlayerInputController : MonoBehaviour {
         {
             agent = this.gameObject.AddComponent<NavMeshAgent>();
             agent.stoppingDistance = 0.3f;
-        
+            agent.updatePosition = false;//---
         }
     }
     public void StartNav(Vector3 target)
@@ -61,6 +62,7 @@ public class PlayerInputController : MonoBehaviour {
 
     IEnumerator BeginNav(Vector3 target)
     {
+        agent.updatePosition = false;//---
         agent.SetDestination(target);
 
         yield return null;
@@ -85,6 +87,7 @@ public class PlayerInputController : MonoBehaviour {
             this.character.Stop();
             this.SendEntityEvent(EntityEvent.Idle);
         }
+        agent.updatePosition = false;//---
         NavPathRenderer.Instance.SetPath(null, Vector3.zero);
     }
     public void NavMove()
@@ -103,9 +106,33 @@ public class PlayerInputController : MonoBehaviour {
         }
         NavPathRenderer.Instance.SetPath(agent.path,agent.destination);
     }
+
+    public bool enabledRigidbody//-----
+    {
+        get { return !this.rb.isKinematic; }
+        set
+        {
+            this.rb.isKinematic = !value;
+            this.rb.detectCollisions = value;
+        }
+    }
+    public void OnLeaveLevel() //-----
+    {
+        this.enabledRigidbody = false;
+        this.rb.velocity = Vector3.zero;
+    }
+    public void OnEnterLevel() //-----
+    {
+
+        this.rb.velocity = Vector3.zero;
+        this.entityController.UpdateTransform();
+        this.lastPos = this.rb.transform.position;
+        this.enabledRigidbody = true;
+    }
+
     void FixedUpdate()
     {
-        if (character == null)
+        if (character == null || User.Instance.CurrentCharacter == null || !character.ready)//----
             return;
         if(autoNav)
         {
@@ -174,7 +201,8 @@ public class PlayerInputController : MonoBehaviour {
     float lastSync = 0;
     private void LateUpdate()
     {
-        if (this.character == null) return;
+        if (this.character == null || !character.ready)//----
+            return;
 
         Vector3 offset = this.rb.transform.position - lastPos;
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);

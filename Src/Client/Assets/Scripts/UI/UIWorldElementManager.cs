@@ -8,6 +8,7 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager>
 {
     public GameObject nameBarPrefab;
     public GameObject npcStatusPrefab;
+    public GameObject popupTextprefab;
 
     private Dictionary<Transform, GameObject> elementNames = new Dictionary<Transform, GameObject>();
     private Dictionary<Transform, GameObject> elementStatus = new Dictionary<Transform, GameObject>();
@@ -16,6 +17,7 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager>
     protected override void OnStart()
     {
         nameBarPrefab.SetActive(false);
+        popupTextprefab.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -68,5 +70,14 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager>
             Destroy(this.elementStatus[owner]);
             this.elementStatus.Remove(owner);
         }
+    }
+    public void ShowPopupText(PopupType type,Vector3 postion,float damage,bool isCrit)
+    {
+        GameObject go = Instantiate(popupTextprefab, postion,Quaternion.identity,this.transform);
+        go.name = "Popup" ;
+        go.GetComponent<UIPopupText>().InitPopup(type,damage,isCrit);
+     
+        go.SetActive(true);
+        
     }
 }

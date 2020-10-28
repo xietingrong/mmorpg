@@ -107,7 +107,7 @@ namespace GameServer.Services
                 Level = 1,
                 MapID = 1,
                 MapPosX = 5000, //初始出生位置X
-                MapPosY = 4000, //初始出生位置Y
+                MapPosY = 4500, //初始出生位置Y
                 MapPosZ = 820,
                 Gold = 100000, //初始10万金币
                 HP=1000,

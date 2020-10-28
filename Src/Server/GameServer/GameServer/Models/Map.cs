@@ -12,6 +12,7 @@ using Network;
 using GameServer.Managers;
 using GameServer.Entities;
 using GameServer.Services;
+using GameServer.Battle;
 
 namespace GameServer.Models
 {
@@ -28,7 +29,10 @@ namespace GameServer.Models
                 this.character = cha;
             }
         }
-
+        public int GetMapIndex()
+        {
+            return ID * 1000 + InstanceId;
+        }
         public int ID
         {
             get { return this.Define.ID; }
@@ -48,16 +52,21 @@ namespace GameServer.Models
 
         public MonsterManager MonsterManager = new MonsterManager();
 
-        internal Map(MapDefine define)
+        public int InstanceId { get; set; }
+        internal Map(MapDefine define,int instanceCount)
         {
             this.Define = define;
             this.SpawnManager.Init(this);
             this.MonsterManager.Init(this);
-        }
+            this.Battle = new Battle.Battle(this);
+            InstanceId = instanceCount;
 
+        }
+        public Battle.Battle Battle;
         internal void Update()
         {
             SpawnManager.Update();
+            this.Battle.Update();
         }
 
         /// <summary>
@@ -67,8 +76,8 @@ namespace GameServer.Models
         internal void CharacterEnter(NetConnection<NetSession> conn, Character character)
         {
             Log.InfoFormat("CharacterEnter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
-            character.Info.mapId = this.ID;
-            this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+
+            AddCharacter(conn, character);
 
             conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
             conn.Session.Response.mapCharacterEnter.mapId = this.Define.ID;
@@ -85,6 +94,13 @@ namespace GameServer.Models
             conn.SendResponse();
         }
 
+        public void AddCharacter(NetConnection<NetSession> conn, Character character)
+        {
+            Log.InfoFormat("AddCharacte: Map:{0} characterId:{1}", this.Define.ID, character.Id);
+            character.Info.mapId = this.ID;
+            if (!this.MapCharacters.ContainsKey(character.Id))
+                this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+        }
 
         internal void CharacterLeave(Character cha)
         {
@@ -146,6 +162,7 @@ namespace GameServer.Models
         internal void MonsterEnter(Monster monster)
         {
             Log.InfoFormat("MonsterEnter: Map:{0} monsterId:{1}", this.Define.ID, monster.Id);
+            monster.OnEnterMap(this);
             foreach (var kv in this.MapCharacters)
             {
                 this.AddCharacterEnterMap(kv.Value.connection, monster.Info);
@@ -155,8 +172,13 @@ namespace GameServer.Models
         {
             foreach (var kv in this.MapCharacters)
             {
-                kv.Value.connection.Session.Response.skillCast = response.skillCast;
-                kv.Value.connection.Session.GetResponse();
+                if(response.skillCast!= null)
+                     kv.Value.connection.Session.Response.skillCast = response.skillCast;
+                if(response.skillHits!= null)
+                    kv.Value.connection.Session.Response.skillHits = response.skillHits;
+                if(response.buffRes!= null)
+                    kv.Value.connection.Session.Response.buffRes = response.buffRes;
+                kv.Value.connection.SendResponse();
             }
         }
     }

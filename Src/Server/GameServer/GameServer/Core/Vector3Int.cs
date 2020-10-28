@@ -123,6 +123,14 @@ namespace GameServer.Core
         /// </summary>
         public int sqrMagnitude => x * x + y * y + z * z;
 
+        public Vector3Int normallizd
+        {
+            get
+            {
+                var m = this.magnitude;
+                return new Vector3Int((int)(this.x*100f/m),(int)(this.x * 100f / m),(int)(this.x * 100f / m));
+            }
+        }
         /// <summary>
         ///   <para>Shorthand for writing Vector3Int (0, 0, 0).</para>
         /// </summary>

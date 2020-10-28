@@ -17,11 +17,19 @@ public class GameObjectTool
         return new Vector3(vector.x / 100f, vector.z / 100f, vector.y / 100f);
     }
 
+    public static Vector3 LogicToWorld(Vector3 vector)
+    {
+        return new Vector3(vector.x / 100f, vector.z / 100f, vector.y / 100f);
+    }
+
     public static float LogicToWorld(int val)
     {
         return val / 100f;
     }
-
+    public static float LogicToWorld(float val)
+    {
+        return val / 100f;
+    }
     public static int WorldToLogic(float val)
     {
         return Mathf.RoundToInt(val * 100f);

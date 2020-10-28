@@ -243,8 +243,13 @@ message NetMessageRequest{
 	GuildAdminRequest guildAdmin = 29;
 
 	ChatRequest chat = 30;
-
 	SkillCastRequest skillCast = 50;
+
+	ArenaChallengeRequest arenaChallengeReq =60;
+	ArenaChallengeResponse arenaChallengeRes =61;
+	ArenaReadyRequest arenaReady =62;
+	StoryStartRequest storyStart =63;
+	StoryEndRequest storyEnd =64;
 }
 
 message NetMessageResponse{
@@ -286,6 +291,18 @@ message NetMessageResponse{
 
 	ChatResponse chat = 30;
 	SkillCastResponse skillCast = 50;
+	SkillHitResponse skillHits = 51;
+	BuffResponse buffRes= 52;
+	ArenaChallengeRequest arennaChallengeReq =60;
+	ArenaChallengeResponse arennaChallengeRes =61;
+	ArenaBeginResponse arenaBegin =62;
+	ArenaEndResponse arenaEnd =63;
+
+	ArenaReadyResponse arenaReady =64;
+	ArenaRoundStarResponse arenaRoundStar =65;
+	ArenaRoundEndResponse arenaRoundEnd =66;
+	StoryStartResponse storyStart =67;
+	StoryEndResponse storyEnd =68;
 	StatusNotify statusNotify = 100;	
 }
 
@@ -778,12 +795,20 @@ message ChatResponse
 //Battle
 //
 ///////////////////////////////////////////////////////////////////////////////
-enum SKILL_RESULT
+enum SkillResult
 {
-  OK =0;
-  OUT_OF_MP =1;
-  COOL_DOWN =2;
-  INVALTO_TARGET =3;
+  OK =0;//成功
+  Out_Of_Mp =1;//缺蓝
+  Cool_Down =2;//冷却中
+  Invalid_Target =3;//无效范围
+  OutOfRange =4;//超出范围
+  Casting =5;//技能长在释放中
+}
+enum SkillStatus
+{
+	None =0;
+	Casting =1;//施法中
+	Runing =2;//执行中
 }
  message NSkillCastInfo
  {
@@ -791,14 +816,154 @@ enum SKILL_RESULT
    int32 casterId =2;
    int32 targetId =3;
    NVector3 postion =4;
+   SkillResult result =5;
  }
  message SkillCastRequest
  {
    NSkillCastInfo castInfo =1;
  }
+ message NDamageInfo
+ {
+	 int32 entityId =1;
+	 int32 damage=2;
+	 bool crit =3;
+	 bool will_dead =4;
+ }
+ message NSkillHitInfo
+ {
+   int32 skillId =1;
+   int32 casterId =2;
+   int32 hitId =3;
+   bool isBullet =4;
+   repeated NDamageInfo damage =5;
+ }
  message SkillCastResponse
  {
    RESULT result =1;
    string errormsg =2;
-   NSkillCastInfo castInfo =3;
+   repeated NSkillCastInfo castInfo =3;
+ }
+ message SkillHitResponse
+ {
+   RESULT result =1;
+   string errormsg =2;
+   repeated NSkillHitInfo hits =3;
+ }
+
+ enum Buff_ACTION
+ {
+	 NONO =0;
+	 ADD =1;
+	 REMOVE =2;
+	 HIT =3;
+ }
+ message NBuffInfo
+ {
+	int32 buffId =1;
+	int32 buffType =2;
+	Buff_Action action =3;
+	int32 casterId =4;
+	int32 ownerId =5;
+	NDamageInfo damge =6;
+ }
+ message BuffResponse
+ {
+	 RESULT result =1;
+	 string errormsg =2;
+	 repeated NBuffInfo buffs =3;
+ }
+ 
+
+ //Arena
+ message ArenaPlayer
+ {
+	 int32 entity_id =1;
+	 string name =2;
+	 int32 score =3;
+	 int32 rank =4;
+ }
+ message ArenaInfo
+ {
+	 int32 arena_id =1;
+	 ArenaPlayer red =2;
+	 ArenaPlayer blue =3;
+ }
+ message ArenaChallengeRequest
+ {
+    ArenaInfo arena_info =1;
+ }
+ message ArenaChallengeResponse
+ {
+	RESULT result =1;
+	string errormsg =2;
+	ArenaInfo arena_info =3;
+ }
+ message ArenaBeginResponse
+ {
+	RESULT result =1;
+	string errormsg =2;
+	ArenaInfo arena_info =3;
+ }
+ message ArenaEndResponse
+ {
+	RESULT result =1;
+	string errormsg =2;
+	ArenaInfo arena_info =3;
+ }
+ message ArenaReadyRequest
+ {
+	int32 arenaId =1;
+	int32 entity =2;
+ }
+ message ArenaReadyResponse
+ {
+	int32 round =1;
+	ArenaInfo arena_info =2;
+ }
+ message ArenaRoundStarResponse
+ {
+	int32 round =1;
+	ArenaInfo arena_info =2;
+ }
+ message ArenaRoundEndResponse
+ {
+	 int32 round =1;
+	 ArenaInfo arena_info =2;
+ }
+ enum Arena_Status
+ {
+	None =0;
+	Wait =1;
+	Game =2;
+	Result =3;
+ }
+ enum Arena_Round_Status
+ {
+	 None =0;
+	 Ready =1;
+	 Fight =2;
+	 Result =3;
+ }
+ message StoryStartResponse
+ {
+	 RESULT result =1;
+	 string errormsg =2;
+	 int32 storyId =3;
+	 int32 instanceId =4;
+ }
+ message StoryStartRequest
+ {
+	 int32 storyId =1;
+	 int32 instanceId =2;
+ }
+ message StoryEndRequest
+ {
+	int32 storyId =1;
+	int32 instanceId =2;
+ }
+ message StoryEndResponse
+ {
+	 RESULT result =1;
+	 string errormsg =2;
+	 int32 storyId =3;
  }

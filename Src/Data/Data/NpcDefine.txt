@@ -18,7 +18,7 @@
     "Name": "埃布尔",
     "Description": "副本NPC",
     "Type": "Functional",
-    "Function": "InvokeInsrance"
+    "Function": "InvokeStroy"
   },
   "4": {
     "ID": 4,

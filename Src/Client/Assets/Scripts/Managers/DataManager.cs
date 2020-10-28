@@ -26,7 +26,7 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<int, RideDefine> Rides = null;
     public Dictionary<int, Dictionary<int, SkillDefine>> Skills = null;
     public Dictionary<int, BuffDefine> Buffs = null;
-
+    public Dictionary<int, StoryDefine> Storys = null;
     public DataManager()
     {
         this.DataPath = "Data/";
@@ -70,6 +70,9 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
         this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "StoryDefine.txt");
+        this.Storys = JsonConvert.DeserializeObject<Dictionary<int, StoryDefine>>(json);
     }
 
 
@@ -120,6 +123,9 @@ public class DataManager : Singleton<DataManager>
         json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
         this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
 
+        json = File.ReadAllText(this.DataPath + "StoryDefine.txt");
+        this.Storys = JsonConvert.DeserializeObject<Dictionary<int, StoryDefine>>(json);
+        
         yield return null;
     }
 

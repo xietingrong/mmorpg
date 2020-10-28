@@ -32,11 +32,20 @@
   "4": {
     "ID": 4,
     "Name": "落日空间",
-    "Type": "Normal",
+    "Type": "Story",
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map03",
     "MiniMap": "luoriyuhui",
     "Music": "bgm-map02"
+  },
+  "5": {
+    "ID": 5,
+    "Name": "竞技场",
+    "Type": "Arena",
+    "SubType": "Arena",
+    "PKMode": true,
+    "Resource": "Arena",
+    "Music": "bgm-town"
   }
 }

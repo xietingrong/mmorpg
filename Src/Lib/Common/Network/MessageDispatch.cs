@@ -37,6 +37,15 @@ namespace Network
             if (message.guildAdmin != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.guildAdmin); }
             if (message.Chat != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.Chat); }
             if (message.skillCast != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.skillCast); }
+            if (message.skillHits!= null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.skillHits); }
+            if (message.buffRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.buffRes); }
+            if (message.arennaChallengeReq != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arennaChallengeReq); }
+            if (message.arennaChallengeRes != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arennaChallengeRes); }
+            if (message.arenaBegin!= null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaBegin); }
+            if (message.arenaEnd != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaEnd); }
+            if (message.arenaRoundStar != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaRoundStar); }
+            if (message.arenaRoundEnd != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaRoundEnd); }
+            if (message.arenaReady != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaReady); }
         }
 
         public void Dispatch(T sender, SkillBridge.Message.NetMessageRequest message)
@@ -70,6 +79,11 @@ namespace Network
             if (message.guildAdmin != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.guildAdmin); }
             if (message.Chat != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.Chat); }
             if (message.skillCast != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.skillCast); }
+
+            if (message.arenaChallengeReq != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaChallengeReq); }
+            if (message.arenaChallengeRes!= null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaChallengeRes); }
+            if (message.arenaReady != null) { MessageDistributer<T>.Instance.RaiseEvent(sender, message.arenaReady); }
+
         }
     }
 }

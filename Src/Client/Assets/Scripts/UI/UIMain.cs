@@ -1,5 +1,8 @@
-﻿using Models;
+﻿using Entities;
+using Managers;
+using Models;
 using Services;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +13,32 @@ public class UIMain :MonoSingleton<UIMain> {
     public Text avatarName;
     public Text avatarLevel;
     public UITeam teamwindow;
-  
-	// Use this for initialization
-	void Start () {
-        this.UpdateAvatar();
+    public UICreatureInfo targetUI;
+    public UISkillSlots skillSlots;
+    internal bool Show;
 
-	}
+    // Use this for initialization
+    void Start () {
+        this.UpdateAvatar();
+        this.targetUI.gameObject.SetActive(false);
+        BattleManager.Instance.OnTargetChanged += onTargetChanged;
+        User.Instance.OnCharacterInit += this.skillSlots.UpdateSkills;
+        this.skillSlots.UpdateSkills();
+
+    }
+
+    private void onTargetChanged(Creature target)
+    {
+        if(target!=null)
+        {
+            if (!targetUI.isActiveAndEnabled) targetUI.gameObject.SetActive(true);
+            targetUI.Target = target;
+        }
+        else
+        {
+            targetUI.gameObject.SetActive(false);
+        }
+    }
 
     void UpdateAvatar()
     {
