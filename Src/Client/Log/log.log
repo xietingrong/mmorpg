@@ -1,26 +1,25 @@
-2020-10-29 00:23:52,845 [ 1] INFO  Unity: LoadingManager start
-2020-10-29 00:23:56,295 [ 1] INFO  Unity: DataManager > DataManager()
-2020-10-29 00:24:04,427 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2020-10-29 00:24:04,429 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-10-29 00:24:04,431 [ 1] INFO  Unity: DoConnect
-2020-10-29 00:24:04,433 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-10-29 00:24:04,436 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-10-30 00:30:45,769 [ 1] INFO  Unity: LoadingManager start
+2020-10-30 00:31:02,322 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2020-10-30 00:31:02,324 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-10-30 00:31:02,325 [ 1] INFO  Unity: DoConnect
+2020-10-30 00:31:02,328 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-10-30 00:31:02,330 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-10-29 00:24:04,441 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-10-29 00:24:05,757 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-10-29 00:24:05,760 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-10-29 00:24:07,913 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-10-29 00:24:07,936 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+2020-10-30 00:31:02,334 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-10-30 00:31:03,635 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-10-30 00:31:03,637 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-10-30 00:31:04,512 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-10-30 00:31:04,533 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
 UnityEngine.GameObject:AddComponent()
 PlayerInputController:Start() (at Assets/Scripts/GameObject/PlayerInputController.cs:53)
 
-2020-10-29 00:24:07,941 [ 1] INFO  Unity: Select Char:[2]1234[Wizard]
-2020-10-29 00:24:07,961 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+2020-10-30 00:31:04,538 [ 1] INFO  Unity: Select Char:[2]1234[Wizard]
+2020-10-30 00:31:04,559 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
 UnityEngine.GameObject:AddComponent()
 PlayerInputController:Start() (at Assets/Scripts/GameObject/PlayerInputController.cs:53)
 
-2020-10-29 00:24:10,015 [ 1] INFO  Unity: Select Char:[3]234[Archer]
-2020-10-29 00:24:10,017 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+2020-10-30 00:31:07,005 [ 1] INFO  Unity: Select Char:[3]234[Archer]
+2020-10-30 00:31:07,007 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
 UnityEngine.GameObject:SetActive(Boolean)
 UICharacterView:UpdateCharacter() (at Assets/Scripts/UI/UICharacterView.cs:39)
 UICharacterView:set_CurrectCharacter(Int32) (at Assets/Scripts/UI/UICharacterView.cs:21)
@@ -28,246 +27,1534 @@ UICharacterSelect:OnSelectCharacter(Int32) (at Assets/Scripts/UI/UICharacterSele
 <InitCharacterSelect>c__AnonStorey0:<>m__0() (at Assets/Scripts/UI/UICharacterSelect.cs:119)
 UnityEngine.EventSystems.EventSystem:Update()
 
-2020-10-29 00:24:11,381 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
-2020-10-29 00:24:11,612 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2020-10-29 00:24:11,615 [ 1] INFO  Unity: ItemManager:Init(Id1,Count20)
-2020-10-29 00:24:11,616 [ 1] INFO  Unity: ItemManager:Init(Id2,Count20)
-2020-10-29 00:24:11,637 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2020-10-29 00:24:11,642 [ 1] INFO  Unity: AddCharacter:3:234 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2020-10-29 00:24:11,646 [ 1] INFO  Unity: LoadLevel: MainCity
-2020-10-29 00:24:13,318 [ 1] WARN  Unity: MainPlayerCamera[-451672] Awake
+2020-10-30 00:31:07,916 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
+2020-10-30 00:31:08,167 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-10-30 00:31:08,171 [ 1] INFO  Unity: ItemManager:Init(Id1,Count20)
+2020-10-30 00:31:08,172 [ 1] INFO  Unity: ItemManager:Init(Id2,Count20)
+2020-10-30 00:31:08,186 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2020-10-30 00:31:08,192 [ 1] INFO  Unity: AddCharacter:3:234 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-10-30 00:31:08,197 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-10-30 00:31:10,053 [ 1] WARN  Unity: MainPlayerCamera[-103706] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2020-10-29 00:24:13,319 [ 1] WARN  Unity: GameObjectManager[-451632] Awake
+2020-10-30 00:31:10,055 [ 1] WARN  Unity: GameObjectManager[-103666] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2020-10-29 00:24:13,332 [ 1] WARN  Unity: UIMain[47616] Awake
+2020-10-30 00:31:10,068 [ 1] WARN  Unity: UIMain[64198] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2020-10-29 00:24:13,334 [ 1] WARN  Unity: UIWorldElementManager[48458] Awake
+2020-10-30 00:31:10,069 [ 1] WARN  Unity: UIWorldElementManager[65040] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2020-10-29 00:24:13,391 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-10-29 00:24:13,401 [ 1] WARN  Unity: UIMinimap Start 47886
+2020-10-30 00:31:10,135 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-10-30 00:31:10,144 [ 1] WARN  Unity: UIMinimap Start 64468
 UnityEngine.Debug:LogWarning(Object)
 UIMinimap:Start() (at Assets/Scripts/UI/Minimap/UIMinimap.cs:18)
 
-2020-10-29 00:24:13,402 [ 1] WARN  Unity: MinimapManager.Instance.Minimap[47886] Set
+2020-10-30 00:31:10,145 [ 1] WARN  Unity: MinimapManager.Instance.Minimap[64468] Set
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 Managers.MinimapManager:set_Minimap(UIMinimap) (at Assets/Scripts/Managers/MinimapManager.cs:16)
 UIMinimap:Start() (at Assets/Scripts/UI/Minimap/UIMinimap.cs:19)
 
-2020-10-29 00:24:16,186 [ 1] INFO  Unity: MoveForward
-2020-10-29 00:24:16,188 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:300 
-2020-10-29 00:24:16,663 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2020-10-29 00:24:16,664 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5145,4000,820) DIR:(98,-18,0) SPD:300 
-2020-10-29 00:24:16,763 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
-2020-10-29 00:24:16,764 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5175,3994,820) DIR:(93,-36,0) SPD:300 
-2020-10-29 00:24:16,865 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
-2020-10-29 00:24:16,866 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5205,3982,820) DIR:(84,-54,0) SPD:300 
-2020-10-29 00:24:16,915 [ 1] INFO  Unity: Stop
-2020-10-29 00:24:16,917 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(84,-54,0) SPD:0 
-2020-10-29 00:24:16,950 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
-2020-10-29 00:24:16,951 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(73,-68,0) SPD:0 
-2020-10-29 00:24:17,050 [ 1] INFO  Unity: SetDirection:(58, -82, 0)
-2020-10-29 00:24:17,051 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(58,-82,0) SPD:0 
-2020-10-29 00:24:17,134 [ 1] INFO  Unity: SetDirection:(43, -91, 0)
-2020-10-29 00:24:17,135 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(43,-91,0) SPD:0 
-2020-10-29 00:24:17,218 [ 1] INFO  Unity: SetDirection:(26, -97, 0)
-2020-10-29 00:24:17,219 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(26,-97,0) SPD:0 
-2020-10-29 00:24:17,319 [ 1] INFO  Unity: SetDirection:(6, -100, 0)
-2020-10-29 00:24:17,320 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(6,-100,0) SPD:0 
-2020-10-29 00:24:17,404 [ 1] INFO  Unity: SetDirection:(-12, -99, 0)
-2020-10-29 00:24:17,405 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(-12,-99,0) SPD:0 
-2020-10-29 00:24:17,421 [ 1] INFO  Unity: MoveForward
-2020-10-29 00:24:17,422 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5217,3973,820) DIR:(-12,-99,0) SPD:300 
-2020-10-29 00:24:17,522 [ 1] INFO  Unity: SetDirection:(-31, -95, 0)
-2020-10-29 00:24:17,523 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5211,3943,820) DIR:(-31,-95,0) SPD:300 
-2020-10-29 00:24:18,263 [ 1] INFO  Unity: SetDirection:(-47, -88, 0)
-2020-10-29 00:24:18,264 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5121,3718,820) DIR:(-47,-88,0) SPD:300 
-2020-10-29 00:24:18,415 [ 1] INFO  Unity: SetDirection:(-63, -78, 0)
-2020-10-29 00:24:18,416 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5103,3682,820) DIR:(-63,-78,0) SPD:300 
-2020-10-29 00:24:18,516 [ 1] INFO  Unity: SetDirection:(-77, -64, 0)
-2020-10-29 00:24:18,517 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5085,3658,820) DIR:(-77,-64,0) SPD:300 
-2020-10-29 00:24:18,600 [ 1] INFO  Unity: SetDirection:(-87, -49, 0)
-2020-10-29 00:24:18,601 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5065,3643,820) DIR:(-87,-49,0) SPD:300 
-2020-10-29 00:24:18,701 [ 1] INFO  Unity: SetDirection:(-95, -31, 0)
-2020-10-29 00:24:18,702 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5041,3631,820) DIR:(-95,-31,0) SPD:300 
-2020-10-29 00:24:18,819 [ 1] INFO  Unity: SetDirection:(-99, -14, 0)
-2020-10-29 00:24:18,820 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5006,3617,820) DIR:(-99,-14,0) SPD:300 
-2020-10-29 00:24:22,097 [ 1] INFO  Unity: SetDirection:(-95, -31, 0)
-2020-10-29 00:24:22,098 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4026,3421,820) DIR:(-95,-31,0) SPD:300 
-2020-10-29 00:24:22,249 [ 1] INFO  Unity: SetDirection:(-88, -48, 0)
-2020-10-29 00:24:22,250 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3981,3403,820) DIR:(-88,-48,0) SPD:300 
-2020-10-29 00:24:26,984 [ 1] INFO  Unity: SetPosition:(2756, 2790, 804)
-2020-10-29 00:24:26,985 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2756,2790,804) DIR:(-88,-48,0) SPD:300 
-2020-10-29 00:24:27,589 [ 1] INFO  Unity: SetDirection:(-95, -31, 0)
-2020-10-29 00:24:27,590 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2612,2718,804) DIR:(-95,-31,0) SPD:300 
-2020-10-29 00:24:27,759 [ 1] INFO  Unity: SetDirection:(-99, -13, 0)
-2020-10-29 00:24:27,760 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2562,2698,804) DIR:(-99,-13,0) SPD:300 
-2020-10-29 00:24:27,909 [ 1] INFO  Unity: SetDirection:(-100, 6, 0)
-2020-10-29 00:24:27,910 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2517,2689,804) DIR:(-100,6,0) SPD:300 
-2020-10-29 00:24:28,685 [ 1] INFO  Unity: SetDirection:(-99, -13, 0)
-2020-10-29 00:24:28,686 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2282,2689,804) DIR:(-99,-13,0) SPD:300 
-2020-10-29 00:24:28,872 [ 1] INFO  Unity: TeleporterObject: Character[234] Enter TeleporterObject[3:Ö÷³Ç´«Èëµã1]
-2020-10-29 00:24:32,829 [ 1] INFO  Unity: SetDirection:(-100, 5, 0)
-2020-10-29 00:24:32,830 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(1042,2441,804) DIR:(-100,5,0) SPD:300 
-2020-10-29 00:24:33,222 [ 1] INFO  Unity: SetPosition:(925, 2541, 804)
-2020-10-29 00:24:33,223 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(925,2541,804) DIR:(-100,5,0) SPD:300 
-2020-10-29 00:24:34,165 [ 1] INFO  Unity: TeleporterObject: Character[234] Enter TeleporterObject[1:Ö÷³Ç->Ò°Íâ]
-2020-10-29 00:24:34,166 [ 1] INFO  Unity: MapTeleportRequest :teleporterID:1
-2020-10-29 00:24:34,202 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:1
-2020-10-29 00:24:34,204 [ 1] INFO  Unity: RemoveCharacter:1
-2020-10-29 00:24:34,207 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:5
-2020-10-29 00:24:34,210 [ 1] INFO  Unity: AddCharacter:3:234 Map:2 Entity:(1:pos:(2844,4020,17),dir:(0,100,0),spd:300
-2020-10-29 00:24:34,608 [ 1] INFO  Unity: LoadLevel: Map01
-2020-10-29 00:24:35,007 [ 1] INFO  Unity: AddCharacter:2:¶ñ¹í Map:2 Entity:(2:pos:(5887,1573,7),dir:(9,100,0),spd:0
-2020-10-29 00:24:35,318 [ 1] INFO  Unity: AddCharacter:3:É½Çð¾ÞÈË Map:2 Entity:(3:pos:(5540,1682,4),dir:(20,98,0),spd:0
-2020-10-29 00:24:35,966 [ 1] INFO  Unity: AddCharacter:4:Ð¡¶ñÄ§ Map:2 Entity:(4:pos:(4775,2865,14),dir:(-30,95,0),spd:0
-2020-10-29 00:24:35,991 [ 1] INFO  Unity: AddCharacter:5:ËÀÉñ Map:2 Entity:(5:pos:(5683,4173,0),dir:(28,-96,0),spd:0
-2020-10-29 00:24:36,526 [ 1] WARN  Unity: Failed to create agent because it is not close enough to the NavMesh
+2020-10-30 00:31:12,035 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2020-10-30 00:31:12,036 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:0 
+2020-10-30 00:31:12,135 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2020-10-30 00:31:12,136 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(93,-36,0) SPD:0 
+2020-10-30 00:31:12,237 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
+2020-10-30 00:31:12,239 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(84,-54,0) SPD:0 
+2020-10-30 00:31:12,321 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
+2020-10-30 00:31:12,322 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(73,-68,0) SPD:0 
+2020-10-30 00:31:12,422 [ 1] INFO  Unity: SetDirection:(58, -82, 0)
+2020-10-30 00:31:12,424 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(58,-82,0) SPD:0 
+2020-10-30 00:31:12,439 [ 1] INFO  Unity: MoveForward
+2020-10-30 00:31:12,440 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(58,-82,0) SPD:300 
+2020-10-30 00:31:12,490 [ 1] INFO  Unity: SetDirection:(43, -91, 0)
+2020-10-30 00:31:12,491 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5012,3984,820) DIR:(43,-91,0) SPD:300 
+2020-10-30 00:31:12,591 [ 1] INFO  Unity: SetDirection:(24, -97, 0)
+2020-10-30 00:31:12,594 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5024,3954,820) DIR:(24,-97,0) SPD:300 
+2020-10-30 00:31:12,725 [ 1] INFO  Unity: SetDirection:(7, -100, 0)
+2020-10-30 00:31:12,726 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5032,3914,820) DIR:(7,-100,0) SPD:300 
+2020-10-30 00:31:13,417 [ 1] INFO  Unity: SetDirection:(-12, -99, 0)
+2020-10-30 00:31:13,418 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5032,3709,820) DIR:(-12,-99,0) SPD:300 
+2020-10-30 00:31:13,534 [ 1] INFO  Unity: SetDirection:(-31, -95, 0)
+2020-10-30 00:31:13,535 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5025,3674,820) DIR:(-31,-95,0) SPD:300 
+2020-10-30 00:31:13,618 [ 1] INFO  Unity: SetDirection:(-47, -88, 0)
+2020-10-30 00:31:13,619 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5015,3649,820) DIR:(-47,-88,0) SPD:300 
+2020-10-30 00:31:13,702 [ 1] INFO  Unity: SetDirection:(-62, -79, 0)
+2020-10-30 00:31:13,703 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5005,3629,820) DIR:(-62,-79,0) SPD:300 
+2020-10-30 00:31:13,787 [ 1] INFO  Unity: SetDirection:(-75, -67, 0)
+2020-10-30 00:31:13,788 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4990,3609,820) DIR:(-75,-67,0) SPD:300 
+2020-10-30 00:31:13,890 [ 1] INFO  Unity: SetDirection:(-86, -51, 0)
+2020-10-30 00:31:13,891 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4966,3591,820) DIR:(-86,-51,0) SPD:300 
+2020-10-30 00:31:14,026 [ 1] INFO  Unity: SetDirection:(-94, -35, 0)
+2020-10-30 00:31:14,027 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4930,3564,820) DIR:(-94,-35,0) SPD:300 
+2020-10-30 00:31:17,061 [ 1] INFO  Unity: SetPosition:(4110, 3253, 804)
+2020-10-30 00:31:17,062 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4110,3253,804) DIR:(-94,-35,0) SPD:300 
+2020-10-30 00:31:21,441 [ 1] INFO  Unity: SetPosition:(2876, 2794, 804)
+2020-10-30 00:31:21,442 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2876,2794,804) DIR:(-94,-35,0) SPD:300 
+2020-10-30 00:31:23,783 [ 1] INFO  Unity: TeleporterObject: Character[234] Enter TeleporterObject[3:Ö÷³Ç´«Èëµã1]
+2020-10-30 00:31:24,036 [ 1] INFO  Unity: SetDirection:(-99, -17, 0)
+2020-10-30 00:31:24,037 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2096,2482,804) DIR:(-99,-17,0) SPD:300 
+2020-10-30 00:31:27,692 [ 1] INFO  Unity: SetDirection:(-100, 1, 0)
+2020-10-30 00:31:27,693 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(1001,2263,804) DIR:(-100,1,0) SPD:300 
+2020-10-30 00:31:28,837 [ 1] INFO  Unity: SetDirection:(-98, 20, 0)
+2020-10-30 00:31:28,838 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(661,2263,804) DIR:(-98,20,0) SPD:300 
+2020-10-30 00:31:28,922 [ 1] INFO  Unity: SetPosition:(710, 2338, 804)
+2020-10-30 00:31:28,923 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(710,2338,804) DIR:(-98,20,0) SPD:300 
+2020-10-30 00:31:28,973 [ 1] INFO  Unity: SetDirection:(-93, 37, 0)
+2020-10-30 00:31:28,974 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(690,2342,804) DIR:(-93,37,0) SPD:300 
+2020-10-30 00:31:29,225 [ 1] INFO  Unity: SetPosition:(710, 2339, 804)
+2020-10-30 00:31:29,226 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(710,2339,804) DIR:(-93,37,0) SPD:300 
+2020-10-30 00:31:29,546 [ 1] INFO  Unity: SetPosition:(710, 2339, 804)
+2020-10-30 00:31:29,547 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(710,2339,804) DIR:(-93,37,0) SPD:300 
+2020-10-30 00:31:29,679 [ 1] INFO  Unity: SetDirection:(-84, 54, 0)
+2020-10-30 00:31:29,680 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(670,2355,804) DIR:(-84,54,0) SPD:300 
+2020-10-30 00:31:29,797 [ 1] INFO  Unity: SetDirection:(-73, 69, 0)
+2020-10-30 00:31:29,798 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(642,2376,804) DIR:(-73,69,0) SPD:300 
+2020-10-30 00:31:29,898 [ 1] INFO  Unity: SetDirection:(-57, 82, 0)
+2020-10-30 00:31:29,899 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(618,2394,804) DIR:(-57,82,0) SPD:300 
+2020-10-30 00:31:30,000 [ 1] INFO  Unity: SetDirection:(-39, 92, 0)
+2020-10-30 00:31:30,001 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(600,2418,804) DIR:(-39,92,0) SPD:300 
+2020-10-30 00:31:30,068 [ 1] INFO  Unity: Stop
+2020-10-30 00:31:30,069 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(592,2438,804) DIR:(-39,92,0) SPD:0 
+2020-10-30 00:31:30,085 [ 1] INFO  Unity: SetDirection:(-22, 97, 0)
+2020-10-30 00:31:30,087 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(592,2438,804) DIR:(-22,97,0) SPD:0 
+2020-10-30 00:31:30,106 [ 1] INFO  Unity: MoveForward
+2020-10-30 00:31:30,107 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(592,2438,804) DIR:(-22,97,0) SPD:300 
+2020-10-30 00:31:30,208 [ 1] INFO  Unity: SetDirection:(-5, 100, 0)
+2020-10-30 00:31:30,209 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(586,2468,804) DIR:(-5,100,0) SPD:300 
+2020-10-30 00:31:30,713 [ 1] INFO  Unity: SetDirection:(-22, 97, 0)
+2020-10-30 00:31:30,714 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(586,2623,804) DIR:(-22,97,0) SPD:300 
+2020-10-30 00:31:30,798 [ 1] INFO  Unity: SetDirection:(-39, 92, 0)
+2020-10-30 00:31:30,799 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(581,2648,804) DIR:(-39,92,0) SPD:300 
+2020-10-30 00:31:30,832 [ 1] INFO  Unity: TeleporterObject: Character[234] Enter TeleporterObject[1:Ö÷³Ç->Ò°Íâ]
+2020-10-30 00:31:30,833 [ 1] INFO  Unity: MapTeleportRequest :teleporterID:1
+2020-10-30 00:31:30,867 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:1
+2020-10-30 00:31:30,870 [ 1] INFO  Unity: RemoveCharacter:1
+2020-10-30 00:31:30,874 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:5
+2020-10-30 00:31:30,876 [ 1] INFO  Unity: AddCharacter:3:234 Map:2 Entity:(1:pos:(2844,4020,17),dir:(0,100,0),spd:300
+2020-10-30 00:31:31,320 [ 1] INFO  Unity: LoadLevel: Map01
+2020-10-30 00:31:31,673 [ 1] INFO  Unity: AddCharacter:2:¶ñ¹í Map:2 Entity:(2:pos:(5887,1573,7),dir:(9,100,0),spd:0
+2020-10-30 00:31:32,012 [ 1] INFO  Unity: AddCharacter:3:É½Çð¾ÞÈË Map:2 Entity:(3:pos:(5540,1682,4),dir:(20,98,0),spd:0
+2020-10-30 00:31:32,698 [ 1] INFO  Unity: AddCharacter:4:Ð¡¶ñÄ§ Map:2 Entity:(4:pos:(4775,2865,14),dir:(-30,95,0),spd:0
+2020-10-30 00:31:32,721 [ 1] INFO  Unity: AddCharacter:5:ËÀÉñ Map:2 Entity:(5:pos:(5683,4173,0),dir:(28,-96,0),spd:0
+2020-10-30 00:31:33,237 [ 1] WARN  Unity: Failed to create agent because it is not close enough to the NavMesh
 UnityEngine.GameObject:AddComponent()
 PlayerInputController:Start() (at Assets/Scripts/GameObject/PlayerInputController.cs:53)
 
-2020-10-29 00:24:36,528 [ 1] INFO  Unity: Character_3_234 OnDestroy :ID:1 POS:(2844, 4020, 17) DIR:(0, 100, 0) SPD:300 
-2020-10-29 00:24:36,796 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-10-29 00:24:36,802 [ 1] INFO  Unity: TeleporterObject: Character[234] Enter TeleporterObject[6:Ò°Íâ´«Èëµã]
-2020-10-29 00:24:37,259 [ 1] INFO  Unity: SetPosition:(2844, 4050, 4)
-2020-10-29 00:24:37,260 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4050,4) DIR:(0,100,0) SPD:300 
-2020-10-29 00:24:37,608 [ 1] INFO  Unity: SetPosition:(2844, 4050, 4)
-2020-10-29 00:24:37,609 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4050,4) DIR:(0,100,0) SPD:300 
-2020-10-29 00:24:37,707 [ 1] INFO  Unity: SetDirection:(18, 98, 0)
-2020-10-29 00:24:37,708 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4080,4) DIR:(18,98,0) SPD:300 
-2020-10-29 00:24:37,808 [ 1] INFO  Unity: SetDirection:(36, 93, 0)
-2020-10-29 00:24:37,809 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2850,4110,4) DIR:(36,93,0) SPD:300 
-2020-10-29 00:24:37,909 [ 1] INFO  Unity: SetDirection:(55, 84, 0)
-2020-10-29 00:24:37,910 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2862,4140,4) DIR:(55,84,0) SPD:300 
-2020-10-29 00:24:37,945 [ 1] INFO  Unity: SetPosition:(2844, 4050, 4)
-2020-10-29 00:24:37,946 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4050,4) DIR:(55,84,0) SPD:300 
-2020-10-29 00:24:38,010 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
-2020-10-29 00:24:38,011 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2856,4066,4) DIR:(71,71,0) SPD:300 
-2020-10-29 00:24:38,095 [ 1] INFO  Unity: SetDirection:(82, 57, 0)
-2020-10-29 00:24:38,097 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2876,4086,4) DIR:(82,57,0) SPD:300 
-2020-10-29 00:24:38,145 [ 1] INFO  Unity: MoveForward
-2020-10-29 00:24:38,146 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2888,4095,4) DIR:(82,57,0) SPD:300 
-2020-10-29 00:24:38,195 [ 1] INFO  Unity: SetDirection:(91, 41, 0)
-2020-10-29 00:24:38,196 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2900,4104,4) DIR:(91,41,0) SPD:300 
-2020-10-29 00:24:38,347 [ 1] INFO  Unity: SetDirection:(97, 24, 0)
-2020-10-29 00:24:38,349 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2945,4122,4) DIR:(97,24,0) SPD:300 
-2020-10-29 00:24:38,600 [ 1] INFO  Unity: SetDirection:(100, 4, 0)
-2020-10-29 00:24:38,601 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3020,4137,4) DIR:(100,4,0) SPD:300 
-2020-10-29 00:24:38,701 [ 1] INFO  Unity: SetDirection:(99, -14, 0)
-2020-10-29 00:24:38,702 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3050,4137,4) DIR:(99,-14,0) SPD:300 
-2020-10-29 00:24:38,802 [ 1] INFO  Unity: SetDirection:(94, -34, 0)
-2020-10-29 00:24:38,803 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3080,4131,4) DIR:(94,-34,0) SPD:300 
-2020-10-29 00:24:38,870 [ 1] INFO  Unity: SetDirection:(87, -50, 0)
-2020-10-29 00:24:38,871 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3105,4121,4) DIR:(87,-50,0) SPD:300 
-2020-10-29 00:24:38,971 [ 1] INFO  Unity: SetDirection:(75, -66, 0)
-2020-10-29 00:24:38,972 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3129,4103,4) DIR:(75,-66,0) SPD:300 
-2020-10-29 00:24:39,088 [ 1] INFO  Unity: SetDirection:(62, -78, 0)
-2020-10-29 00:24:39,089 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3157,4082,4) DIR:(62,-78,0) SPD:300 
-2020-10-29 00:24:39,948 [ 1] INFO  Unity: SetDirection:(75, -66, 0)
-2020-10-29 00:24:39,949 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3310,3878,4) DIR:(75,-66,0) SPD:300 
-2020-10-29 00:24:40,049 [ 1] INFO  Unity: SetDirection:(87, -49, 0)
-2020-10-29 00:24:40,051 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3334,3860,4) DIR:(87,-49,0) SPD:300 
-2020-10-29 00:24:40,167 [ 1] INFO  Unity: SetDirection:(95, -33, 0)
-2020-10-29 00:24:40,168 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3362,3846,4) DIR:(95,-33,0) SPD:300 
-2020-10-29 00:24:42,612 [ 1] INFO  Unity: BattleManager.SetTarget:[4:Ð¡¶ñÄ§]
-2020-10-29 00:24:43,504 [ 1] INFO  Unity: SetDirection:(87, -50, 0)
-2020-10-29 00:24:43,504 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4362,3446,4) DIR:(87,-50,0) SPD:300 
-2020-10-29 00:24:44,482 [ 1] INFO  Unity: SendSkillCast: skill:301 caster:1 post:4
-2020-10-29 00:24:44,531 [ 1] INFO  Unity: Stop
-2020-10-29 00:24:44,532 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4610,3260,4) DIR:(87,-50,0) SPD:0 
-2020-10-29 00:24:44,587 [ 1] INFO  Unity: OnSkillCast: skill:301 caster:1 post:4
-2020-10-29 00:24:44,590 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:45,313 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:45,315 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:45,391 [ 1] INFO  Unity: SkillÆÕÍ¨¹¥»÷.CastBullet[0] Target:Ð¡¶ñÄ§
-2020-10-29 00:24:45,814 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:45,817 [ 1] INFO  Unity: DoDamage:1
-2020-10-29 00:24:45,825 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:45,920 [ 1] INFO  Unity: SkillÆÕÍ¨¹¥»÷UpdateSkill Finsh
-2020-10-29 00:24:47,606 [ 1] INFO  Unity: SendSkillCast: skill:302 caster:1 post:4
-2020-10-29 00:24:47,639 [ 1] INFO  Unity: OnSkillCast: skill:302 caster:1 post:4
-2020-10-29 00:24:47,641 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:48,160 [ 1] INFO  Unity: SkillÁ÷Ñª¼ý.UpdateCasting Finsh
-2020-10-29 00:24:48,450 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:48,452 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:48,464 [ 1] INFO  Unity: SkillÁ÷Ñª¼ý.CastBullet[0] Target:Ð¡¶ñÄ§
-2020-10-29 00:24:48,957 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:48,960 [ 1] INFO  Unity: DoDamage:3
-2020-10-29 00:24:49,005 [ 1] INFO  Unity: SkillÁ÷Ñª¼ýUpdateSkill Finsh
-2020-10-29 00:24:51,331 [ 1] INFO  Unity: BattleManager.SetPostion:[SkillBridge.Message.NVector3]
-2020-10-29 00:24:51,332 [ 1] INFO  Unity: SendSkillCast: skill:303 caster:1 post:4
-2020-10-29 00:24:51,382 [ 1] INFO  Unity: OnSkillCast: skill:303 caster:1 post:4
-2020-10-29 00:24:51,383 [ 1] INFO  Unity: SetDirection:(46, -89, 1)
-2020-10-29 00:24:51,384 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:52,612 [ 1] INFO  Unity: Skill¶¾¼ýÓê.UpdateCasting Finsh
-2020-10-29 00:24:53,420 [ 1] INFO  Unity: Skill¶¾¼ýÓêUpdateSkill Finsh
-2020-10-29 00:24:53,422 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:53,424 [ 1] INFO  Unity: DoDamage:3
-2020-10-29 00:24:54,718 [ 1] INFO  Unity: SendSkillCast: skill:304 caster:1 post:4
-2020-10-29 00:24:54,837 [ 1] INFO  Unity: OnSkillCast: skill:304 caster:1 post:4
-2020-10-29 00:24:54,838 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:55,357 [ 1] INFO  Unity: SkillÁ¬Éä.UpdateCasting Finsh
-2020-10-29 00:24:55,947 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:55,948 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:55,964 [ 1] INFO  Unity: SkillÁ¬Éä.CastBullet[0] Target:Ð¡¶ñÄ§
-2020-10-29 00:24:56,448 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:56,451 [ 1] INFO  Unity: DoDamage:4
-2020-10-29 00:24:56,456 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:56,617 [ 1] INFO  Unity: SkillÁ¬Éä.CastBullet[0] Target:Ð¡¶ñÄ§
-2020-10-29 00:24:56,651 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:56,652 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:57,174 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:57,175 [ 1] INFO  Unity: DoDamage:3
-2020-10-29 00:24:57,178 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:57,358 [ 1] INFO  Unity: SkillÁ¬Éä.CastBullet[0] Target:Ð¡¶ñÄ§
-2020-10-29 00:24:57,376 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:57,377 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:57,882 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:24:57,883 [ 1] INFO  Unity: DoDamage:3
-2020-10-29 00:24:57,885 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:24:57,898 [ 1] INFO  Unity: SkillÁ¬ÉäUpdateSkill Finsh
-2020-10-29 00:25:02,279 [ 1] INFO  Unity: SendSkillCast: skill:301 caster:1 post:4
-2020-10-29 00:25:02,330 [ 1] INFO  Unity: OnSkillCast: skill:301 caster:1 post:4
-2020-10-29 00:25:02,332 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:25:02,345 [ 1] INFO  Unity: SkillÆÕÍ¨¹¥»÷UpdateSkill Finsh
-2020-10-29 00:25:03,037 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:25:03,038 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:25:03,543 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:25:03,546 [ 1] INFO  Unity: DoDamage:1
-2020-10-29 00:25:03,550 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:34,946 [ 1] INFO  Unity: BattleManager.SetPostion:[SkillBridge.Message.NVector3]
-2020-10-29 00:26:34,947 [ 1] INFO  Unity: SendSkillCast: skill:303 caster:1 post:4
-2020-10-29 00:26:35,047 [ 1] INFO  Unity: OnSkillCast: skill:303 caster:1 post:4
-2020-10-29 00:26:35,048 [ 1] INFO  Unity: SetDirection:(29, -96, 1)
-2020-10-29 00:26:35,049 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:36,261 [ 1] INFO  Unity: Skill¶¾¼ýÓê.UpdateCasting Finsh
-2020-10-29 00:26:36,277 [ 1] INFO  Unity: Skill¶¾¼ýÓêUpdateSkill Finsh
-2020-10-29 00:26:37,069 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:26:37,070 [ 1] INFO  Unity: DoDamage:3
-2020-10-29 00:26:38,670 [ 1] INFO  Unity: SendSkillCast: skill:304 caster:1 post:4
-2020-10-29 00:26:38,788 [ 1] INFO  Unity: OnSkillCast: skill:304 caster:1 post:4
-2020-10-29 00:26:38,789 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:39,309 [ 1] INFO  Unity: SkillÁ¬Éä.UpdateCasting Finsh
-2020-10-29 00:26:39,325 [ 1] INFO  Unity: SkillÁ¬ÉäUpdateSkill Finsh
-2020-10-29 00:26:39,900 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:26:39,901 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:40,404 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:26:40,406 [ 1] INFO  Unity: DoDamage:1
-2020-10-29 00:26:40,409 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:40,607 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:26:40,608 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:41,112 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:26:41,114 [ 1] INFO  Unity: DoDamage:3
-2020-10-29 00:26:41,118 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:41,331 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:26:41,332 [ 1] INFO  Unity: OnBuff: count:0
-2020-10-29 00:26:41,836 [ 1] INFO  Unity: OnSkillHit: count:1
-2020-10-29 00:26:41,838 [ 1] INFO  Unity: DoDamage:3
-2020-10-29 00:26:41,840 [ 1] INFO  Unity: OnBuff: count:0
+2020-10-30 00:31:33,239 [ 1] INFO  Unity: Character_3_234 OnDestroy :ID:1 POS:(2844, 4020, 17) DIR:(0, 100, 0) SPD:300 
+2020-10-30 00:31:33,596 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-10-30 00:31:33,602 [ 1] INFO  Unity: TeleporterObject: Character[234] Enter TeleporterObject[6:Ò°Íâ´«Èëµã]
+2020-10-30 00:31:33,999 [ 1] INFO  Unity: SetPosition:(2844, 4050, 4)
+2020-10-30 00:31:33,999 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4050,4) DIR:(0,100,0) SPD:300 
+2020-10-30 00:31:34,359 [ 1] INFO  Unity: SetPosition:(2844, 4050, 4)
+2020-10-30 00:31:34,361 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4050,4) DIR:(0,100,0) SPD:300 
+2020-10-30 00:31:34,457 [ 1] INFO  Unity: SetDirection:(18, 98, 0)
+2020-10-30 00:31:34,458 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4080,4) DIR:(18,98,0) SPD:300 
+2020-10-30 00:31:34,558 [ 1] INFO  Unity: SetDirection:(36, 93, 0)
+2020-10-30 00:31:34,559 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2850,4110,4) DIR:(36,93,0) SPD:300 
+2020-10-30 00:31:34,660 [ 1] INFO  Unity: SetDirection:(54, 84, 0)
+2020-10-30 00:31:34,662 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2862,4140,4) DIR:(54,84,0) SPD:300 
+2020-10-30 00:31:34,695 [ 1] INFO  Unity: SetPosition:(2844, 4050, 4)
+2020-10-30 00:31:34,696 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2844,4050,4) DIR:(54,84,0) SPD:300 
+2020-10-30 00:31:34,744 [ 1] INFO  Unity: SetDirection:(68, 73, 0)
+2020-10-30 00:31:34,745 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2853,4062,4) DIR:(68,73,0) SPD:300 
+2020-10-30 00:31:34,845 [ 1] INFO  Unity: MoveForward
+2020-10-30 00:31:34,846 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2871,4086,4) DIR:(68,73,0) SPD:300 
+2020-10-30 00:31:34,846 [ 1] INFO  Unity: SetDirection:(82, 58, 0)
+2020-10-30 00:31:34,847 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2871,4086,4) DIR:(82,58,0) SPD:300 
+2020-10-30 00:31:34,914 [ 1] INFO  Unity: SetDirection:(91, 42, 0)
+2020-10-30 00:31:34,915 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2891,4101,4) DIR:(91,42,0) SPD:300 
+2020-10-30 00:31:35,013 [ 1] INFO  Unity: SetDirection:(97, 23, 0)
+2020-10-30 00:31:35,014 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2921,4113,4) DIR:(97,23,0) SPD:300 
+2020-10-30 00:31:35,097 [ 1] INFO  Unity: SetDirection:(100, 5, 0)
+2020-10-30 00:31:35,098 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2946,4118,4) DIR:(100,5,0) SPD:300 
+2020-10-30 00:31:35,198 [ 1] INFO  Unity: SetDirection:(99, -15, 0)
+2020-10-30 00:31:35,199 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(2976,4118,4) DIR:(99,-15,0) SPD:300 
+2020-10-30 00:31:35,283 [ 1] INFO  Unity: SetDirection:(95, -32, 0)
+2020-10-30 00:31:35,284 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3001,4113,4) DIR:(95,-32,0) SPD:300 
+2020-10-30 00:31:35,369 [ 1] INFO  Unity: SetDirection:(88, -48, 0)
+2020-10-30 00:31:35,370 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3026,4103,4) DIR:(88,-48,0) SPD:300 
+2020-10-30 00:31:35,453 [ 1] INFO  Unity: SetDirection:(78, -63, 0)
+2020-10-30 00:31:35,454 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3046,4093,4) DIR:(78,-63,0) SPD:300 
+2020-10-30 00:31:35,571 [ 1] INFO  Unity: SetDirection:(65, -76, 0)
+2020-10-30 00:31:35,572 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3074,4072,4) DIR:(65,-76,0) SPD:300 
+2020-10-30 00:31:36,263 [ 1] INFO  Unity: SetDirection:(79, -62, 0)
+2020-10-30 00:31:36,264 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3197,3908,4) DIR:(79,-62,0) SPD:300 
+2020-10-30 00:31:36,415 [ 1] INFO  Unity: SetDirection:(88, -47, 0)
+2020-10-30 00:31:36,416 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3233,3881,4) DIR:(88,-47,0) SPD:300 
+2020-10-30 00:31:39,315 [ 1] INFO  Unity: SetPosition:(3984, 3448, 4)
+2020-10-30 00:31:39,316 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(3984,3448,4) DIR:(88,-47,0) SPD:300 
+2020-10-30 00:31:39,936 [ 1] INFO  Unity: SetDirection:(95, -30, 0)
+2020-10-30 00:31:39,937 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4132,3374,4) DIR:(95,-30,0) SPD:300 
+2020-10-30 00:31:40,054 [ 1] INFO  Unity: SetDirection:(99, -11, 0)
+2020-10-30 00:31:40,056 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4167,3360,4) DIR:(99,-11,0) SPD:300 
+2020-10-30 00:31:40,139 [ 1] INFO  Unity: SetDirection:(100, 7, 0)
+2020-10-30 00:31:40,140 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4192,3355,4) DIR:(100,7,0) SPD:300 
+2020-10-30 00:31:40,240 [ 1] INFO  Unity: SetDirection:(96, 27, 0)
+2020-10-30 00:31:40,241 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4222,3355,4) DIR:(96,27,0) SPD:300 
+2020-10-30 00:31:40,307 [ 1] INFO  Unity: SetDirection:(90, 43, 0)
+2020-10-30 00:31:40,308 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4247,3360,4) DIR:(90,43,0) SPD:300 
+2020-10-30 00:31:40,409 [ 1] INFO  Unity: SetDirection:(81, 58, 0)
+2020-10-30 00:31:40,409 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4277,3372,4) DIR:(81,58,0) SPD:300 
+2020-10-30 00:31:41,252 [ 1] INFO  Unity: SetDirection:(90, 43, 0)
+2020-10-30 00:31:41,253 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4477,3522,4) DIR:(90,43,0) SPD:300 
+2020-10-30 00:31:41,387 [ 1] INFO  Unity: SetDirection:(97, 26, 0)
+2020-10-30 00:31:41,388 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4517,3538,4) DIR:(97,26,0) SPD:300 
+2020-10-30 00:31:42,532 [ 1] INFO  Unity: SetDirection:(100, 7, 0)
+2020-10-30 00:31:42,534 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4862,3607,4) DIR:(100,7,0) SPD:300 
+2020-10-30 00:31:42,650 [ 1] INFO  Unity: SetDirection:(99, -13, 0)
+2020-10-30 00:31:42,651 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4897,3607,4) DIR:(99,-13,0) SPD:300 
+2020-10-30 00:31:42,757 [ 1] INFO  Unity: SetDirection:(95, -31, 0)
+2020-10-30 00:31:42,758 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4927,3601,4) DIR:(95,-31,0) SPD:300 
+2020-10-30 00:31:42,925 [ 1] INFO  Unity: SetDirection:(88, -48, 0)
+2020-10-30 00:31:42,927 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4977,3581,4) DIR:(88,-48,0) SPD:300 
+2020-10-30 00:31:43,263 [ 1] INFO  Unity: SetDirection:(78, -62, 0)
+2020-10-30 00:31:43,264 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5061,3539,4) DIR:(78,-62,0) SPD:300 
+2020-10-30 00:31:43,380 [ 1] INFO  Unity: SetDirection:(64, -77, 0)
+2020-10-30 00:31:43,382 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5089,3518,4) DIR:(64,-77,0) SPD:300 
+2020-10-30 00:31:43,481 [ 1] INFO  Unity: SetDirection:(47, -88, 0)
+2020-10-30 00:31:43,482 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5107,3494,4) DIR:(47,-88,0) SPD:300 
+2020-10-30 00:31:43,583 [ 1] INFO  Unity: SetDirection:(29, -96, 0)
+2020-10-30 00:31:43,586 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5119,3470,4) DIR:(29,-96,0) SPD:300 
+2020-10-30 00:31:43,718 [ 1] INFO  Unity: SetDirection:(12, -99, 0)
+2020-10-30 00:31:43,719 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5127,3430,4) DIR:(12,-99,0) SPD:300 
+2020-10-30 00:31:44,493 [ 1] INFO  Unity: SetDirection:(30, -96, 0)
+2020-10-30 00:31:44,494 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5173,3200,4) DIR:(30,-96,0) SPD:300 
+2020-10-30 00:31:44,594 [ 1] INFO  Unity: SetDirection:(48, -88, 0)
+2020-10-30 00:31:44,595 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5185,3170,4) DIR:(48,-88,0) SPD:300 
+2020-10-30 00:31:44,678 [ 1] INFO  Unity: SetDirection:(62, -78, 0)
+2020-10-30 00:31:44,679 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5195,3150,4) DIR:(62,-78,0) SPD:300 
+2020-10-30 00:31:44,762 [ 1] INFO  Unity: SetDirection:(75, -66, 0)
+2020-10-30 00:31:44,764 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5210,3130,4) DIR:(75,-66,0) SPD:300 
+2020-10-30 00:31:44,865 [ 1] INFO  Unity: SetDirection:(87, -49, 0)
+2020-10-30 00:31:44,866 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5234,3112,4) DIR:(87,-49,0) SPD:300 
+2020-10-30 00:31:44,950 [ 1] INFO  Unity: SetDirection:(94, -33, 0)
+2020-10-30 00:31:44,951 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5254,3102,4) DIR:(94,-33,0) SPD:300 
+2020-10-30 00:31:45,035 [ 1] INFO  Unity: SetDirection:(99, -13, 0)
+2020-10-30 00:31:45,036 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5284,3090,4) DIR:(99,-13,0) SPD:300 
+2020-10-30 00:31:45,118 [ 1] INFO  Unity: SetDirection:(100, 5, 0)
+2020-10-30 00:31:45,119 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5309,3085,4) DIR:(100,5,0) SPD:300 
+2020-10-30 00:31:45,219 [ 1] INFO  Unity: SetDirection:(97, 25, 0)
+2020-10-30 00:31:45,220 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5339,3085,4) DIR:(97,25,0) SPD:300 
+2020-10-30 00:31:45,303 [ 1] INFO  Unity: SetDirection:(91, 42, 0)
+2020-10-30 00:31:45,304 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5364,3090,4) DIR:(91,42,0) SPD:300 
+2020-10-30 00:31:45,404 [ 1] INFO  Unity: SetDirection:(80, 60, 0)
+2020-10-30 00:31:45,405 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5394,3102,4) DIR:(80,60,0) SPD:300 
+2020-10-30 00:31:45,506 [ 1] INFO  Unity: SetDirection:(68, 73, 0)
+2020-10-30 00:31:45,507 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5418,3120,4) DIR:(68,73,0) SPD:300 
+2020-10-30 00:31:45,708 [ 1] INFO  Unity: SetDirection:(54, 84, 0)
+2020-10-30 00:31:45,709 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5454,3168,4) DIR:(54,84,0) SPD:300 
+2020-10-30 00:31:47,010 [ 1] INFO  Unity: BattleManager.SetTarget:[5:ËÀÉñ]
+2020-10-30 00:31:47,190 [ 1] INFO  Unity: Stop
+2020-10-30 00:31:47,191 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5721,3524,4) DIR:(54,84,0) SPD:0 
+2020-10-30 00:31:48,238 [ 1] INFO  Unity: SendSkillCast: skill:301 caster:1 post:5
+2020-10-30 00:31:48,373 [ 1] INFO  Unity: OnSkillCast: skill:301 caster:1 post:5
+2020-10-30 00:31:49,088 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:31:49,164 [ 1] INFO  Unity: SkillÆÕÍ¨¹¥»÷.CastBullet[0] Target:ËÀÉñ
+2020-10-30 00:31:49,974 [ 1] INFO  Unity: SkillÆÕÍ¨¹¥»÷UpdateSkill Finsh
+2020-10-30 00:31:57,031 [ 1] INFO  Unity: OnSkillCast: skill:10054 caster:5 post:1
+2020-10-30 00:31:57,033 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:31:57,034 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:31:57,036 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:31:57,138 [ 1] INFO  Unity: OnSkillCast: skill:10053 caster:5 post:1
+2020-10-30 00:31:57,141 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:31:57,143 [ 1] INFO  Unity: OnSkillHit: count:2
+2020-10-30 00:31:57,146 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:31:57,151 [ 1] ERROR Unity: Effect£ºEFX_M1005_SkillC_hit not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:31:57,156 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:31:57,158 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:31:57,733 [ 1] INFO  Unity: SkillËÀÍö·Éµ¯.CastBullet[0] Target:234
+2020-10-30 00:31:58,153 [ 1] INFO  Unity: Skill¹íÓ°±³´ÌUpdateSkill Finsh
+2020-10-30 00:31:58,541 [ 1] INFO  Unity: SkillËÀÍö·Éµ¯UpdateSkill Finsh
+2020-10-30 00:32:01,326 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5683, 4173, 0) DIR:(5, 5, 5) SPD:300 
+2020-10-30 00:32:01,327 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5683,4173,0),dir:(5,5,5),spd:300
+
+2020-10-30 00:32:01,424 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:01,426 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:01,427 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:01,428 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:01,526 [ 1] INFO  Unity: OnSkillCast: skill:10052 caster:5 post:1
+2020-10-30 00:32:01,527 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:01,846 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:01,847 [ 1] INFO  Unity: SkillËÀÍö¼â½ÐUpdateSkill Finsh
+2020-10-30 00:32:01,849 [ 1] INFO  Unity: OnSkillHit: count:2
+2020-10-30 00:32:01,850 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:01,853 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:01,854 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:01,855 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:04,456 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:04,457 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:04,472 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:04,877 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:04,879 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:04,881 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:04,882 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:04,884 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:08,028 [ 1] INFO  Unity: MoveForward
+2020-10-30 00:32:08,029 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5721,3524,4) DIR:(54,84,0) SPD:300 
+2020-10-30 00:32:08,870 [ 1] INFO  Unity: Stop
+2020-10-30 00:32:08,871 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5871,3724,4) DIR:(54,84,0) SPD:0 
+2020-10-30 00:32:08,990 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:08,992 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:09,006 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:09,411 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:09,446 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:09,449 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:09,450 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:09,451 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:09,819 [ 1] INFO  Unity: OnSkillCast: skill:10054 caster:5 post:1
+2020-10-30 00:32:09,821 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:09,835 [ 1] INFO  Unity: SkillËÀÍö·Éµ¯UpdateSkill Finsh
+2020-10-30 00:32:09,918 [ 1] INFO  Unity: SetDirection:(38, 93, 0)
+2020-10-30 00:32:09,919 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5871,3724,4) DIR:(38,93,0) SPD:0 
+2020-10-30 00:32:10,341 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5917, 3720, 200) DIR:(-22, -22, -22) SPD:300 
+2020-10-30 00:32:10,342 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5917,3720,200),dir:(-22,-22,-22),spd:300
+
+2020-10-30 00:32:10,544 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5864, 3717, -2) DIR:(-22, -22, -22) SPD:0 
+2020-10-30 00:32:10,545 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5864,3717,-2),dir:(-22,-22,-22),spd:0
+
+2020-10-30 00:32:10,546 [ 1] INFO  Unity: OnSkillHit: count:2
+2020-10-30 00:32:10,547 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:10,549 [ 1] ERROR Unity: Effect£ºEFX_M1005_SkillC_hit not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:10,550 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:10,551 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:11,589 [ 1] INFO  Unity: OnSkillCast: skill:10052 caster:5 post:1
+2020-10-30 00:32:11,590 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:11,603 [ 1] INFO  Unity: SkillËÀÍö¼â½ÐUpdateSkill Finsh
+2020-10-30 00:32:11,891 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:12,009 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:12,010 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:12,025 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:12,211 [ 1] INFO  Unity: OnSkillCast: skill:10053 caster:5 post:1
+2020-10-30 00:32:12,212 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:12,226 [ 1] INFO  Unity: Skill¹íÓ°±³´ÌUpdateSkill Finsh
+2020-10-30 00:32:12,414 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:12,415 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:12,417 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:12,418 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:12,419 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:13,239 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:13,240 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:15,109 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:15,110 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:15,125 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:15,531 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:15,533 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:15,536 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:15,538 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:15,539 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:18,111 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:18,113 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:18,127 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:18,532 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:18,534 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:18,538 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:18,539 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:18,541 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:21,130 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:21,131 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:21,146 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:21,551 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:21,552 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:21,554 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:21,555 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:21,556 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:21,652 [ 1] INFO  Unity: OnSkillCast: skill:10052 caster:5 post:1
+2020-10-30 00:32:21,653 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:21,668 [ 1] INFO  Unity: SkillËÀÍö¼â½ÐUpdateSkill Finsh
+2020-10-30 00:32:21,973 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:24,163 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:24,164 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:24,179 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:24,575 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:24,577 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:24,579 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:24,580 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:24,581 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:25,702 [ 1] INFO  Unity: BattleManager.SetTarget:[5:ËÀÉñ]
+2020-10-30 00:32:26,275 [ 1] INFO  Unity: BattleManager.SetTarget:[5:ËÀÉñ]
+2020-10-30 00:32:26,277 [ 1] INFO  Unity: BattleManager.SetPostion:[SkillBridge.Message.NVector3]
+2020-10-30 00:32:26,278 [ 1] INFO  Unity: SendSkillCast: skill:303 caster:1 post:5
+2020-10-30 00:32:26,344 [ 1] INFO  Unity: OnSkillCast: skill:303 caster:1 post:5
+2020-10-30 00:32:26,346 [ 1] INFO  Unity: SetDirection:(-97, 22, -9)
+2020-10-30 00:32:27,187 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:27,188 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:27,202 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:27,305 [ 1] INFO  Unity: OnSkillCast: skill:10053 caster:5 post:1
+2020-10-30 00:32:27,306 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:27,320 [ 1] INFO  Unity: Skill¹íÓ°±³´ÌUpdateSkill Finsh
+2020-10-30 00:32:27,558 [ 1] INFO  Unity: Skill¶¾¼ýÓê.UpdateCasting Finsh
+2020-10-30 00:32:27,607 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:27,609 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:27,611 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:27,612 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:27,612 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:28,349 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:28,351 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:28,381 [ 1] INFO  Unity: Skill¶¾¼ýÓêUpdateSkill Finsh
+2020-10-30 00:32:28,472 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:28,473 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:28,477 [ 1] INFO  Unity: OnBuff: count:2
+2020-10-30 00:32:28,478 [ 1] INFO  Unity:    Buff:1:6Add
+2020-10-30 00:32:28,481 [ 1] INFO  Unity:    Buff:1:6Remove
+2020-10-30 00:32:29,840 [ 1] INFO  Unity: OnSkillCast: skill:10054 caster:5 post:1
+2020-10-30 00:32:29,841 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:29,856 [ 1] INFO  Unity: SkillËÀÍö·Éµ¯UpdateSkill Finsh
+2020-10-30 00:32:30,262 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:30,263 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:30,277 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:30,582 [ 1] INFO  Unity: OnSkillHit: count:2
+2020-10-30 00:32:30,583 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:30,589 [ 1] ERROR Unity: Effect£ºEFX_M1005_SkillC_hit not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:30,591 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:30,592 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:30,687 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:30,688 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:30,690 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:30,691 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:30,692 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:30,710 [ 1] INFO  Unity: MoveForward
+2020-10-30 00:32:30,711 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5871,3724,4) DIR:(-97,22,-9) SPD:300 
+2020-10-30 00:32:30,932 [ 1] INFO  Unity: SetDirection:(-91, 41, 0)
+2020-10-30 00:32:30,933 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5801,3738,4) DIR:(-91,41,0) SPD:300 
+2020-10-30 00:32:31,033 [ 1] INFO  Unity: SetDirection:(-82, 57, 0)
+2020-10-30 00:32:31,034 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5771,3750,4) DIR:(-82,57,0) SPD:300 
+2020-10-30 00:32:31,118 [ 1] INFO  Unity: SetDirection:(-71, 71, 0)
+2020-10-30 00:32:31,119 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5751,3765,4) DIR:(-71,71,0) SPD:300 
+2020-10-30 00:32:31,219 [ 1] INFO  Unity: SetDirection:(-56, 83, 0)
+2020-10-30 00:32:31,220 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5727,3789,4) DIR:(-56,83,0) SPD:300 
+2020-10-30 00:32:31,388 [ 1] INFO  Unity: SetDirection:(-40, 92, 0)
+2020-10-30 00:32:31,389 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5697,3829,4) DIR:(-40,92,0) SPD:300 
+2020-10-30 00:32:31,424 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5864, 3717, -2) DIR:(-83, -83, -83) SPD:300 
+2020-10-30 00:32:31,425 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5864,3717,-2),dir:(-83,-83,-83),spd:300
+
+2020-10-30 00:32:31,643 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5670, 3802, -22) DIR:(-83, -83, -83) SPD:0 
+2020-10-30 00:32:31,644 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5670,3802,-22),dir:(-83,-83,-83),spd:0
+
+2020-10-30 00:32:31,744 [ 1] INFO  Unity: OnSkillCast: skill:10052 caster:5 post:1
+2020-10-30 00:32:31,745 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:31,759 [ 1] INFO  Unity: SkillËÀÍö¼â½ÐUpdateSkill Finsh
+2020-10-30 00:32:32,046 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:33,226 [ 1] INFO  Unity: SetPosition:(5446, 4361, 98)
+2020-10-30 00:32:33,227 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5446,4361,98) DIR:(-40,92,0) SPD:300 
+2020-10-30 00:32:33,327 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5670, 3802, -22) DIR:(-36, -36, -36) SPD:300 
+2020-10-30 00:32:33,328 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5670,3802,-22),dir:(-36,-36,-36),spd:300
+
+2020-10-30 00:32:33,429 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:33,430 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:33,445 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:33,529 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5434, 4349, 86) DIR:(-36, -36, -36) SPD:0 
+2020-10-30 00:32:33,530 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5434,4349,86),dir:(-36,-36,-36),spd:0
+
+2020-10-30 00:32:33,698 [ 1] INFO  Unity: SetDirection:(-23, 97, 0)
+2020-10-30 00:32:33,699 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5388,4506,98) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:33,850 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:33,852 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:33,854 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:33,855 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:33,856 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:33,969 [ 1] INFO  Unity: SetPosition:(5380, 4550, 194)
+2020-10-30 00:32:33,970 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5380,4550,194) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:34,052 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5434, 4349, 86) DIR:(-23, -23, -23) SPD:300 
+2020-10-30 00:32:34,054 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5434,4349,86),dir:(-23,-23,-23),spd:300
+
+2020-10-30 00:32:34,255 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5372, 4542, 186) DIR:(-23, -23, -23) SPD:0 
+2020-10-30 00:32:34,256 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5372,4542,186),dir:(-23,-23,-23),spd:0
+
+2020-10-30 00:32:34,558 [ 1] INFO  Unity: SetPosition:(5350, 4689, 288)
+2020-10-30 00:32:34,559 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5350,4689,288) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:35,147 [ 1] INFO  Unity: SetPosition:(5316, 4843, 386)
+2020-10-30 00:32:35,148 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5316,4843,386) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:35,198 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5372, 4542, 186) DIR:(-15, -15, -15) SPD:300 
+2020-10-30 00:32:35,199 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5372,4542,186),dir:(-15,-15,-15),spd:300
+
+2020-10-30 00:32:35,399 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5311, 4838, 381) DIR:(-15, -15, -15) SPD:0 
+2020-10-30 00:32:35,400 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5311,4838,381),dir:(-15,-15,-15),spd:0
+
+2020-10-30 00:32:35,991 [ 1] INFO  Unity: SetPosition:(5261, 5075, 484)
+2020-10-30 00:32:35,992 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5261,5075,484) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:36,125 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5311, 4838, 381) DIR:(-18, -18, -18) SPD:300 
+2020-10-30 00:32:36,127 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5311,4838,381),dir:(-18,-18,-18),spd:300
+
+2020-10-30 00:32:36,344 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5255, 5069, 478) DIR:(-18, -18, -18) SPD:0 
+2020-10-30 00:32:36,345 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5255,5069,478),dir:(-18,-18,-18),spd:0
+
+2020-10-30 00:32:36,445 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:36,447 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:36,461 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:36,867 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:36,868 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:36,870 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:36,871 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:36,872 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:39,039 [ 1] INFO  Unity: Stop
+2020-10-30 00:32:39,040 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5079,5985,484) DIR:(-23,97,0) SPD:0 
+2020-10-30 00:32:39,158 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5255, 5069, 478) DIR:(-18, -18, -18) SPD:300 
+2020-10-30 00:32:39,160 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5255,5069,478),dir:(-18,-18,-18),spd:300
+
+2020-10-30 00:32:39,360 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5073, 5979, 478) DIR:(-18, -18, -18) SPD:0 
+2020-10-30 00:32:39,362 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5073,5979,478),dir:(-18,-18,-18),spd:0
+
+2020-10-30 00:32:39,462 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:39,463 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:39,477 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:39,831 [ 1] INFO  Unity: MoveForward
+2020-10-30 00:32:39,832 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5079,5985,484) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:39,884 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:39,885 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:39,888 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:39,888 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:39,889 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:40,556 [ 1] INFO  Unity: Stop
+2020-10-30 00:32:40,558 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5036,6200,484) DIR:(-23,97,0) SPD:0 
+2020-10-30 00:32:40,608 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5073, 5979, 478) DIR:(-16, -16, -16) SPD:300 
+2020-10-30 00:32:40,609 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5073,5979,478),dir:(-16,-16,-16),spd:300
+
+2020-10-30 00:32:40,827 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5030, 6194, 478) DIR:(-16, -16, -16) SPD:0 
+2020-10-30 00:32:40,829 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(5030,6194,478),dir:(-16,-16,-16),spd:0
+
+2020-10-30 00:32:41,047 [ 1] INFO  Unity: MoveForward
+2020-10-30 00:32:41,048 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5036,6200,484) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:41,761 [ 1] INFO  Unity: OnSkillCast: skill:10052 caster:5 post:1
+2020-10-30 00:32:41,763 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:41,778 [ 1] INFO  Unity: SkillËÀÍö¼â½ÐUpdateSkill Finsh
+2020-10-30 00:32:41,898 [ 1] INFO  Unity: SetPosition:(4969, 6410, 392)
+2020-10-30 00:32:41,899 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4969,6410,392) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:41,966 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(5030, 6194, 478) DIR:(-25, -25, -25) SPD:300 
+2020-10-30 00:32:41,967 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(5030,6194,478),dir:(-25,-25,-25),spd:300
+
+2020-10-30 00:32:42,067 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:42,185 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(4961, 6402, 384) DIR:(-25, -25, -25) SPD:0 
+2020-10-30 00:32:42,186 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(4961,6402,384),dir:(-25,-25,-25),spd:0
+
+2020-10-30 00:32:42,188 [ 1] INFO  Unity: SetPosition:(4950, 6497, 287)
+2020-10-30 00:32:42,189 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4950,6497,287) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:42,386 [ 1] INFO  Unity: OnSkillCast: skill:10053 caster:5 post:1
+2020-10-30 00:32:42,388 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:42,402 [ 1] INFO  Unity: Skill¹íÓ°±³´ÌUpdateSkill Finsh
+2020-10-30 00:32:42,488 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:42,489 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:42,504 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:42,521 [ 1] INFO  Unity: SetPosition:(4928, 6599, 184)
+2020-10-30 00:32:42,522 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4928,6599,184) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:42,909 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:42,911 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:42,913 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:42,914 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:42,915 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:43,011 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(4961, 6402, 384) DIR:(-11, -11, -11) SPD:300 
+2020-10-30 00:32:43,012 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(4961,6402,384),dir:(-11,-11,-11),spd:300
+
+2020-10-30 00:32:43,214 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(4924, 6595, 180) DIR:(-11, -11, -11) SPD:0 
+2020-10-30 00:32:43,217 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(4924,6595,180),dir:(-11,-11,-11),spd:0
+
+2020-10-30 00:32:43,432 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:43,434 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:43,686 [ 1] INFO  Unity: SetPosition:(4852, 6945, 84)
+2020-10-30 00:32:43,688 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4852,6945,84) DIR:(-23,97,0) SPD:300 
+2020-10-30 00:32:43,736 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(4924, 6595, 180) DIR:(-19, -19, -19) SPD:300 
+2020-10-30 00:32:43,737 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(4924,6595,180),dir:(-19,-19,-19),spd:300
+
+2020-10-30 00:32:43,942 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(4846, 6939, 78) DIR:(-19, -19, -19) SPD:0 
+2020-10-30 00:32:43,943 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(4846,6939,78),dir:(-19,-19,-19),spd:0
+
+2020-10-30 00:32:45,093 [ 1] INFO  Unity: Stop
+2020-10-30 00:32:45,095 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4768,7365,84) DIR:(-23,97,0) SPD:0 
+2020-10-30 00:32:45,195 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(4846, 6939, 78) DIR:(-18, -18, -18) SPD:300 
+2020-10-30 00:32:45,196 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:MoveFwd entity:(5:pos:(4846,6939,78),dir:(-18,-18,-18),spd:300
+
+2020-10-30 00:32:45,398 [ 1] INFO  Unity: OnEntityChanged :ID:5 POS:(4762, 7359, 78) DIR:(-18, -18, -18) SPD:0 
+2020-10-30 00:32:45,399 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+    [5]evt:Idle entity:(5:pos:(4762,7359,78),dir:(-18,-18,-18),spd:0
+
+2020-10-30 00:32:45,516 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:45,518 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:45,531 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:45,920 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:45,922 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:45,924 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:45,925 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:45,926 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:48,516 [ 1] INFO  Unity: OnSkillCast: skill:10051 caster:5 post:1
+2020-10-30 00:32:48,518 [ 1] WARN  Unity: Parameter 'Standby' does not exist.
+UnityEngine.Animator:SetBool(String, Boolean)
+EntityController:SetStandby(Boolean) (at Assets/Scripts/GameObject/EntityController.cs:171)
+Entities.Creature:SetStandby(Boolean) (at Assets/Scripts/Entities/Creature.cs:146)
+Entities.Creature:CastSkill(Int32, Creature, NVector3) (at Assets/Scripts/Entities/Creature.cs:138)
+Services.BattleService:OnSkillCast(Object, SkillCastResponse) (at Assets/Scripts/Services/BattleService.cs:65)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillCastResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:48,530 [ 1] INFO  Unity: Skill»Ó»÷UpdateSkill Finsh
+2020-10-30 00:32:49,539 [ 1] INFO  Unity: OnSkillHit: count:1
+2020-10-30 00:32:49,542 [ 1] INFO  Unity: DoDamage:1
+2020-10-30 00:32:49,545 [ 1] ERROR Unity: Effect£ºEFX_M1005_AtkA_hit_prefab not Found
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+FXManager:PlayEffect(EffectType, String, Transform, Vector3, Single) (at Assets/Scripts/Managers/FXManager.cs:35)
+EntityController:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature:PlayEffect(EffectType, String, Creature, Single) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill:DoHitDamages(List`1) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill:DoHit(Int32, List`1) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill:DoHit(NSkillHitInfo) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature:DoSkillHit(NSkillHitInfo) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService:OnSkillHit(Object, SkillHitResponse) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1:RaiseEvent(Object, SkillHitResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:417)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:435)
+
+2020-10-30 00:32:49,548 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) [0x0003e] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Managers\FXManager.cs:37 
+  at EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x0002b] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\GameObject\EntityController.cs:180 
+  at Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) [0x00027] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:255 
+  at Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) [0x00064] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:264 
+  at Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) [0x00021] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:253 
+  at Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) [0x0002a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Battle\Skill.cs:244 
+  at Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) [0x00015] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Entities\Creature.cs:199 
+  at Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) [0x0006a] in G:\ExtremeWorld\mmorpg\Src\Client\Assets\Scripts\Services\BattleService.cs:84 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg) [0x00000] in <filename unknown>:0 
+2020-10-30 00:32:49,549 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, FXManager.PlayEffect (EffectType type, System.String name, UnityEngine.Transform target, Vector3 pos, Single duration) (at Assets/Scripts/Managers/FXManager.cs:37)
+EntityController.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/GameObject/EntityController.cs:180)
+Entities.Creature.PlayEffect (EffectType type, System.String name, Entities.Creature target, Single duration) (at Assets/Scripts/Entities/Creature.cs:255)
+Battle.Skill.DoHitDamages (System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:264)
+Battle.Skill.DoHit (Int32 hitId, System.Collections.Generic.List`1 damages) (at Assets/Scripts/Battle/Skill.cs:253)
+Battle.Skill.DoHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Battle/Skill.cs:244)
+Entities.Creature.DoSkillHit (SkillBridge.Message.NSkillHitInfo hit) (at Assets/Scripts/Entities/Creature.cs:199)
+Services.BattleService.OnSkillHit (System.Object sender, SkillBridge.Message.SkillHitResponse message) (at Assets/Scripts/Services/BattleService.cs:84)
+Network.MessageDistributer`1[System.Object].RaiseEvent[SkillHitResponse] (System.Object sender, SkillBridge.Message.SkillHitResponse msg)
+}</args></log4net.Error>
+2020-10-30 00:32:49,591 [ 1] INFO  Unity: Character_3_234 OnDestroy :ID:1 POS:(4768, 7365, 84) DIR:(-23, 97, 0) SPD:0 
+2020-10-30 00:32:49,592 [ 1] INFO  Unity: Character_2_¶ñ¹í OnDestroy :ID:2 POS:(5887, 1573, 7) DIR:(9, 100, 0) SPD:0 
+2020-10-30 00:32:49,594 [ 1] INFO  Unity: Character_3_É½Çð¾ÞÈË OnDestroy :ID:3 POS:(5540, 1682, 4) DIR:(20, 98, 0) SPD:0 
+2020-10-30 00:32:49,595 [ 1] INFO  Unity: Character_4_Ð¡¶ñÄ§ OnDestroy :ID:4 POS:(4775, 2865, 14) DIR:(-30, 95, 0) SPD:0 
+2020-10-30 00:32:49,597 [ 1] INFO  Unity: Character_5_ËÀÉñ OnDestroy :ID:5 POS:(4762, 7359, 78) DIR:(-18, -18, -18) SPD:0 
+2020-10-30 00:32:49,602 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-10-30 00:32:49,604 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
+

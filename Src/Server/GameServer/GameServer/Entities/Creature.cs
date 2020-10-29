@@ -58,9 +58,9 @@ namespace GameServer.Entities
                 this.isDeath = true;
                 damage.WillDead = true;
             }
-           // this.DoDamage(damage, source);
+            this.OnDamage(damage, source);
         }
-
+       
         internal  int Distance(Creature target)
         {
             return (int)Vector3Int.Distance(this.Position, target.Position);

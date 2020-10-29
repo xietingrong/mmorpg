@@ -17,7 +17,7 @@ namespace GameServer.Entities
     {
         AIAgent AI;
         //Creature Target;
-        public Map map;
+        //public Map map;
         private Vector3Int moveTarget;
         private Vector3 movepPostion;
         public Monster(int tid, int level, Vector3Int pos, Vector3Int dir) : base(CharacterType.Monster, tid, level, pos, dir)
@@ -57,7 +57,7 @@ namespace GameServer.Entities
         }
         protected override void OnDamage(NDamageInfo damage,Creature source)
         {
-            if(this.AI == null)
+            if(this.AI != null)
             {
                 this.AI.OnDamage(damage,source);
             }

@@ -42,7 +42,7 @@ namespace Managers
         {
             Entity entity = null;
             this.entities.TryGetValue(data.Id, out entity);
-            if(entity ==null)
+            if(entity !=null)
             {
                 if (data.Entity != null)
                 {

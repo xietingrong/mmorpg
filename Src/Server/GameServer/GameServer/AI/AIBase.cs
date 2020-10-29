@@ -55,7 +55,7 @@ namespace GameServer.AI
                 Skill skill = this.owner.FindSkill(context, SkillType.Skill | SkillType.Passive);
                 if(skill != null)
                 {
-                    this.owner.CastSkill(context, normalSkill.Define.ID);
+                    this.owner.CastSkill(context, skill.Define.ID);
                     return true;
                 }
               

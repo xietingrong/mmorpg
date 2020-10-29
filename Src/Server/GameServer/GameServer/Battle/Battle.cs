@@ -72,7 +72,7 @@ namespace GameServer.Battle
                 message.skillHits.Result = Result.Success;
                 message.skillHits.Errormsg = "";
             }
-            if (this.BuffActions.Count == 0)
+            if (this.BuffActions.Count > 0)
             {
                 message.buffRes = new BuffResponse();
                 message.buffRes.Buffs.AddRange(this.BuffActions);

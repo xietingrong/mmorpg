@@ -93,10 +93,9 @@ namespace GameServer.Battle
                 //{
                 //    this.DoSkillDamage(context);
                 //}
+              
             }
-
-            Log.InfoFormat("Skill{0}.Cast Result:[{1}] Statu:{2}", this.Define.Name, result, this.Status);
-            this.cd = this.Define.Cd;
+           // this.cd = this.Define.Cd;
             return result;
         }
 
@@ -167,9 +166,14 @@ namespace GameServer.Battle
             if (this.cd > 0)
             {
                 this.cd -= Time.deltaTime;
+                Log.InfoFormat("Skill{0}.UpdateCD() cd {1} Time.deltaTime {2}  ", this.Define.Name, this.cd, Time.deltaTime);
             }
             if (cd < 0)
+            {
+                Log.InfoFormat("Skill{0}.UpdateCD() cd {1}------------------", this.Define.Name, this.cd);
                 this.cd = 0;
+            }
+                
         }
         private void UpdateSkill()
         {
