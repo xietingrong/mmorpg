@@ -1,7 +1,0 @@
-{
-  "VitalityLimit": 30,
-  "VitalityRevocerSpeed": 360,
-  "VitalityExpend": 5,
-  "VitalityBuyNum": 10,
-  "VitalityBuyPrice": 100
-}

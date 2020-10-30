@@ -1,3 +1,0 @@
-
-2020-08-17 16:46:23,592 [1] [INFO ] [GameServer] £ºGame Server Init
-2020-08-17 16:46:24,464 [1] [INFO ] [GameServer] £ºDataManager > DataManager()
