@@ -24,7 +24,7 @@ namespace Common.Data
         public float MPCost { get; set; }
         public bool Bullet { get; set; }
         public float BulletSpeed { get; set; }
-        public float BulletResouece { get; set; }
+        public string BulletResource { get; set; }
         public float AOERange { get; set; }
         public string AOEEffect { get; set; }
         public string SkillAnim { get; set; }

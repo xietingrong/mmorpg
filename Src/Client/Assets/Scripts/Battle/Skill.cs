@@ -74,7 +74,7 @@ namespace Battle
             this.castTime = 0;
             this.skillTime = 0;
             this.cd = this.Define.Cd;
-            
+            this.Hit = 0;
             this.Target = target;
             this.TargetPostion = pos;
             this.Owner.PlayAnim(this.Define.SkillAnim) ;
@@ -82,11 +82,13 @@ namespace Battle
             this.HitMap.Clear();
             if(this.Define.CastTarget ==Common.Battle.TargetType.Position)
             {
-                this.Owner.FaceTo(this.TargetPostion.ToVector3Int());
+                if(this.TargetPostion!= null)
+                    this.Owner.FaceTo(this.TargetPostion.ToVector3Int());
             }
-            else if (this.Define.CastTarget == Common.Battle.TargetType.Position)
+            else if (this.Define.CastTarget == Common.Battle.TargetType.Target)
             {
-                this.Owner.FaceTo(this.Target.position);
+                if(this.Target!= null)
+                    this.Owner.FaceTo(this.Target.position);
             }
             if (this.Define.CastTime > 0)
             {
@@ -198,7 +200,9 @@ namespace Battle
         }
         private void DoHit()
         {
-            if(this.Define.Bullet)
+           
+
+            if (this.Define.Bullet)
             {
                 this.CastBullet();
             }
@@ -222,9 +226,10 @@ namespace Battle
         void CastBullet()
         {
             Bullet bullet = new Bullet(this);
-            Debug.LogFormat("Skill{0}.CastBullet[{1}] Target:{2}", this.Define.Name, this.Define.BulletResouece, this.Target!= null? this.Target.Name:"");
+            Debug.LogFormat("Skill{0}.CastBullet[{1}] Target:{2}", this.Define.Name, this.Define.BulletResource, this.Target!= null? this.Target.Name:"");
 
             this.Bullets.Add(bullet);
+            this.Owner.PlayEffect(EffectType.Bullet, this.Define.BulletResource, this.Target, bullet.duration);
         }
      
 

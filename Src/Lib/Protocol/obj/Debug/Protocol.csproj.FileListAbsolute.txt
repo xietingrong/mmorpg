@@ -7,3 +7,11 @@ G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csproj.CopyComplete
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.dll
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.pdb
 G:\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csprojAssemblyReference.cache
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\Protocol.dll
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\Protocol.pdb
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\protobuf-net.dll
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\bin\Debug\protobuf-net.xml
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csproj.CoreCompileInputs.cache
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.csproj.CopyComplete
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.dll
+E:\BaiduNetdiskDownload\ExtremeWorld\mmorpg\Src\Lib\Protocol\obj\Debug\Protocol.pdb

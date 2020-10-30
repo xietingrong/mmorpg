@@ -41,6 +41,7 @@ public class EntityEffectManager : MonoBehaviour
         Debug.LogFormat("PlayEffec:{0}:{1}", this.name, name);
         if (type == EffectType.Bullet)
         {
+            if (target == null) return;
             EffectController effect = InstantiateEffect(name);
             effect.Init(type, this.transform, target, offset, duration);
             effect.gameObject.SetActive(true);

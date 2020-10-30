@@ -38,6 +38,7 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
         if (entity != null)
         {
             EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId, this);
+            this.EffectMgr = this.gameObject.GetComponent<EntityEffectManager>();
             this.UpdateTransform();
         }
 
@@ -175,11 +176,18 @@ public class EntityController : MonoBehaviour, IEntityNotify, IEntityController
 
     public void PlayEffect(EffectType type, string name, Creature target, float duration)
     {
-        Transform transform = target.Controller.GetTransform();
+        Transform transform = null;
+        Vector3 pos = new Vector3();
+        if (target!= null)
+        {
+            transform = target.Controller.GetTransform();
+            pos = target.GetHitOffset();
+        }
+          
         if (type == EffectType.Position || type == EffectType.Hit)
-            FXManager.Instance.PlayEffect(type, name, transform, target.GetHitOffset(), duration);
+            FXManager.Instance.PlayEffect(type, name, transform, pos, duration);
         else
-            this.EffectMgr.PlayEffect(type, name, transform, target.GetHitOffset(), duration);
+            this.EffectMgr.PlayEffect(type, name, transform, pos, duration);
     }
 
     public Transform GetTransform()

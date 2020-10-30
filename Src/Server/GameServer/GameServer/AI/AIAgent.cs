@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GameServer.AI
 {
-     class AIAgent
+    class AIAgent
     {
         private Monster monster;
         private AIBase ai;
@@ -18,13 +18,13 @@ namespace GameServer.AI
             string ainame = monster.Define.AI;
             if (string.IsNullOrEmpty(ainame))
                 ainame = AIMonsterPassive.ID;
-            switch(ainame)
+            switch (ainame)
             {
                 case AIMonsterPassive.ID:
-                    this.ai = new AIMonsterPassive(monster);
+                    // this.ai = new AIMonsterPassive(monster);
                     break;
                 case AIBoss.ID:
-                    this.ai = new AIBoss(monster);
+                    //this.ai = new AIBoss(monster);
                     break;
             }
         }
@@ -34,14 +34,17 @@ namespace GameServer.AI
             {
                 this.ai.Update();
             }
-           
+
         }
-      
+
 
         internal void OnDamage(NDamageInfo damage, Creature source)
         {
-            this.ai.OnDamage(damage, source);
+            if (this.ai != null) {
+                this.ai.OnDamage(damage, source);
+            }
         }
     }
 }
+
 

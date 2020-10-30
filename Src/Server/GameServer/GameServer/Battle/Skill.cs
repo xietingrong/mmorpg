@@ -348,7 +348,7 @@ namespace GameServer.Battle
          void CastBullet(NSkillHitInfo hitInfo )
         {
             Context.Battle.AddHitInfo(hitInfo);
-            Log.InfoFormat("Skill{0}.CastBullet[{1}] Target;{2}", this.Define.Name, this.Define.BulletResouece,this.Context.Target.Name);
+            Log.InfoFormat("Skill{0}.CastBullet[{1}] Target;{2}", this.Define.Name, this.Define.BulletResource, this.Context.Target.Name);
             Bullet bullet = new Bullet(this, this.Context.Target, hitInfo);
 
             this.Bullets.Add(bullet);
