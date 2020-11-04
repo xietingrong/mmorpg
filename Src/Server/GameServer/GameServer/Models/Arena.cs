@@ -59,7 +59,9 @@ namespace GameServer.Models
         internal void PlayerEnter()
         {
             this.SourceMapRed = PlayerLeaveMap(this.Red);
-            this.SourceMapBlue = PlayerLeaveMap(this.Blue);
+            if(this.Blue != null)
+                this.SourceMapBlue = PlayerLeaveMap(this.Blue);
+            PlayerEnterArena();
         }
         private Map PlayerLeaveMap(NetConnection<NetSession> player)
         {
@@ -73,19 +75,24 @@ namespace GameServer.Models
             TeleporterDefine redPoint = DataManager.Instance.Teleporters[this.RedPoint];
             this.Red.Session.Character.Position = redPoint.Position;
             this.Red.Session.Character.Direction = redPoint.Direction;
-
-            TeleporterDefine bluePoint = DataManager.Instance.Teleporters[this.BluePoint];
-            this.Blue.Session.Character.Position = redPoint.Position;
-            this.Blue.Session.Character.Direction = redPoint.Direction;
+            if (this.Blue != null)
+            {
+                TeleporterDefine bluePoint = DataManager.Instance.Teleporters[this.BluePoint];
+                this.Blue.Session.Character.Position = redPoint.Position;
+                this.Blue.Session.Character.Direction = redPoint.Direction;
+            }
 
             this.map.AddCharacter(this.Red, this.Red.Session.Character);
-            this.map.AddCharacter(this.Blue, this.Blue.Session.Character);
+            if (this.Blue != null)
+                this.map.AddCharacter(this.Blue, this.Blue.Session.Character);
 
             this.map.CharacterEnter(this.Red, this.Red.Session.Character);
-            this.map.CharacterEnter(this.Blue, this.Blue.Session.Character);
+            if (this.Blue != null)
+                this.map.CharacterEnter(this.Blue, this.Blue.Session.Character);
 
             EntityManager.Instance.AddEntity(this.map.ID, this.map.InstanceId, this.Red.Session.Character);
-            EntityManager.Instance.AddEntity(this.map.ID, this.map.InstanceId, this.Blue.Session.Character);
+            if(this.Blue!= null)
+                 EntityManager.Instance.AddEntity(this.map.ID, this.map.InstanceId, this.Blue.Session.Character);
         }
         internal void Update()
         {

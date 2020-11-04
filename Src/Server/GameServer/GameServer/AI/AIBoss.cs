@@ -10,9 +10,8 @@ namespace GameServer.AI
     class AIBoss:AIBase
     {
         public const string ID = "AIBoss";
-        private Monster monster;
 
-        public AIBoss(Monster monster) : base(monster)
+        public AIBoss(Creature mons) : base(mons)
         {
 
         }

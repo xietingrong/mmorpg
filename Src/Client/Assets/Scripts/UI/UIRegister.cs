@@ -7,7 +7,14 @@ using SkillBridge.Message;
 
 public class UIRegister : MonoBehaviour {
 
-
+    /// <summary>
+    /// 上次账号
+    /// </summary>
+    const string LAST_USER_NAME = "LAST_USER_NAME";
+    /// <summary>
+    /// 上次密码
+    /// </summary>
+    const string LASR_PASSWORD = "LASR_PASSWORD";
     public InputField username;
     public InputField password;
     public InputField passwordConfirm;
@@ -17,6 +24,11 @@ public class UIRegister : MonoBehaviour {
     // Use this for initialization
     void Start () {
         UserService.Instance.OnRegister = OnRegister;
+        string lastUserName = PlayerPrefs.GetString(LAST_USER_NAME, string.Empty);
+        if (lastUserName != null)
+        {
+            CloseRegister();
+        } 
     }
 
     // Update is called once per frame

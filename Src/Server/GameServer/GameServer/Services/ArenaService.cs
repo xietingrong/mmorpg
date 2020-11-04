@@ -37,21 +37,28 @@ namespace GameServer.Services
         private void OnArenaChallengeRequest(NetConnection<NetSession> sender, ArenaChallengeRequest request)
         {
             Character character = sender.Session.Character;
-            Log.InfoFormat("OnArenaChallengeRequest: RedId:{0}:RedName{1} BlueId:{2} BlueName:{3]", request.ArenaInfo.Red.EntityId, request.ArenaInfo.Red.Name, request.ArenaInfo.Blue.EntityId, request.ArenaInfo.Blue.Name);
+           // Log.InfoFormat("OnArenaChallengeRequest: RedId:{0}:RedName{1} BlueId:{2} BlueName:{3]", request.ArenaInfo.Red.EntityId, request.ArenaInfo.Red.Name, request.ArenaInfo.Blue.EntityId, request.ArenaInfo.Blue.Name);
             NetConnection<NetSession> blue = null;
             if (request.ArenaInfo.Blue.EntityId > 0)
             {
                 blue = SessionManager.Instance.GetSession(request.ArenaInfo.Blue.EntityId);
             }
+            else
+            {//pve对战 
+                var arena = ArenaManager.Instance.NewArena(request.ArenaInfo, sender, null);
+                this.SendArenaBegin(arena);
+                return;
+            }
             if (blue == null)
             {
+
                 sender.Session.Response.arennaChallengeRes = new ArenaChallengeResponse();
                 sender.Session.Response.arennaChallengeRes.Result = Result.Failed;
                 sender.Session.Response.arennaChallengeRes.Errormsg = "对方不存在或不在线";
                 sender.SendResponse();
                 return;
             }
-            Log.InfoFormat("ForwardArenaChallengeRequest: RedId:{0}:RedName{1} BlueId:{2} BlueName:{3]", request.ArenaInfo.Red.EntityId, request.ArenaInfo.Red.Name, request.ArenaInfo.Blue.EntityId, request.ArenaInfo.Blue.Name);
+            //Log.InfoFormat("ForwardArenaChallengeRequest: RedId:{0}:RedName{1} BlueId:{2} BlueName:{3]", request.ArenaInfo.Red.EntityId, request.ArenaInfo.Red.Name, request.ArenaInfo.Blue.EntityId, request.ArenaInfo.Blue.Name);
             blue.Session.Response.arennaChallengeReq = request;
             blue.SendResponse();
         }
@@ -59,7 +66,7 @@ namespace GameServer.Services
         private void OnArenaChallengeResponse(NetConnection<NetSession> sender, ArenaChallengeResponse reponse)
         {
             Character character = sender.Session.Character;
-            Log.InfoFormat("OnArenaChallengeReponse: RedId:{0}:RedName{1} BlueId:{2} BlueName:{3]", reponse.ArenaInfo.Red.EntityId, reponse.ArenaInfo.Red.Name, reponse.ArenaInfo.Blue.EntityId, reponse.ArenaInfo.Blue.Name);
+           // Log.InfoFormat("OnArenaChallengeReponse: RedId:{0}:RedName{1} BlueId:{2} BlueName:{3]", reponse.ArenaInfo.Red.EntityId, reponse.ArenaInfo.Red.Name, reponse.ArenaInfo.Blue.EntityId, reponse.ArenaInfo.Blue.Name);
             var requester = SessionManager.Instance.GetSession(reponse.ArenaInfo.Red.EntityId);
 
             if (requester == null)
@@ -90,8 +97,13 @@ namespace GameServer.Services
             arenaBegin.ArenaInfo = arena.ArenaInfo;
             arena.Red.Session.Response.arenaBegin = arenaBegin;
             arena.Red.SendResponse();
-            arena.Blue.Session.Response.arenaBegin = arenaBegin;
-            arena.Blue.SendResponse();
+
+            if(arena.Blue!= null)//pve对战 
+            {
+                arena.Blue.Session.Response.arenaBegin = arenaBegin;
+                arena.Blue.SendResponse();
+            }
+           
         }
 
         private void OnArenaReady(NetConnection<NetSession> sender, ArenaReadyRequest message)

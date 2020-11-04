@@ -35,5 +35,6 @@ namespace GameServer
         public virtual DbSet<TGuild> Guilds { get; set; }
         public virtual DbSet<TGuildMember> GuildMembers { get; set; }
         public virtual DbSet<TGuildApply> GuildApplies { get; set; }
+        public virtual DbSet<TPet> TPets { get; set; }
     }
 }

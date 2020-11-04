@@ -1,6 +1,9 @@
 ﻿using Common;
+using Common.Battle;
 using Common.Data;
 using Common.Utils;
+using GameServer.AI;
+using GameServer.Battle;
 using GameServer.Core;
 using GameServer.Managers;
 using GameServer.Models;
@@ -29,7 +32,7 @@ namespace GameServer.Entities
         public QuestManager QuestManager;
         public StatusManager StatusManager;
         public FriendManager FriendManager;
-
+        public PetManager PetManager;
         public Team Team;
         public double TeamUpdateTS;
 
@@ -41,6 +44,7 @@ namespace GameServer.Entities
         public Character(CharacterType type,TCharacter cha):
             base(type, cha.TID, cha.Level,new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
         {
+            this.AI = new AIAgent(this);
             this.Data = cha;
             this.Id = cha.ID;
             this.Info.Id = cha.ID;
@@ -62,7 +66,8 @@ namespace GameServer.Entities
             this.StatusManager = new StatusManager(this);
             this.FriendManager = new FriendManager(this);
             this.FriendManager.GetFriendInfos(this.Info.Friends);
-
+            this.PetManager = new PetManager(this);
+            
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
 
             this.Chat = new Chat(this);
@@ -141,7 +146,7 @@ namespace GameServer.Entities
 
         public void PostProcess(NetMessageResponse message)
         {
-            Log.InfoFormat("PostProcess > Character: characterID:{0}:{1}", this.Id, this.Info.Name);
+           // Log.InfoFormat("PostProcess > Character: characterID:{0}:{1}", this.Id, this.Info.Name);
             this.FriendManager.PostProcess(message);
 
             if (this.Team != null)
@@ -183,6 +188,7 @@ namespace GameServer.Entities
         /// </summary>
         public void Clear()
         {
+            this.PetManager.RemovePet() ;
             this.FriendManager.OfflineNotify();
         }
 
@@ -195,6 +201,54 @@ namespace GameServer.Entities
                 Class = this.Info.Class,
                 Level = this.Info.Level
             };
+        }
+        public override void Update()
+        {
+            base.Update();
+
+            UpdateMovement();
+
+            foreach (var item in PetManager.Monsters)
+            {
+                item.Update();
+            }
+            if (this.BattleState == Common.Battle.CharState.InBattle)
+            {
+                IsAiUse = true;
+            }
+
+        }
+        private Vector3 movepPostion;
+        public override void UpdateMovement()
+        {
+           
+        }
+
+        protected override void OnDamage(NDamageInfo damage, Creature source)
+        {
+            if (this.AI != null)
+            {
+                this.AI.OnDamage(damage, source);
+            }
+        }
+
+        public override Skill FindSkill(BattleContext context, SkillType type)
+        {
+            Skill cancast = null;
+            foreach (var skill in this.SkillMgr.skills)
+            {
+                if ((skill.Define.Type & type) != skill.Define.Type)
+                    continue;
+
+                var result = skill.CanCast(context);
+                if (result == SkillResult.Casting)
+                    return null;
+                if (result == SkillResult.Ok)
+                {
+                    cancast = skill;
+                }
+            }
+            return cancast;
         }
     }
 }

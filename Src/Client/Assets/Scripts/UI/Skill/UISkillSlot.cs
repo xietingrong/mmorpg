@@ -1,4 +1,5 @@
 ﻿using Battle;
+using Common.Data;
 using Managers;
 using Models;
 using SkillBridge.Message;
@@ -80,7 +81,9 @@ public class UISkillSlot : MonoBehaviour,IPointerClickHandler
                 MessageBox.Show("技能：[" + this.skill.Define.Name + " ]施法范围");
                 break;
         }
+      
         BattleManager.Instance.CastSkill(this.skill);
+       
     }
 
 

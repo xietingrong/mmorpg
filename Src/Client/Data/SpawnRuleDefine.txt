@@ -66,5 +66,16 @@
       "SpawnPeriod": 60,
       "SpawnPoint": 4
     }
+  },
+  "5": {
+    "7": {
+      "ID": 7,
+      "MapID": "5",
+      "SpawnMonID": 1006,
+      "SpawnLevel": 1,
+      "SpawnPeriod": 5,
+      "SpawnPoint": 7
+    },
+   
   }
 }

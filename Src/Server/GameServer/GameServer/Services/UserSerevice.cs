@@ -106,12 +106,12 @@ namespace GameServer.Services
                 TID = (int)request.Class,
                 Level = 1,
                 MapID = 1,
-                MapPosX = 5000, //初始出生位置X
-                MapPosY = 4500, //初始出生位置Y
+                MapPosX = 1500, //初始出生位置X
+                MapPosY = 2600, //初始出生位置Y
                 MapPosZ = 820,
                 Gold = 100000, //初始10万金币
-                HP=1000,
-                MP =1000,
+                HP=100,
+                MP =50,
                 Equips = new byte[28]
             };
             var bag = new TCharacterBag();
@@ -132,6 +132,21 @@ namespace GameServer.Services
                 Owner = character,
                 ItemID = 2,
                 ItemCount = 20,
+            });
+           
+            character.TPets.Add(new TPet()
+            {
+                Owner = character,
+                Id = 1,
+                Tid = 1006,
+                Level = 1,
+            });
+            character.TPets.Add(new TPet()
+            {
+                Owner = character,
+                Id = 2,
+                Tid = 1006,
+                Level = 1,
             });
             sender.Session.User.Player.Characters.Add(character);
 
@@ -173,6 +188,7 @@ namespace GameServer.Services
             sender.SendResponse();
 
             MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
+          
         }
 
         void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)
@@ -183,8 +199,9 @@ namespace GameServer.Services
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
             sender.Session.Response.gameLeave.Result = Result.Success;
             sender.Session.Response.gameLeave.Errormsg = "None";
-
             sender.SendResponse();
+
+
         }
 
         public void CharacterLeave(Character character)

@@ -16,10 +16,12 @@ namespace GameServer.Battle
         public Creature Target;
         public NSkillCastInfo CastSkill;
         public SkillResult Result;
-        public Vector3Int Position
+        public NVector3 Position
         {
             get
             {
+                if (this.CastSkill == null)
+                    return new Vector3Int();
                 return this.CastSkill.Postion;
             }
         }

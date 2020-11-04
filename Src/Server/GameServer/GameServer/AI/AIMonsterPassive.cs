@@ -11,7 +11,7 @@ namespace GameServer.AI
     {
         public const string ID = "AIMonsterPassive";
   
-        public AIMonsterPassive(Monster monster):base(monster)
+        public AIMonsterPassive(Creature mons):base(mons)
         {
            
         }

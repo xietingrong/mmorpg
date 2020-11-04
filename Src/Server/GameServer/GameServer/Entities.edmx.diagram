@@ -23,6 +23,8 @@
         <EntityTypeShape EntityType="ExtremeWorldModel.TGuildApply" Width="1.5" PointX="3.75" PointY="11.75" />
         <AssociationConnector Association="ExtremeWorldModel.TGuildTGuildMember" />
         <AssociationConnector Association="ExtremeWorldModel.TGuildTGuildApply" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TPet" Width="1.5" PointX="8" PointY="9.125" />
+        <AssociationConnector Association="ExtremeWorldModel.Pet" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

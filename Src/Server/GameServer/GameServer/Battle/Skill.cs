@@ -117,7 +117,7 @@ namespace GameServer.Battle
             }
             if(this.Define.CastTarget == Common.Battle.TargetType.Position)
             {
-                if (context.Position == new Vector3Int())
+                if (context.Position == null)
                     return SkillResult.InvalidTarget;
                 if (this.Owner.Distance(context.Position) > this.Define.CastRange)
                     return SkillResult.OutOfRange;
@@ -166,11 +166,11 @@ namespace GameServer.Battle
             if (this.cd > 0)
             {
                 this.cd -= Time.deltaTime;
-                Log.InfoFormat("Skill{0}.UpdateCD() cd {1} Time.deltaTime {2}  ", this.Define.Name, this.cd, Time.deltaTime);
+               // Log.InfoFormat("Skill{0}.UpdateCD() cd {1} Time.deltaTime {2}  ", this.Define.Name, this.cd, Time.deltaTime);
             }
             if (cd < 0)
             {
-                Log.InfoFormat("Skill{0}.UpdateCD() cd {1}------------------", this.Define.Name, this.cd);
+               // Log.InfoFormat("Skill{0}.UpdateCD() cd {1}------------------", this.Define.Name, this.cd);
                 this.cd = 0;
             }
                 

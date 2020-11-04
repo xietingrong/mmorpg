@@ -10,27 +10,30 @@ namespace GameServer.AI
 {
     class AIAgent
     {
-        private Monster monster;
+        private Creature mons;
         private AIBase ai;
-        public AIAgent(Monster monster)
+        public AIAgent(Creature mons)
         {
-            this.monster = monster;
-            string ainame = monster.Define.AI;
+            this.mons = mons;
+            string ainame = mons.Define.AI;
             if (string.IsNullOrEmpty(ainame))
                 ainame = AIMonsterPassive.ID;
             switch (ainame)
             {
                 case AIMonsterPassive.ID:
-                    // this.ai = new AIMonsterPassive(monster);
+                     this.ai = new AIMonsterPassive(mons);
                     break;
                 case AIBoss.ID:
-                    //this.ai = new AIBoss(monster);
+                    this.ai = new AIBoss(mons);
+                    break;
+                case AIPet.ID:
+                    this.ai = new AIPet(mons);
                     break;
             }
         }
         internal void Update()
         {
-            if (this.ai != null)
+            if (this.ai != null )
             {
                 this.ai.Update();
             }
@@ -42,6 +45,13 @@ namespace GameServer.AI
         {
             if (this.ai != null) {
                 this.ai.OnDamage(damage, source);
+            }
+        }
+        internal void OnOwner(Character father, int dest)
+        {
+            if (this.ai != null)
+            {
+                this.ai.OnOwner(father,dest);
             }
         }
     }

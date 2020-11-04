@@ -60,7 +60,7 @@ namespace GameServer.Managers
         {
             this.spawned = true;
             Log.InfoFormat("Map[{0}] Spawn[{1}:Mon:{2},lv:{3}] At Point;{4}", this.Define.MapID, this.Define.ID, this.Define.SpawnMonID, this.Define, this.Define);
-            this.Map.MonsterManager.Create(this.Define.SpawnMonID, this.Define.SpawnLevel, this.spawnPoint.Position, this.spawnPoint.Direction);
+            this.Map.MonsterManager.Create(this.Define.SpawnMonID, this.Define.SpawnLevel, this.spawnPoint.Position, this.spawnPoint.Direction, this.Define.ID);
         }   
     }
 }

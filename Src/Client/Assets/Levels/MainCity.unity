@@ -29393,7 +29393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &869287915
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34273,7 +34273,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4341760909876430, guid: d5391e1f63d0bde4b87e6c38a4bf145c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 27.935814
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4341760909876430, guid: d5391e1f63d0bde4b87e6c38a4bf145c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -34298,6 +34298,24 @@ Prefab:
     - target: {fileID: 1865119113577650, guid: d5391e1f63d0bde4b87e6c38a4bf145c, type: 2}
       propertyPath: m_Name
       value: MainPlayerCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 20652036606558768, guid: d5391e1f63d0bde4b87e6c38a4bf145c,
+        type: 2}
+      propertyPath: field of view
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865119113577650, guid: d5391e1f63d0bde4b87e6c38a4bf145c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699072701709414, guid: d5391e1f63d0bde4b87e6c38a4bf145c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114406636976840150, guid: d5391e1f63d0bde4b87e6c38a4bf145c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5391e1f63d0bde4b87e6c38a4bf145c, type: 2}
@@ -60349,7 +60367,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1823431362
 RectTransform:
   m_ObjectHideFlags: 0

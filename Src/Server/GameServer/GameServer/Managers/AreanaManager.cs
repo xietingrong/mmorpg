@@ -23,7 +23,7 @@ namespace GameServer.Managers
                 InstanceIndexes.Enqueue(i);
             }
         }
-        public Arena NewArena(ArenaInfo info, NetConnection<NetSession> red, NetConnection<NetSession> blue)
+        public Arena NewArena(ArenaInfo info, NetConnection<NetSession> red, NetConnection<NetSession> blue = null)
         {
             var instance = InstanceIndexes.Dequeue();
             var map = MapManager.Instance.GetInstance(ArenaMapID, instance);

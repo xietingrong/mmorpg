@@ -118,5 +118,39 @@
     "Descript": null,
     "Position": null,
     "Direction": null
+  },
+  "9": {
+    "ID": 9,
+    "Name": "竞技场",
+    "MapID": 5,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": -398,
+      "Y": -4,
+      "Z": 2671
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "10": {
+    "ID": 10,
+    "Name": "竞技场",
+    "MapID": 5,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 378,
+      "Y": -16,
+      "Z": 2671
+    },
+    "Direction": {
+      "X": -100,
+      "Y": -2,
+      "Z": 0
+    }
   }
 }

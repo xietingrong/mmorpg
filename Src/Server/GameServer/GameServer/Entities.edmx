@@ -16,6 +16,7 @@
     <EntitySet Name="Guilds" EntityType="ExtremeWorldModel.Store.Guilds" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="GuildMembers" EntityType="ExtremeWorldModel.Store.GuildMembers" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="GuildApplies" EntityType="ExtremeWorldModel.Store.GuildApplies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TPets" EntityType="ExtremeWorldModel.Store.TPets" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="UserPlayer" Association="ExtremeWorldModel.Store.UserPlayer">
       <End Role="User" EntitySet="Users" />
       <End Role="Player" EntitySet="Players" />
@@ -47,6 +48,10 @@
     <AssociationSet Name="TGuildTGuildApply" Association="ExtremeWorldModel.Store.TGuildTGuildApply">
       <End Role="TGuild" EntitySet="Guilds" />
       <End Role="TGuildApply" EntitySet="GuildApplies" />
+    </AssociationSet>
+    <AssociationSet Name="Pet" Association="ExtremeWorldModel.Store.Pet">
+      <End Role="TPet" EntitySet="TPets" />
+      <End Role="TCharacter" EntitySet="Characters" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Users">
@@ -165,6 +170,15 @@
     <Property Name="ApplyTime" Type="datetime" Nullable="false" />
     <Property Name="GuildId" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="TPets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="Tid" Type="int" Nullable="false" />
+    <Property Name="Owner_ID" Type="int" Nullable="false" />
+  </EntityType>
   <Association Name="UserPlayer">
     <End Role="User" Type="ExtremeWorldModel.Store.Users" Multiplicity="*" />
     <End Role="Player" Type="ExtremeWorldModel.Store.Players" Multiplicity="1" />
@@ -261,6 +275,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="Pet">
+    <End Role="TPet" Type="ExtremeWorldModel.Store.TPets" Multiplicity="*" />
+    <End Role="TCharacter" Type="ExtremeWorldModel.Store.Characters" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="TCharacter">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TPet">
+        <PropertyRef Name="Owner_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -318,6 +344,11 @@
             <End Role="TGuild" EntitySet="Guilds" />
             <End Role="TGuildApply" EntitySet="GuildApplies" />
           </AssociationSet>
+          <EntitySet Name="TPets" EntityType="ExtremeWorldModel.TPet" />
+          <AssociationSet Name="Pet" Association="ExtremeWorldModel.Pet">
+            <End Role="TPet" EntitySet="TPets" />
+            <End Role="TCharacter" EntitySet="Characters" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="TPlayer">
           <Key>
@@ -354,6 +385,7 @@
           <Property Name="GuildId" Type="Int32" Nullable="false" />
           <Property Name="HP" Type="Int32" Nullable="false" />
           <Property Name="MP" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TPets" Relationship="ExtremeWorldModel.Pet" FromRole="TCharacter" ToRole="TPet" />
         </EntityType>
         <Association Name="PlayerCharacter">
           <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
@@ -509,6 +541,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="TPet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Level" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <NavigationProperty Name="Owner" Relationship="ExtremeWorldModel.Pet" FromRole="TPet" ToRole="TCharacter" />
+          <Property Name="Tid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+        </EntityType>
+        <Association Name="Pet">
+          <End Type="ExtremeWorldModel.TPet" Role="TPet" Multiplicity="*" />
+          <End Type="ExtremeWorldModel.TCharacter" Role="TCharacter" Multiplicity="1" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -638,6 +683,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="TPets">
+      <EntityTypeMapping TypeName="IsTypeOf(ExtremeWorldModel.TPet)">
+        <MappingFragment StoreEntitySet="TPets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Tid" ColumnName="Tid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <AssociationSetMapping Name="UserPlayer" TypeName="ExtremeWorldModel.UserPlayer" StoreEntitySet="Users">
       <EndProperty Name="Player">
         <ScalarProperty Name="ID" ColumnName="Player_ID" />
@@ -660,6 +714,14 @@
       </EndProperty>
       <EndProperty Name="TCharacter">
         <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Pet" TypeName="ExtremeWorldModel.Pet" StoreEntitySet="TPets">
+      <EndProperty Name="TCharacter">
+        <ScalarProperty Name="ID" ColumnName="Owner_ID" />
+      </EndProperty>
+      <EndProperty Name="TPet">
+        <ScalarProperty Name="Id" ColumnName="Id" />
       </EndProperty>
     </AssociationSetMapping>
   </EntityContainerMapping>

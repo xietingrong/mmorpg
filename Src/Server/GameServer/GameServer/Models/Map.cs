@@ -13,6 +13,7 @@ using GameServer.Managers;
 using GameServer.Entities;
 using GameServer.Services;
 using GameServer.Battle;
+using Common.Battle;
 
 namespace GameServer.Models
 {
@@ -42,8 +43,8 @@ namespace GameServer.Models
         /// <summary>
         /// 地图中的角色，以CharacterID为Key
         /// </summary>
-        Dictionary<int, MapCharacter> MapCharacters = new Dictionary<int, MapCharacter>();
-
+        public Dictionary<int, MapCharacter> MapCharacters = new Dictionary<int, MapCharacter>();
+        public List< MapCharacter> MapArrCharacters = new List<MapCharacter>();
 
         /// <summary>
         /// 刷怪管理器
@@ -66,9 +67,32 @@ namespace GameServer.Models
         internal void Update()
         {
             SpawnManager.Update();
+           
             this.Battle.Update();
+            
         }
+        internal void AddBattle( Creature cha)
+        {
+            this.Battle.JoinBattle(cha);
+            cha.CanAttNum = 0;
+            cha.Spwnum = 1;
+            cha.BattleState = CharState.InBattle;
+            foreach (var value in MonsterManager.Monsters)
+            {
+                if(value.Value.Spwnum>= 7 )
+                {
+                    value.Value.ZhengYing = 2;
 
+                }
+                else
+                {
+                    value.Value.ZhengYing = 1;
+                }
+                value.Value.CanAttNum = 0;
+                value.Value.BattleState = CharState.InBattle;
+                this.Battle.JoinBattle(value.Value);
+            }
+        } 
         /// <summary>
         /// 角色进入地图
         /// </summary>
@@ -78,8 +102,9 @@ namespace GameServer.Models
             Log.InfoFormat("CharacterEnter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
 
             AddCharacter(conn, character);
-
-            conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
+           
+           
+           conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
             conn.Session.Response.mapCharacterEnter.mapId = this.Define.ID;
             foreach (var kv in this.MapCharacters)
             {
@@ -92,6 +117,9 @@ namespace GameServer.Models
                 conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);
             }
             conn.SendResponse();
+
+            character.OnEnterMap(this);
+            character.PetManager.PetInit();
         }
 
         public void AddCharacter(NetConnection<NetSession> conn, Character character)
@@ -99,7 +127,11 @@ namespace GameServer.Models
             Log.InfoFormat("AddCharacte: Map:{0} characterId:{1}", this.Define.ID, character.Id);
             character.Info.mapId = this.ID;
             if (!this.MapCharacters.ContainsKey(character.Id))
+            {
                 this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+              
+            }
+                
         }
 
         internal void CharacterLeave(Character cha)
@@ -139,7 +171,9 @@ namespace GameServer.Models
                 if (kv.Value.character.entityId == entity.Id)
                 {
                     kv.Value.character.Position = entity.Entity.Position;
-                    kv.Value.character.Direction = entity.Entity.Direction;
+                    Log.InfoFormat("UpdateEntity ===character.Position ={0}", kv.Value.character.Position);
+
+                   kv.Value.character.Direction = entity.Entity.Direction;
                     kv.Value.character.Speed = entity.Entity.Speed;
                     if (entity.Event == EntityEvent.Ride)
                     {

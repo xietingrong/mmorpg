@@ -1,5 +1,7 @@
 ﻿using Battle;
+using Common.Data;
 using Entities;
+using Models;
 using Services;
 using SkillBridge.Message;
 using System;
@@ -49,8 +51,23 @@ namespace Managers
         }
         public void CastSkill(Skill skill)
         {
+            //特殊进入战斗地图
+           if (CurrentTarget != null && CurrentTarget.Info.Type == CharacterType.Monster && User.Instance.CurrentMapData.Type != MapType.Arena)
+            {
+                enterbattlemap(CurrentTarget);
+                return;
+            }
             int target = CurrentTarget != null ? currentTarget.entityId : 0;
             BattleService.Instance.SendSkillCast(skill.Define.ID, skill.Owner.entityId, target, currentPostion);
+
+          
+        }
+
+        private void enterbattlemap(Creature CurrentTarget)
+        {
+
+            ArenaService.Instance.SendArenaChangeRequest();
+
         }
     }
 }

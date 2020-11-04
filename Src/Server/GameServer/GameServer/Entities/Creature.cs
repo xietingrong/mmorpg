@@ -1,5 +1,6 @@
 ﻿using Common.Battle;
 using Common.Data;
+using GameServer.AI;
 using GameServer.Battle;
 using GameServer.Core;
 using GameServer.Managers;
@@ -15,7 +16,13 @@ namespace GameServer.Entities
 {
     class Creature : Entity
     {
-       
+        public int Spwnum = 0;
+        public int CanAttNum = 0;
+        public bool IsAttOver = false;
+        public bool IsAtt = false;
+        public int ZhengYing = 0;//1红方 2绿方
+        public AIAgent AI;
+        public bool IsAiUse = false;
         public int Id { get; set; }
         public string Name { get { return this.Info.Name; } }
 
@@ -29,6 +36,8 @@ namespace GameServer.Entities
         public CharacterState state;
         public CharState BattleState;
         public Map map;
+        
+       
         public Creature(CharacterType type, int configId, int level, Vector3Int pos, Vector3Int dir) :
            base(pos, dir)
         {
@@ -40,7 +49,7 @@ namespace GameServer.Entities
             this.Info.EntityId = this.entityId;
             this.Define = DataManager.Instance.Characters[configId];
             this.Info.Name = this.Define.Name;
-
+          
             InitSkills();
             InitBuffs();
             this.Attributes = new Attributes();
@@ -61,6 +70,7 @@ namespace GameServer.Entities
             this.OnDamage(damage, source);
         }
        
+       
         internal  int Distance(Creature target)
         {
             return (int)Vector3Int.Distance(this.Position, target.Position);
@@ -69,11 +79,18 @@ namespace GameServer.Entities
         {
             return (int)Vector3Int.Distance(this.Position, position);
         }
-
+        private float usecd = 0;
         public override void Update()
         {
             this.SkillMgr.Update();
             this.BuffMgr.Update();
+            
+            //if(IsAiUse && !IsAtt)
+               this.AI.Update();
+            if (usecd > 0)
+                usecd -= Time.deltaTime;
+            if (usecd <= 0)
+                IsAttOver = true;
         }
 
         void InitSkills()
@@ -113,6 +130,8 @@ namespace GameServer.Entities
                         Postion = new NVector3(),
                         Result = context.Result,
                     };
+                    this.IsAtt = true;
+                    usecd = skill.Define.Cd;
                     context.Battle.AddCastSkillInfo(context.CastSkill);
                 }
             }
@@ -134,10 +153,35 @@ namespace GameServer.Entities
         public virtual void OnEnterMap(Map map)
         {
             this.map = map;
+            if(CharacterType.Player == this.Info.Type && this.map.Define.Type == MapType.Arena)
+            {
+                this.ZhengYing = 1;
+                this.map.AddBattle(this);
+            }
         }
         public void OnLeave(Map map)
         {
             this.map = null;
+        }
+
+        public virtual Skill FindSkill(BattleContext context, SkillType type)
+        {
+            Skill cancast = null;
+         
+            return cancast;
+        }
+        public virtual void MoveTo(Vector3Int position)
+        {
+           
+        }
+        public virtual void UpdateMovement()
+        {
+            
+        }
+
+        public virtual void SopMove()
+        {
+           
         }
     }
 }

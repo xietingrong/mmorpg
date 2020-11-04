@@ -129,7 +129,7 @@ public class PlayerInputController : MonoBehaviour {
         this.lastPos = this.rb.transform.position;
         this.enabledRigidbody = true;
     }
-
+    private float movetime =0.3f;
     void FixedUpdate()
     {
         if (character == null || User.Instance.CurrentCharacter == null || !character.ready)//----
@@ -147,9 +147,16 @@ public class PlayerInputController : MonoBehaviour {
         {
             if (state != SkillBridge.Message.CharacterState.Move)
             {
+                movetime = 0.3f;
                 state = SkillBridge.Message.CharacterState.Move;
                 this.character.MoveForward();
                 this.SendEntityEvent(EntityEvent.MoveFwd);
+            }
+            movetime -= Time.deltaTime;
+            if (movetime <= 0)
+            {
+                this.SendEntityEvent(EntityEvent.MoveFwd);
+                movetime = 0.3f;
             }
             this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
         }
@@ -157,9 +164,16 @@ public class PlayerInputController : MonoBehaviour {
         {
             if (state != SkillBridge.Message.CharacterState.Move)
             {
+                movetime = 0.3f;
                 state = SkillBridge.Message.CharacterState.Move;
                 this.character.MoveBack();
                 this.SendEntityEvent(EntityEvent.MoveBack);
+            }
+            movetime -= Time.deltaTime;
+            if (movetime<=0)
+            {
+                this.SendEntityEvent(EntityEvent.MoveBack);
+                movetime = 0.3f;
             }
             this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
         }
@@ -168,6 +182,7 @@ public class PlayerInputController : MonoBehaviour {
             if (state != SkillBridge.Message.CharacterState.Idle)
             {
                 state = SkillBridge.Message.CharacterState.Idle;
+                movetime = 0.3f;
                 this.rb.velocity = Vector3.zero;
                 this.character.Stop();
                 this.SendEntityEvent(EntityEvent.Idle);

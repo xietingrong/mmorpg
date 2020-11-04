@@ -77,7 +77,7 @@ namespace Services
             message.Request.arenaReady.Entity = User.Instance.CurrentCharacter.entityId;
             NetClient.Instance.SendMessage(message);
         }
-        public void SendArenaChangeRequest(int targetId, String TargetName)
+        public void SendArenaChangeRequest(int targetId = 0, String TargetName = null)
         {
             Debug.Log("SendArenaChangeRequest");
             NetMessage message = new NetMessage();

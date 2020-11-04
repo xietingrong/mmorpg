@@ -94,6 +94,7 @@
     <Compile Include="AI\AIBase.cs" />
     <Compile Include="AI\AIBoss.cs" />
     <Compile Include="AI\AIMonsterPassive.cs" />
+    <Compile Include="AI\AIPet.cs" />
     <Compile Include="Battle\Battle.cs" />
     <Compile Include="Battle\BattleContext.cs" />
     <Compile Include="Battle\Buff.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Managers\ItemManager.cs" />
     <Compile Include="Managers\MapManager.cs" />
     <Compile Include="Managers\MonsterManager.cs" />
+    <Compile Include="Managers\PetManager.cs" />
     <Compile Include="Managers\QuestManager.cs" />
     <Compile Include="Managers\SessionManager.cs" />
     <Compile Include="Managers\ShopManager.cs" />
@@ -204,6 +206,9 @@
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="TGuildMember.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TPet.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="TPlayer.cs">

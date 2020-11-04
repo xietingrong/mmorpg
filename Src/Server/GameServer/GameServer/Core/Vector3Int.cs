@@ -128,7 +128,7 @@ namespace GameServer.Core
             get
             {
                 var m = this.magnitude;
-                return new Vector3Int((int)(this.x*100f/m),(int)(this.x * 100f / m),(int)(this.x * 100f / m));
+                return new Vector3Int((int)(this.x*100f/m),(int)(this.y * 100f / m),(int)(this.z * 100f / m));
             }
         }
         /// <summary>
